@@ -265,23 +265,14 @@ h1,h2{font-family:Georgia,serif;color:#9c6a1c}h1{margin:10px 0 0;font-size:42px}
 <div class="item"><span class="name">ถอดสีเล็บ PVC ล้างพักหน้าเล็บ</span><span class="price">150.-</span></div>
 <div class="item"><span class="name">ถอดสี อะคริลิค</span><span class="price">200.-</span></div></section>
 
-<section class="card" id="builder"><h2>คำนวณราคาทำเล็บ • Nail Price Builder</h2><p class="th">เลือกแบบเล็บและดูราคาเริ่มต้น</p>
-<div class="builder">
-<div class="pick"><label>สีหลัก</label><select id="base"><option value="0">ยังไม่เลือก</option><option value="200" data-style="solid">สีพื้น — 200</option><option value="250" data-style="healthy">สีสุขภาพดี — 250</option><option value="300" data-style="glitter">สีกากเพชร — 300</option><option value="300" data-style="flash">สีแฟลช — 300</option><option value="350" data-style="cat">สีลูกแก้ว — 350</option></select></div>
-<div class="pick"><label>Add-ons • ระบุจำนวนเล็บแต่ละแบบ</label>
-<div class="addon-grid">
-<label>งานเพ้นท์ <small>เริ่มต้น 25/นิ้ว</small><input class="addonQty" data-name="งานเพ้นท์" data-price="25" type="number" min="0" max="10" value="0"></label>
-<label>เฟรนช์ปลาย <small>40/นิ้ว</small><input class="addonQty" data-name="เฟรนช์ปลาย" data-price="40" type="number" min="0" max="10" value="0"></label>
-<label>ไล่ปลาย <small>40/นิ้ว</small><input class="addonQty" data-name="ไล่ปลาย" data-price="40" type="number" min="0" max="10" value="0"></label>
-<label>ออมเบร <small>40/นิ้ว</small><input class="addonQty" data-name="ออมเบร" data-price="40" type="number" min="0" max="10" value="0"></label>
-<label>ติดอะไหล่ <small>30/นิ้ว</small><input class="addonQty" data-name="ติดอะไหล่" data-price="30" type="number" min="0" max="10" value="0"></label>
-<label>ติดสติ๊กเกอร์ <small>15/นิ้ว</small><input class="addonQty" data-name="ติดสติ๊กเกอร์" data-price="15" type="number" min="0" max="10" value="0"></label>
-<label>ปั้นนูน <small>50/นิ้ว</small><input class="addonQty" data-name="ปั้นนูน" data-price="50" type="number" min="0" max="10" value="0"></label>
-</div></div>
-<div class="pick"><label>ต่อ/เสริมเล็บ</label><select id="ext"><option value="0">ไม่เพิ่ม</option><option value="150">ชิดโคน กาวธรรมดา — 150</option><option value="200">ชิดโคน กาวเจล — 200</option><option value="300">เว้นโคน กาวเจล — 300</option><option value="0">เสริมหน้าเล็บ — ฟรี</option><option value="150">เสริม Overlay — 150</option></select></div>
-</div>
-<div class="preview"><div id="desc">เลือกบริการเพื่อคำนวณราคา</div><div class="total"><span>ราคาเริ่มต้น</span><strong id="total">0 บาท</strong></div><p class="fine">ราคาที่แสดงเป็นราคาเริ่มต้น ราคาสุดท้ายขึ้นกับจำนวนเล็บ ความยาว รายละเอียดงาน และวัสดุ</p></div>
+
+<section class="card" id="price-calculator-link">
+  <h2>คำนวณราคาทำเล็บ</h2>
+  <p class="th">เลือกบริการและดูราคาเริ่มต้นก่อนจองคิว</p>
+  <p>ต้องการประเมินราคาทำเล็บก่อนมาที่ร้าน? เปิดหน้าคำนวณราคา แล้วเลือกสีเจล ต่อเล็บ เสริมหน้าเล็บ และงานตกแต่งที่ต้องการได้เลยค่ะ</p>
+  <a class="map-btn primary-map" href="/price-calculator/" id="openPriceCalculator">💅 เปิดเครื่องคำนวณราคา</a>
 </section>
+
 
 
 <section class="card" id="location">
@@ -455,4 +446,16 @@ function calc(){let sum=(+b.value||0)+(+e.value||0),p=[];if(+b.value)p.push(lab(
 </script>
 <!-- Neko Nail button tracking END -->
 
+
+<script>
+document.addEventListener('click', function(e){
+  var el=e.target.closest('a[href="/price-calculator/"]');
+  if(!el || typeof window.gtag!=='function') return;
+  gtag('event','click_price_calculator',{
+    link_url:el.getAttribute('href'),
+    link_text:(el.innerText||'').trim(),
+    button_location:'homepage'
+  });
+},true);
+</script>
 </body></html>
