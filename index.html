@@ -406,12 +406,6 @@ h1,h2{font-family:Georgia,serif;color:#9c6a1c}h1{margin:10px 0 0;font-size:42px}
 </div>
 </nav>
 <script>
-const b=document.getElementById('base'),e=document.getElementById('ext'),t=document.getElementById('total'),d=document.getElementById('desc'),addons=[...document.querySelectorAll('.addonQty')];
-function lab(x){return x.options[x.selectedIndex].text.split(' — ')[0]}
-function calc(){let sum=(+b.value||0)+(+e.value||0),p=[];if(+b.value)p.push(lab(b));addons.forEach(x=>{let qty=Math.max(0,Math.min(10,+x.value||0));x.value=qty;if(qty){sum+=(+x.dataset.price)*qty;p.push(x.dataset.name+' '+qty+' นิ้ว')}});if(e.selectedIndex>0)p.push(lab(e));t.textContent=sum.toLocaleString('th-TH')+' บาท';d.textContent=p.length?p.join(' + '):'เลือกบริการเพื่อคำนวณราคา'}
-[b,e,...addons].forEach(x=>x.addEventListener('input',calc));calc();
-</script>
-<script>
 (function(){
   const slider=document.getElementById('nailSlider');
   if(!slider) return;
