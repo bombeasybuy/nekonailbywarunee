@@ -26,21 +26,7 @@
 h1,h2{font-family:Georgia,serif;color:#9c6a1c}h1{margin:10px 0 0;font-size:42px}.sub{letter-spacing:2px;color:#9d6f48}.tag{display:inline-block;margin-top:12px;background:#f8dfe0;padding:7px 14px;border-radius:99px;color:#8f4c57}
 .card{padding:19px;margin-top:16px}h2{margin:0;font-size:26px}.th{margin:2px 0 13px;color:var(--rose);font-weight:700}
 .item{display:grid;grid-template-columns:1fr auto;gap:12px;padding:11px 0;border-bottom:1px dashed #ddcdbf}.item:last-child{border:0}.name{font-weight:700}.note{display:block;font-size:12px;color:var(--muted)}.price{font-weight:800;color:var(--rose);white-space:nowrap}
-.builder{display:grid;grid-template-columns:1fr 1fr;gap:11px}.pick{background:#fff;border:1px solid var(--line);border-radius:15px;padding:12px}label{font-weight:800;display:block;margin-bottom:7px}select,input{width:100%;padding:11px;border:1px solid #ddcdbf;border-radius:11px;background:#fff;font:inherit}
-.preview{margin-top:13px;text-align:center;background:linear-gradient(145deg,#fff1f3,#fffaf1);border:1px solid var(--line);border-radius:20px;padding:16px}
-.nail{width:110px;height:190px;margin:10px auto;border-radius:55px 55px 35px 35px;background:linear-gradient(145deg,#f3ccd2,#fff1f3 45%,#deb2bc);border:2px solid #d7aab3;position:relative;overflow:hidden}
-.nail.solid{background:linear-gradient(145deg,#c77d8a,#e8a6b0)}
-.nail.healthy{background:linear-gradient(145deg,#f6d5dc,#fff2f4 50%,#e6b9c4)}
-.nail.glitter{background:radial-gradient(circle at 25% 20%,#fff 0 2px,transparent 3px),radial-gradient(circle at 65% 40%,#fff7c9 0 2px,transparent 3px),radial-gradient(circle at 45% 75%,#fff 0 1.5px,transparent 3px),linear-gradient(145deg,#e6b4c8,#c888aa)}
-.nail.flash{background:linear-gradient(120deg,#a990c8,#f4c2d7 32%,#fff 48%,#9fd7d4 63%,#d9a5c7)}
-.nail.cat{background:linear-gradient(135deg,#d9a8b9 0%,#fff0f4 28%,#fff 43%,#cda3d6 53%,#f6c6d1 70%,#d6a8b6 100%)}
-.nail.cat:after{content:"";position:absolute;inset:-15%;background:linear-gradient(112deg,transparent 32%,#ffffffee 45%,#ffd6e688 51%,transparent 63%);transform:rotate(-4deg)}
-.nail.french:before{content:"";position:absolute;left:-10px;right:-10px;top:-6px;height:48px;background:#fff;border-radius:50%;z-index:3;border-bottom:2px solid #efd9df}
-.nail.charm:before{content:"✦";position:absolute;z-index:4;top:58px;left:36px;font-size:38px;color:#c59a3a;text-shadow:0 1px 2px #fff}
-.nail.sticker:before{content:"♡";position:absolute;z-index:4;top:62px;left:38px;font-size:38px;color:#fff;text-shadow:0 0 2px #a95561}
-.nail.art3d:before{content:"✿";position:absolute;z-index:4;top:57px;left:35px;font-size:42px;color:#fff;text-shadow:0 1px 3px #b78935}
-.nail.glitter:after,.nail.flash:after{content:"✦  ·  ✧";position:absolute;inset:35px 8px auto;text-align:center;color:#fff;font-size:18px;text-shadow:0 0 4px #fff}
-.total{display:flex;justify-content:space-between;align-items:center;margin-top:13px;padding:13px;background:#f8e4e3;border-radius:14px}.total strong{font-size:24px;color:var(--rose)}.fine{font-size:12px;color:var(--muted)}
+.fine{font-size:12px;color:var(--muted)}
 .bottom{position:fixed;left:0;right:0;bottom:0;background:#fffaf6ee;border-top:1px solid var(--line);padding:10px 14px}.bottomin{max-width:820px;margin:auto;display:grid;grid-template-columns:1fr 1.4fr;gap:9px}.btn{text-align:center;text-decoration:none;padding:13px;border-radius:14px;border:1px solid #d7b97f;font-weight:800;background:#fff}.primary{background:#b78935;color:#fff}.socials{display:flex;justify-content:center;gap:18px;margin-top:16px;flex-wrap:wrap}
 .socialbtn{width:76px;height:76px;border-radius:24px;display:grid;place-items:center;text-decoration:none;background:#fff;border:1px solid var(--line);box-shadow:0 8px 20px rgba(92,62,49,.10);transition:.18s ease;position:relative}
 .socialbtn:active{transform:scale(.96)}
@@ -49,8 +35,6 @@ h1,h2{font-family:Georgia,serif;color:#9c6a1c}h1{margin:10px 0 0;font-size:42px}
 .socialbtn.tt{background:linear-gradient(145deg,#fff,#f7f7f7)}
 .social-label{width:100%;text-align:center;margin-top:10px;font-size:13px;color:var(--muted)}
 @media(max-width:430px){.socialbtn{width:72px;height:72px}}
-@media(max-width:560px){.builder{grid-template-columns:1fr}}
-.addon-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.addon-grid label{display:flex;flex-direction:column;gap:5px;font-weight:700}.addon-grid small{font-weight:400;opacity:.72}.addon-grid input{width:100%;box-sizing:border-box;padding:12px;border:1px solid #d9cdbd;border-radius:12px;font-size:18px;background:#fff}@media(max-width:520px){.addon-grid{grid-template-columns:1fr}}
 
 .location-card{
   position:relative;overflow:hidden;
@@ -212,6 +196,41 @@ h1,h2{font-family:Georgia,serif;color:#9c6a1c}h1{margin:10px 0 0;font-size:42px}
     clip-path:polygon(10px 0,calc(100% - 10px) 0,100% 50%,calc(100% - 10px) 100%,10px 100%,0 50%)
   }
 }
+
+/* ===== Neko Nail top navigation ===== */
+.site-nav{position:sticky;top:0;z-index:1000;background:rgba(255,253,249,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);box-shadow:0 5px 18px rgba(92,62,49,.07)}
+.site-nav-inner{max-width:920px;margin:auto;min-height:68px;padding:8px 14px;display:flex;align-items:center;gap:16px}
+.site-brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.site-brand img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:1.5px solid #d4a44c;flex:0 0 auto}
+.site-brand-text{display:flex;flex-direction:column;line-height:1.1;min-width:0}
+.site-brand-text strong{font-family:Georgia,serif;color:#8d611b;font-size:17px;white-space:nowrap}
+.site-brand-text small{font-size:10px;letter-spacing:1px;color:var(--muted);margin-top:4px;white-space:nowrap}
+.site-menu{margin-left:auto;display:flex;align-items:center;gap:4px}
+.site-menu a{padding:10px 9px;border-radius:12px;text-decoration:none;font-size:14px;font-weight:750;color:#654f45;white-space:nowrap}
+.site-menu a:hover{background:#fff2f4;color:var(--rose)}
+.site-menu .nav-book{margin-left:4px;padding:10px 14px;background:linear-gradient(105deg,#c92f61,#df4e78 58%,#f5a6b8);color:#fff;box-shadow:0 6px 15px rgba(185,54,88,.18)}
+.site-menu .nav-book:hover{color:#fff;background:linear-gradient(105deg,#bd2858,#d94470 58%,#ee96aa)}
+.nav-toggle{display:none;margin-left:auto;width:44px;height:44px;border-radius:13px;border:1px solid var(--line);background:#fff;color:#765a4d;font-size:22px;cursor:pointer}
+@media(max-width:760px){
+  .site-nav-inner{min-height:62px;padding:7px 12px;flex-wrap:wrap}
+  .site-brand img{width:42px;height:42px}.site-brand-text strong{font-size:15px}.site-brand-text small{font-size:9px}
+  .nav-toggle{display:grid;place-items:center}
+  .site-menu{display:none;order:3;width:100%;margin-left:0;padding:3px 0 8px;grid-template-columns:1fr 1fr;gap:6px}
+  .site-menu.open{display:grid}
+  .site-menu a{text-align:center;border:1px solid #efe0d4;background:#fff;padding:11px 8px}
+  .site-menu .nav-book{margin-left:0;grid-column:1/-1}
+}
+
+/* ===== Article preview on homepage ===== */
+.article-card{position:relative;overflow:hidden;background:linear-gradient(145deg,#fffdf9,#fff7f5);border-color:#edd7d3}
+.article-card:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-85px;top:-90px;background:rgba(217,92,120,.07)}
+.article-preview{position:relative;display:grid;grid-template-columns:145px 1fr;gap:16px;align-items:center;margin-top:14px}
+.article-thumb{width:145px;aspect-ratio:1/1;border-radius:18px;object-fit:cover;border:1px solid var(--line);background:#f8f2ed}
+.article-meta{font-size:12px;color:var(--muted);font-weight:700;margin-bottom:5px}.article-preview h3{margin:0 0 7px;color:#624b42;font-size:20px;line-height:1.35}.article-preview p{margin:0;color:var(--muted);line-height:1.65;font-size:14px}
+.article-link{display:inline-flex;align-items:center;gap:7px;margin-top:11px;text-decoration:none;font-weight:900;color:var(--rose)}
+.article-link:hover{text-decoration:underline}.all-articles{text-align:right;margin-top:10px}.all-articles a{font-size:13px;font-weight:800;color:#8a611d;text-decoration:none}
+@media(max-width:560px){.article-preview{grid-template-columns:92px 1fr;gap:12px;align-items:start}.article-thumb{width:92px;border-radius:15px}.article-preview h3{font-size:17px}.article-preview p{font-size:13px}.all-articles{text-align:left}}
+
 </style><script type="application/ld+json">{"@context":"https://schema.org","@type":"NailSalon","@id":"https://nekonailbywarunee.com/#nailsalon","name":"Neko Nail by Warunee","alternateName":"Neko Nail","url":"https://nekonailbywarunee.com/","telephone":"+66-84-519-6545","priceRange":"฿฿","description":"ร้านทำเล็บบางใหญ่ Neko Nail by Warunee ที่ Index Living Mall บางใหญ่ ชั้น 1 ทาสีเจล ต่อเล็บ เพ้นท์เล็บ เสริมหน้าเล็บ สีเจลเริ่ม 200 บาท เปิดทุกวัน 11:00–21:00 น. จองคิวผ่าน LINE","address":{"@type":"PostalAddress","streetAddress":"Index Living Mall บางใหญ่ ชั้น 1, 87 หมู่ 6 ถนนกาญจนาภิเษก","addressLocality":"เสาธงหิน","addressRegion":"นนทบุรี","postalCode":"11140","addressCountry":"TH"},"areaServed":[{"@type":"Place","name":"บางใหญ่ นนทบุรี"},{"@type":"AdministrativeArea","name":"นนทบุรี"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"21:00"}],"sameAs":["https://www.facebook.com/nekonailbywarunee/","https://www.instagram.com/nekonailbywarunee","https://www.tiktok.com/@neko.nail.by.warunee","https://www.lemon8-app.com/@neko.nail.by.warunee?region=th"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"บริการทำเล็บ Neko Nail by Warunee","itemListElement":[{"@type":"Offer","name":"ทาสีเจล","price":"200","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"ทาสีเจล"}},{"@type":"Offer","name":"สีสุขภาพดี","price":"250","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"สีสุขภาพดี"}},{"@type":"Offer","name":"สีลูกแก้ว","price":"350","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"สีลูกแก้ว"}},{"@type":"Offer","name":"ต่อเล็บชิดโคน กาวธรรมดา","price":"150","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"ต่อเล็บ"}},{"@type":"Offer","name":"งานเพ้นท์เล็บ","price":"25","priceCurrency":"THB","description":"ราคาเริ่มต้นต่อนิ้ว","itemOffered":{"@type":"Service","name":"เพ้นท์เล็บ"}}]},"hasMap":"https://www.google.com/maps/search/?api=1&query=Neko%20Nail%20by%20Warunee%20Index%20Living%20Mall%20Bang%20Yai","image":["https://nekonailbywarunee.com/images/nail-art-pearl-cat-eye-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-red-rhinestone-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-blue-silver-winter-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-pink-blue-gradient-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-halloween-neon-bang-yai.webp"]}</script>
 <!-- Neko Nail GA4 START -->
 <!-- Google tag (gtag.js) -->
@@ -224,7 +243,26 @@ h1,h2{font-family:Georgia,serif;color:#9c6a1c}h1{margin:10px 0 0;font-size:42px}
 </script>
 <!-- Neko Nail GA4 END -->
 
-</head><body><main class="wrap">
+</head><body>
+<nav class="site-nav" aria-label="เมนูหลัก">
+  <div class="site-nav-inner">
+    <a class="site-brand" href="/" aria-label="Neko Nail by Warunee หน้าแรก">
+      <img src="/images/neko-nail-logo.webp" alt="โลโก้ Neko Nail by Warunee" width="46" height="46">
+      <span class="site-brand-text"><strong>Neko Nail by Warunee</strong><small>NAIL SALON • BANG YAI</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+    <div class="site-menu">
+      <a href="/">หน้าแรก</a>
+      <a href="/#gallery">ผลงาน</a>
+      <a href="/#pricing">ราคา</a>
+      <a href="/price-calculator/">คำนวณราคา</a>
+      <a href="/blog/">บทความ</a>
+      <a href="/#map">ติดต่อ</a>
+      <a class="nav-book" href="https://lin.ee/YG8WAg5" target="_blank" rel="noopener">จองคิว</a>
+    </div>
+  </div>
+</nav>
+<main class="wrap">
 <section class="hero"><img class="logo" src="images/neko-nail-logo.webp" alt="Neko Nail by Warunee ร้านทำเล็บบางใหญ่ Index Living Mall" width="165" height="165"><h1>ร้านทำเล็บบางใหญ่</h1><div class="sub">NEKO NAIL BY WARUNEE</div><div class="tag">Nail Salon • Bang Yai • สีเจลเริ่ม 200 บาท</div><p><strong>Neko Nail by Warunee</strong> ร้านทำเล็บในบางใหญ่ นนทบุรี บริการทาสีเจล ต่อเล็บ เพ้นท์เล็บ เสริมหน้าเล็บ และถอดสี พร้อมดูราคาเริ่มต้นได้ในหน้านี้</p><p>📍 Index Living Mall บางใหญ่ ชั้น 1<br>🕚 เปิดทุกวัน 11:00–21:00 น.<br>☎ <a href="tel:0845196545">084 519 6545</a> • <a href="https://lin.ee/YG8WAg5" target="_blank" rel="noopener">จองคิวผ่าน LINE</a></p></section>
 
 
@@ -292,7 +330,7 @@ h1,h2{font-family:Georgia,serif;color:#9c6a1c}h1{margin:10px 0 0;font-size:42px}
 
 
 
-<section class="card"><h2>ราคาเล็บเจล • Color Menu</h2><p class="th">บริการสีเจล</p>
+<section class="card" id="pricing"><h2>ราคาเล็บเจล • Color Menu</h2><p class="th">บริการสีเจล</p>
 <div class="item"><span class="name">สีพื้น</span><span class="price">200.-</span></div>
 <div class="item"><span class="name">สีสุขภาพดี</span><span class="price">250.-</span></div>
 <div class="item"><span class="name">สีกากเพชร</span><span class="price">300.-</span></div>
@@ -395,6 +433,22 @@ h1,h2{font-family:Georgia,serif;color:#9c6a1c}h1{margin:10px 0 0;font-size:42px}
 <div class="social-label">Facebook &nbsp; • &nbsp; Instagram &nbsp; • &nbsp; TikTok &nbsp; • &nbsp; Lemon8</div>
 </section>
 
+
+<section class="card article-card" id="articles">
+  <h2>บทความและคำแนะนำเรื่องเล็บ</h2>
+  <p class="th">Nail Care Guide • ดูแลเล็บให้สวยนานขึ้น</p>
+  <div class="article-preview">
+    <img class="article-thumb" src="images/nail-art-pearl-cat-eye-bang-yai.webp" alt="บทความวิธีดูแลเล็บหลังทำเล็บเจล Neko Nail by Warunee" loading="lazy" decoding="async">
+    <div>
+      <div class="article-meta">Nail Care • อ่านประมาณ 4 นาที</div>
+      <h3>วิธีดูแลเล็บหลังทำเล็บเจล ให้สวยนาน ไม่ลอกง่าย</h3>
+      <p>ทำไม “ปลายเล็บ” จึงสำคัญ? รู้จักการคุมปลายเล็บ พร้อมวิธีลดโอกาสสีเจลยก บิ่น หรือลอกก่อนเวลา</p>
+      <a class="article-link" href="/blog/nail-care-after-gel/">อ่านบทความ <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <div class="all-articles"><a href="/blog/">ดูบทความทั้งหมด →</a></div>
+</section>
+
 <section class="card"><h2>มาตรฐานร้านทำเล็บ Neko Nail</h2><p class="th">มาตรฐาน Neko Nail</p><p>✦ ทำความสะอาดเล็บด้วยน้ำยาคุณภาพ<br>✦ อุปกรณ์สะอาด ฆ่าเชื้อทุกชิ้นก่อนให้บริการ<br>✦ ใส่ใจทุกรายละเอียด เพื่อเล็บสวยและปลอดภัย</p></section>
 <p class="fine" style="text-align:center"><strong>Neko Nail by Warunee</strong> • ร้านทำเล็บบางใหญ่ • Index Living Mall บางใหญ่ ชั้น 1 • <a href="tel:0845196545">084 519 6545</a> • เปิดทุกวัน 11:00–21:00 น.</p>
 </main>
@@ -479,6 +533,8 @@ h1,h2{font-family:Georgia,serif;color:#9c6a1c}h1{margin:10px 0 0;font-size:42px}
       eventName = 'click_tiktok';
     } else if (href.indexOf('lemon8-app.com/') !== -1) {
       eventName = 'click_lemon8';
+    } else if (href.indexOf('/blog/') !== -1) {
+      eventName = 'click_blog';
     }
 
     if (!eventName) return;
@@ -506,4 +562,21 @@ document.addEventListener('click', function(e){
   });
 },true);
 </script>
+
+<script>
+(function(){
+  const toggle=document.querySelector('.nav-toggle');
+  const menu=document.querySelector('.site-menu');
+  if(!toggle||!menu) return;
+  toggle.addEventListener('click',function(){
+    const open=menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',open?'true':'false');
+    toggle.textContent=open?'✕':'☰';
+  });
+  menu.addEventListener('click',function(e){
+    if(e.target.closest('a') && window.innerWidth<=760){menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}
+  });
+})();
+</script>
+
 </body></html>
