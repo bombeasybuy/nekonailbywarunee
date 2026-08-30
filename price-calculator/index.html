@@ -59,6 +59,41 @@ h1,h2{margin:0;color:var(--ink)}
 .estimate>span{display:block;color:var(--muted);font-size:13px}.estimate strong{display:block;font-size:36px;color:var(--rose);margin:2px 0 5px}.estimate #desc{font-weight:700;line-height:1.5}.estimate p{font-size:11px;color:var(--muted);margin:8px 0 0;line-height:1.5}
 .calc-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:16px}
 @media(max-width:520px){.wrap{padding-left:10px;padding-right:10px}.card,.calc-hero{border-radius:22px}.calc-card{padding:17px}.service-grid{grid-template-columns:1fr}.calc-heading h2{font-size:27px}.estimate strong{font-size:32px}.calc-note{font-size:14px}.calc-actions{grid-template-columns:1fr}}
+
+/* ===== Neko Nail top navigation ===== */
+.site-nav{position:sticky;top:0;z-index:1000;background:rgba(255,253,249,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);box-shadow:0 5px 18px rgba(92,62,49,.07)}
+.site-nav-inner{max-width:920px;margin:auto;min-height:68px;padding:8px 14px;display:flex;align-items:center;gap:16px}
+.site-brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.site-brand img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:1.5px solid #d4a44c;flex:0 0 auto}
+.site-brand-text{display:flex;flex-direction:column;line-height:1.1;min-width:0}
+.site-brand-text strong{font-family:Georgia,serif;color:#8d611b;font-size:17px;white-space:nowrap}
+.site-brand-text small{font-size:10px;letter-spacing:1px;color:var(--muted);margin-top:4px;white-space:nowrap}
+.site-menu{margin-left:auto;display:flex;align-items:center;gap:4px}
+.site-menu a{padding:10px 9px;border-radius:12px;text-decoration:none;font-size:14px;font-weight:750;color:#654f45;white-space:nowrap}
+.site-menu a:hover{background:#fff2f4;color:var(--rose)}
+.site-menu .nav-book{margin-left:4px;padding:10px 14px;background:linear-gradient(105deg,#c92f61,#df4e78 58%,#f5a6b8);color:#fff;box-shadow:0 6px 15px rgba(185,54,88,.18)}
+.site-menu .nav-book:hover{color:#fff;background:linear-gradient(105deg,#bd2858,#d94470 58%,#ee96aa)}
+.nav-toggle{display:none;margin-left:auto;width:44px;height:44px;border-radius:13px;border:1px solid var(--line);background:#fff;color:#765a4d;font-size:22px;cursor:pointer}
+@media(max-width:760px){
+  .site-nav-inner{min-height:62px;padding:7px 12px;flex-wrap:wrap}
+  .site-brand img{width:42px;height:42px}.site-brand-text strong{font-size:15px}.site-brand-text small{font-size:9px}
+  .nav-toggle{display:grid;place-items:center}
+  .site-menu{display:none;order:3;width:100%;margin-left:0;padding:3px 0 8px;grid-template-columns:1fr 1fr;gap:6px}
+  .site-menu.open{display:grid}
+  .site-menu a{text-align:center;border:1px solid #efe0d4;background:#fff;padding:11px 8px}
+  .site-menu .nav-book{margin-left:0;grid-column:1/-1}
+}
+
+/* ===== Article preview on homepage ===== */
+.article-card{position:relative;overflow:hidden;background:linear-gradient(145deg,#fffdf9,#fff7f5);border-color:#edd7d3}
+.article-card:before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-85px;top:-90px;background:rgba(217,92,120,.07)}
+.article-preview{position:relative;display:grid;grid-template-columns:145px 1fr;gap:16px;align-items:center;margin-top:14px}
+.article-thumb{width:145px;aspect-ratio:1/1;border-radius:18px;object-fit:cover;border:1px solid var(--line);background:#f8f2ed}
+.article-meta{font-size:12px;color:var(--muted);font-weight:700;margin-bottom:5px}.article-preview h3{margin:0 0 7px;color:#624b42;font-size:20px;line-height:1.35}.article-preview p{margin:0;color:var(--muted);line-height:1.65;font-size:14px}
+.article-link{display:inline-flex;align-items:center;gap:7px;margin-top:11px;text-decoration:none;font-weight:900;color:var(--rose)}
+.article-link:hover{text-decoration:underline}.all-articles{text-align:right;margin-top:10px}.all-articles a{font-size:13px;font-weight:800;color:#8a611d;text-decoration:none}
+@media(max-width:560px){.article-preview{grid-template-columns:92px 1fr;gap:12px;align-items:start}.article-thumb{width:92px;border-radius:15px}.article-preview h3{font-size:17px}.article-preview p{font-size:13px}.all-articles{text-align:left}}
+
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Z0XHMFT7Z"></script>
 <script>
@@ -98,6 +133,25 @@ gtag('config','G-1Z0XHMFT7Z');
 </script>
 </head>
 <body>
+
+<nav class="site-nav" aria-label="เมนูหลัก">
+  <div class="site-nav-inner">
+    <a class="site-brand" href="/" aria-label="Neko Nail by Warunee หน้าแรก">
+      <img src="/images/neko-nail-logo.webp" alt="โลโก้ Neko Nail by Warunee" width="46" height="46">
+      <span class="site-brand-text"><strong>Neko Nail by Warunee</strong><small>NAIL SALON • BANG YAI</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+    <div class="site-menu">
+      <a href="/">หน้าแรก</a>
+      <a href="/#gallery">ผลงาน</a>
+      <a href="/#pricing">ราคา</a>
+      <a href="/price-calculator/">คำนวณราคา</a>
+      <a href="/blog/">บทความ</a>
+      <a href="/#map">ติดต่อ</a>
+      <a class="nav-book" href="https://lin.ee/YG8WAg5" target="_blank" rel="noopener">จองคิว</a>
+    </div>
+  </div>
+</nav>
 <main class="wrap">
   <div class="calc-topnav">
     <a class="calc-back" href="/">← กลับหน้าแรก</a>
@@ -170,5 +224,22 @@ document.addEventListener('click',function(e){
   if(name) gtag('event',name,{link_url:href,link_text:(el.innerText||'').trim(),button_location:'price_calculator'});
 },true);
 </script>
+
+<script>
+(function(){
+  const toggle=document.querySelector('.nav-toggle');
+  const menu=document.querySelector('.site-menu');
+  if(!toggle||!menu) return;
+  toggle.addEventListener('click',function(){
+    const open=menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',open?'true':'false');
+    toggle.textContent=open?'✕':'☰';
+  });
+  menu.addEventListener('click',function(e){
+    if(e.target.closest('a') && window.innerWidth<=760){menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}
+  });
+})();
+</script>
+
 </body>
 </html>
