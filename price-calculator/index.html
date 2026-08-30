@@ -7,154 +7,58 @@
 <meta name="description" content="ดูราคาทำเล็บ Neko Nail by Warunee บางใหญ่ ทั้งสีเจล ต่อเล็บ เพ้นท์เล็บ เสริมหน้าเล็บ ถอดสี และใช้เครื่องคำนวณราคาเพื่อประเมินค่าบริการก่อนจองคิว">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
 <link rel="canonical" href="https://nekonailbywarunee.com/price-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="th_TH">
+<meta property="og:site_name" content="Neko Nail by Warunee">
+<meta property="og:title" content="คำนวณราคาทำเล็บ | Neko Nail by Warunee บางใหญ่">
+<meta property="og:description" content="เลือกสีเจล ดีไซน์ และบริการเสริม เพื่อประเมินราคาทำเล็บก่อนจองคิวกับ Neko Nail by Warunee บางใหญ่">
+<meta property="og:url" content="https://nekonailbywarunee.com/price-calculator/">
+<meta property="og:image" content="https://nekonailbywarunee.com/images/nail-art-pearl-cat-eye-bang-yai.webp">
+<meta property="og:image:alt" content="ผลงานทำเล็บ Neko Nail by Warunee บางใหญ่">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="คำนวณราคาทำเล็บ | Neko Nail by Warunee บางใหญ่">
+<meta name="twitter:description" content="เลือกบริการและประเมินราคาทำเล็บเบื้องต้นก่อนจองคิว">
+<meta name="twitter:image" content="https://nekonailbywarunee.com/images/nail-art-pearl-cat-eye-bang-yai.webp">
 <style>
-
 :root{--cream:#fff8f2;--paper:#fffdf9;--rose:#a95561;--gold:#b78935;--ink:#4f3b34;--muted:#806d66;--line:#ead9c9}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Thai",sans-serif;background:#fff8f2;color:var(--ink)}a{color:inherit}
-.wrap{max-width:820px;margin:auto;padding:16px 14px 105px}.hero,.card{background:var(--paper);border:1px solid var(--line);border-radius:26px;box-shadow:0 10px 30px #76553314}
-.hero{text-align:center;padding:24px 16px}.logo{width:165px;height:165px;object-fit:cover;border-radius:50%;border:3px solid #d4a44c}
-h1,h2{font-family:Georgia,serif;color:#9c6a1c}h1{margin:10px 0 0;font-size:42px}.sub{letter-spacing:2px;color:#9d6f48}.tag{display:inline-block;margin-top:12px;background:#f8dfe0;padding:7px 14px;border-radius:99px;color:#8f4c57}
-.card{padding:19px;margin-top:16px}h2{margin:0;font-size:26px}.th{margin:2px 0 13px;color:var(--rose);font-weight:700}
-.item{display:grid;grid-template-columns:1fr auto;gap:12px;padding:11px 0;border-bottom:1px dashed #ddcdbf}.item:last-child{border:0}.name{font-weight:700}.note{display:block;font-size:12px;color:var(--muted)}.price{font-weight:800;color:var(--rose);white-space:nowrap}
-.builder{display:grid;grid-template-columns:1fr 1fr;gap:11px}.pick{background:#fff;border:1px solid var(--line);border-radius:15px;padding:12px}label{font-weight:800;display:block;margin-bottom:7px}select,input{width:100%;padding:11px;border:1px solid #ddcdbf;border-radius:11px;background:#fff;font:inherit}
-.preview{margin-top:13px;text-align:center;background:linear-gradient(145deg,#fff1f3,#fffaf1);border:1px solid var(--line);border-radius:20px;padding:16px}
-.nail{width:110px;height:190px;margin:10px auto;border-radius:55px 55px 35px 35px;background:linear-gradient(145deg,#f3ccd2,#fff1f3 45%,#deb2bc);border:2px solid #d7aab3;position:relative;overflow:hidden}
-.nail.solid{background:linear-gradient(145deg,#c77d8a,#e8a6b0)}
-.nail.healthy{background:linear-gradient(145deg,#f6d5dc,#fff2f4 50%,#e6b9c4)}
-.nail.glitter{background:radial-gradient(circle at 25% 20%,#fff 0 2px,transparent 3px),radial-gradient(circle at 65% 40%,#fff7c9 0 2px,transparent 3px),radial-gradient(circle at 45% 75%,#fff 0 1.5px,transparent 3px),linear-gradient(145deg,#e6b4c8,#c888aa)}
-.nail.flash{background:linear-gradient(120deg,#a990c8,#f4c2d7 32%,#fff 48%,#9fd7d4 63%,#d9a5c7)}
-.nail.cat{background:linear-gradient(135deg,#d9a8b9 0%,#fff0f4 28%,#fff 43%,#cda3d6 53%,#f6c6d1 70%,#d6a8b6 100%)}
-.nail.cat:after{content:"";position:absolute;inset:-15%;background:linear-gradient(112deg,transparent 32%,#ffffffee 45%,#ffd6e688 51%,transparent 63%);transform:rotate(-4deg)}
-.nail.french:before{content:"";position:absolute;left:-10px;right:-10px;top:-6px;height:48px;background:#fff;border-radius:50%;z-index:3;border-bottom:2px solid #efd9df}
-.nail.charm:before{content:"✦";position:absolute;z-index:4;top:58px;left:36px;font-size:38px;color:#c59a3a;text-shadow:0 1px 2px #fff}
-.nail.sticker:before{content:"♡";position:absolute;z-index:4;top:62px;left:38px;font-size:38px;color:#fff;text-shadow:0 0 2px #a95561}
-.nail.art3d:before{content:"✿";position:absolute;z-index:4;top:57px;left:35px;font-size:42px;color:#fff;text-shadow:0 1px 3px #b78935}
-.nail.glitter:after,.nail.flash:after{content:"✦  ·  ✧";position:absolute;inset:35px 8px auto;text-align:center;color:#fff;font-size:18px;text-shadow:0 0 4px #fff}
-.total{display:flex;justify-content:space-between;align-items:center;margin-top:13px;padding:13px;background:#f8e4e3;border-radius:14px}.total strong{font-size:24px;color:var(--rose)}.fine{font-size:12px;color:var(--muted)}
-.bottom{position:fixed;left:0;right:0;bottom:0;background:#fffaf6ee;border-top:1px solid var(--line);padding:10px 14px}.bottomin{max-width:820px;margin:auto;display:grid;grid-template-columns:1fr 1.4fr;gap:9px}.btn{text-align:center;text-decoration:none;padding:13px;border-radius:14px;border:1px solid #d7b97f;font-weight:800;background:#fff}.primary{background:#b78935;color:#fff}.socials{display:flex;justify-content:center;gap:18px;margin-top:16px;flex-wrap:wrap}
-.socialbtn{width:76px;height:76px;border-radius:24px;display:grid;place-items:center;text-decoration:none;background:#fff;border:1px solid var(--line);box-shadow:0 8px 20px rgba(92,62,49,.10);transition:.18s ease;position:relative}
-.socialbtn:active{transform:scale(.96)}
-.socialbtn svg{width:39px;height:39px;display:block}
-.socialbtn.ig{background:linear-gradient(145deg,#fff,#fff5f8)}
-.socialbtn.tt{background:linear-gradient(145deg,#fff,#f7f7f7)}
-.social-label{width:100%;text-align:center;margin-top:10px;font-size:13px;color:var(--muted)}
-@media(max-width:430px){.socialbtn{width:72px;height:72px}}
-@media(max-width:560px){.builder{grid-template-columns:1fr}}
-.addon-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.addon-grid label{display:flex;flex-direction:column;gap:5px;font-weight:700}.addon-grid small{font-weight:400;opacity:.72}.addon-grid input{width:100%;box-sizing:border-box;padding:12px;border:1px solid #d9cdbd;border-radius:12px;font-size:18px;background:#fff}@media(max-width:520px){.addon-grid{grid-template-columns:1fr}}
-
-.location-card{
-  position:relative;overflow:hidden;
-  background:linear-gradient(145deg,#fffdf9 0%,#fff4ed 55%,#f8e6dc 100%);
-  border:1px solid #e4ccb6;
-}
-.location-card:before{
-  content:"";position:absolute;width:170px;height:170px;border-radius:50%;
-  right:-65px;top:-70px;background:#d9b56b24;
-}
-.location-head{display:flex;align-items:center;gap:13px;position:relative}
-.map-pin{
-  width:52px;height:52px;flex:0 0 52px;border-radius:17px;
-  display:grid;place-items:center;
-  background:linear-gradient(145deg,#c99a42,#a97924);
-  box-shadow:0 8px 20px #8d611b2b;
-}
-.map-pin svg{width:29px;height:29px;display:block}
-.location-title{font-size:23px;font-weight:800;color:#8d611b;line-height:1.25}
-.location-sub{font-size:13px;color:var(--muted);margin-top:3px}
-.location-address{
-  position:relative;margin:15px 0 12px;padding:13px 14px;
-  background:#ffffffb8;border:1px solid #ead9c9;border-radius:15px;
-  line-height:1.65;
-}
-.map-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;position:relative}
-.map-btn{
-  display:flex;align-items:center;justify-content:center;gap:7px;
-  text-decoration:none;padding:13px 10px;border-radius:14px;
-  font-weight:800;border:1px solid #c99a42;background:#fff;color:#845a18;
-}
-.map-btn.primary-map{
-  background:linear-gradient(135deg,#b78935,#996b20);
-  color:white;border-color:#a7792d;box-shadow:0 8px 18px #9c6b1c2b;
-}
-.map-note{position:relative;margin:10px 0 0;text-align:center;font-size:12px;color:var(--muted)}
-@media(max-width:430px){
-  .location-title{font-size:21px}
-  .map-actions{grid-template-columns:1fr}
-}
-
-/* 3 quick actions: Call • Maps • LINE */
-.bottomin{grid-template-columns:.8fr 1fr 1.35fr}
-.btn.mapquick{background:#fff7e7;color:#8a611d;border-color:#d8b46d}
-@media(max-width:430px){
-  .bottom{padding:8px}
-  .bottomin{gap:6px}
-  .bottom .btn{padding:11px 6px;font-size:13px}
-}
-
-
-
-.gallery-card{overflow:hidden}
-.gallery-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
-.gallery-badge{white-space:nowrap;background:#f8dfe0;color:#8f4c57;padding:7px 11px;border-radius:99px;font-size:12px;font-weight:800}
-.gallery-intro{margin:8px 0 15px;line-height:1.7;color:var(--muted)}
-.slider-wrap{position:relative}
-.slider{
-  display:flex;overflow-x:auto;scroll-snap-type:x mandatory;
-  scrollbar-width:none;-ms-overflow-style:none;
-  gap:12px;padding-bottom:4px;scroll-behavior:smooth
-}
-.slider::-webkit-scrollbar{display:none}
-.slide{
-  flex:0 0 100%;scroll-snap-align:center;
-  margin:0;background:#fff;border:1px solid var(--line);
-  border-radius:20px;overflow:hidden;
-  box-shadow:0 8px 22px #76553314
-}
-.slide img{
-  display:block;width:100%;aspect-ratio:1/1;
-  object-fit:cover;background:#f7f2ed
-}
-.slide figcaption{
-  padding:10px 12px 12px;font-size:13px;font-weight:700;
-  color:#755a4d;line-height:1.35;text-align:center
-}
-.slider-nav{
-  display:flex;justify-content:space-between;align-items:center;
-  gap:10px;margin-top:10px
-}
-.slider-arrow{
-  width:42px;height:42px;border-radius:50%;
-  border:1px solid #d8b46d;background:#fff8ea;color:#8a611d;
-  display:grid;place-items:center;font-size:22px;font-weight:900;
-  box-shadow:0 4px 12px #8d611b18
-}
-.slider-arrow:active{transform:scale(.96)}
-.slider-dots{display:flex;justify-content:center;gap:7px;flex:1}
-.slider-dot{
-  width:8px;height:8px;border-radius:50%;background:#d9c8ba;
-  border:0;padding:0
-}
-.slider-dot.active{background:#b78935;transform:scale(1.25)}
-.slider-hint{text-align:center;margin:9px 0 0;font-size:12px;color:var(--muted)}
-.gallery-cta{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:14px}
-.shop-photo{
-  margin-top:14px;background:#fff;border:1px solid var(--line);
-  border-radius:18px;overflow:hidden
-}
-.shop-photo img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
-.shop-photo div{padding:10px 12px;font-size:12px;color:#755a4d;font-weight:700;text-align:center}
-@media(max-width:520px){
-  .gallery-cta{grid-template-columns:1fr}
-  .gallery-head{align-items:center}
-}
-
-
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Thai",sans-serif;background:var(--cream);color:var(--ink)}
+a{color:inherit}
+button{font-family:inherit}
+.wrap{max-width:820px;margin:auto;padding:16px 14px 42px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:26px;box-shadow:0 10px 30px #76553314;padding:19px;margin-top:16px}
+h1,h2{margin:0;color:var(--ink)}
+.th{margin:6px 0 0;color:var(--rose);font-weight:700}
 .calc-topnav{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:14px;flex-wrap:wrap}
 .calc-back{text-decoration:none;font-weight:800;color:#8a611d}
-.calc-hero{text-align:center;margin-bottom:6px}
-.calc-note{text-align:center;color:var(--muted);line-height:1.65}
+.map-btn{display:flex;align-items:center;justify-content:center;gap:7px;text-decoration:none;padding:13px 12px;border-radius:14px;font-weight:800;border:1px solid #c99a42;background:#fff;color:#845a18}
+.map-btn.primary-map{background:linear-gradient(135deg,#b78935,#996b20);color:#fff;border-color:#a7792d;box-shadow:0 8px 18px #9c6b1c2b}
+.calc-hero{text-align:center;background:radial-gradient(circle at 85% 10%,rgba(215,176,105,.18),transparent 32%),linear-gradient(145deg,#fffdf9,#fff4f3);border:1px solid var(--line);border-radius:26px;box-shadow:0 10px 30px #76553314;padding:30px 20px;margin-bottom:6px}
+.calc-hero h1{font-size:clamp(30px,7vw,44px);letter-spacing:-1.2px;color:#49362f}
+.calc-hero .sub{font-size:12px;font-weight:800;letter-spacing:3px;color:var(--gold);margin-top:8px}
+.calc-hero .tag{display:inline-block;margin-top:12px;font-size:12px;font-weight:700;background:#fff;border:1px solid #ecd8d1;box-shadow:0 5px 15px rgba(92,62,49,.05);padding:7px 14px;border-radius:99px;color:#8f4c57}
+.calc-note{text-align:center;color:var(--muted);line-height:1.65;margin:14px auto 0;max-width:650px}
+.calc-card{padding:22px;background:linear-gradient(180deg,#fffdfb 0%,#fff8f4 100%);border-color:#ead8ca;box-shadow:0 18px 50px rgba(111,74,55,.10)}
+.calc-heading{text-align:center;padding:4px 4px 10px}
+.calc-heading h2{font-size:30px;margin:5px 0}
+.calc-heading p{margin:0;color:var(--muted)}
+.eyebrow{font-size:11px;letter-spacing:2.4px;color:var(--gold);font-weight:900}
+.step{margin-top:18px;padding-top:18px;border-top:1px solid #efe3d8}
+.stephead{display:flex;align-items:center;gap:11px;margin-bottom:12px}
+.stephead>span{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,#c89a48,#a97827);color:#fff;font-weight:900;box-shadow:0 6px 15px #9c6b1c25}
+.stephead b{display:block;font-size:17px}.stephead small{display:block;color:var(--muted);margin-top:2px}
+.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.service{appearance:none;text-align:left;min-height:67px;padding:12px 13px;border-radius:16px;border:1px solid var(--line);background:#fff;display:flex;justify-content:space-between;align-items:center;gap:8px;color:var(--ink);cursor:pointer}
+.service span{font-weight:750}.service strong{color:var(--rose);white-space:nowrap}
+.service.active{border:2px solid var(--gold);background:linear-gradient(145deg,#fffaf0,#fff2f4);box-shadow:0 6px 16px #9c6b1c18}
+.addon-modern{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.addon-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 13px;border-bottom:1px solid #f0e5db}.addon-row:last-child{border-bottom:0}
+.addon-row b,.addon-row small{display:block}.addon-row small{color:var(--muted);margin-top:2px}
+.counter{display:flex;align-items:center;gap:8px}.counter button{width:34px;height:34px;border-radius:11px;border:1px solid #dfcdbb;background:#fff8f2;font-size:20px;color:#8a611d;cursor:pointer}.counter span{min-width:20px;text-align:center;font-weight:900}
+.estimate{margin-top:20px;padding:18px;border-radius:20px;background:linear-gradient(145deg,#fff0f3,#fff9ed);border:1px solid #e5cdbb;text-align:center}
+.estimate>span{display:block;color:var(--muted);font-size:13px}.estimate strong{display:block;font-size:36px;color:var(--rose);margin:2px 0 5px}.estimate #desc{font-weight:700;line-height:1.5}.estimate p{font-size:11px;color:var(--muted);margin:8px 0 0;line-height:1.5}
 .calc-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:16px}
-@media(max-width:520px){.calc-actions{grid-template-columns:1fr}}
+@media(max-width:520px){.wrap{padding-left:10px;padding-right:10px}.card,.calc-hero{border-radius:22px}.calc-card{padding:17px}.service-grid{grid-template-columns:1fr}.calc-heading h2{font-size:27px}.estimate strong{font-size:32px}.calc-note{font-size:14px}.calc-actions{grid-template-columns:1fr}}
 </style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Z0XHMFT7Z"></script>
 <script>
@@ -174,64 +78,6 @@ gtag('config','G-1Z0XHMFT7Z');
       "url": "https://nekonailbywarunee.com/"
     },
     {
-      "@type": "NailSalon",
-      "@id": "https://nekonailbywarunee.com/#nailsalon",
-      "name": "Neko Nail by Warunee",
-      "alternateName": "Neko Nail",
-      "url": "https://nekonailbywarunee.com/",
-      "telephone": "+66-84-519-6545",
-      "priceRange": "฿฿",
-      "description": "ร้านทำเล็บบางใหญ่ Neko Nail by Warunee ที่ Index Living Mall บางใหญ่ ชั้น 1 ทาสีเจล ต่อเล็บ เพ้นท์เล็บ เสริมหน้าเล็บ สีเจลเริ่ม 200 บาท เปิดทุกวัน 11:00–21:00 น. จองคิวผ่าน LINE",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Index Living Mall บางใหญ่ ชั้น 1, 87 หมู่ 6 ถนนกาญจนาภิเษก",
-        "addressLocality": "เสาธงหิน",
-        "addressRegion": "นนทบุรี",
-        "postalCode": "11140",
-        "addressCountry": "TH"
-      },
-      "areaServed": [
-        {
-          "@type": "Place",
-          "name": "บางใหญ่ นนทบุรี"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "นนทบุรี"
-        }
-      ],
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
-          "opens": "11:00",
-          "closes": "21:00"
-        }
-      ],
-      "sameAs": [
-        "https://www.facebook.com/nekonailbywarunee/",
-        "https://www.instagram.com/nekonailbywarunee",
-        "https://www.tiktok.com/@neko.nail.by.warunee",
-        "https://www.lemon8-app.com/@neko.nail.by.warunee?region=th"
-      ],
-      "image": [
-        "https://nekonailbywarunee.com/images/nail-art-pearl-cat-eye-bang-yai.webp",
-        "https://nekonailbywarunee.com/images/nail-art-red-rhinestone-bang-yai.webp",
-        "https://nekonailbywarunee.com/images/nail-art-blue-silver-winter-bang-yai.webp",
-        "https://nekonailbywarunee.com/images/nail-art-pink-blue-gradient-bang-yai.webp",
-        "https://nekonailbywarunee.com/images/nail-art-halloween-neon-bang-yai.webp"
-      ],
-      "hasMap": "https://www.google.com/maps/search/?api=1&query=Neko%20Nail%20by%20Warunee%20Index%20Living%20Mall%20Bang%20Yai"
-    },
-    {
       "@type": "WebPage",
       "@id": "https://nekonailbywarunee.com/price-calculator/#webpage",
       "name": "ราคาทำเล็บและคำนวณราคา | Neko Nail by Warunee บางใหญ่",
@@ -245,7 +91,7 @@ gtag('config','G-1Z0XHMFT7Z');
       "mainEntity": {
         "@id": "https://nekonailbywarunee.com/#nailsalon"
       },
-      "description": "ดูราคาทำเล็บ Neko Nail by Warunee บางใหญ่ ทั้งสีเจล ต่อเล็บ เพ้นท์เล็บ เสริมหน้าเล็บ ถอดสี และใช้เครื่องคำนวณราคาเพื่อประเมินค่าบริการก่อนจองคิว"
+      "description": "เลือกบริการทำเล็บ Neko Nail by Warunee บางใหญ่ ทั้งสีเจล ต่อเล็บ เพ้นท์เล็บ เสริมหน้าเล็บ และใช้เครื่องคำนวณราคาเพื่อประเมินค่าบริการก่อนจองคิว"
     }
   ]
 }
@@ -262,62 +108,36 @@ gtag('config','G-1Z0XHMFT7Z');
     <h1>ราคาทำเล็บ • คำนวณราคา</h1>
     <div class="sub">NEKO NAIL BY WARUNEE</div>
     <div class="tag">Bang Yai • ราคาเริ่มต้น</div>
-    <p class="calc-note">ดู Price List ทั้งหมด แล้วเลือกบริการที่ต้องการเพื่อประเมินราคาเบื้องต้นก่อนจองคิวที่ Neko Nail by Warunee, Index Living Mall บางใหญ่ ชั้น 1</p>
+    <p class="calc-note">เลือกบริการที่ต้องการ แล้วระบบจะคำนวณราคาเบื้องต้นให้ทันที ก่อนจองคิวที่ Neko Nail by Warunee, Index Living Mall บางใหญ่ ชั้น 1</p>
   </section>
 
-  <section class="card" id="price-list">
-    <h2>Price List • ราคาทำเล็บ</h2>
-    <p class="th">ราคาบริการ Neko Nail by Warunee</p>
-
-    <h2 style="font-size:22px;margin-top:14px">สีเจล • Color Menu</h2>
-    <div class="item"><span class="name">สีพื้น</span><span class="price">200.-</span></div>
-    <div class="item"><span class="name">สีสุขภาพดี</span><span class="price">250.-</span></div>
-    <div class="item"><span class="name">สีกากเพชร</span><span class="price">300.-</span></div>
-    <div class="item"><span class="name">สีแฟลช</span><span class="price">300.-</span></div>
-    <div class="item"><span class="name">สีลูกแก้ว</span><span class="price">350.-</span></div>
-
-    <h2 style="font-size:22px;margin-top:20px">ต่อเล็บและเสริมหน้าเล็บ • Extension & Overlay</h2>
-    <div class="item"><span class="name">ต่อเล็บ ชิดโคน<span class="note">กาวธรรมดา</span></span><span class="price">150.-</span></div>
-    <div class="item"><span class="name">ต่อเล็บ ชิดโคน<span class="note">กาวเจล</span></span><span class="price">200.-</span></div>
-    <div class="item"><span class="name">ต่อเล็บ เว้นโคน<span class="note">กาวเจล</span></span><span class="price">300.-</span></div>
-    <div class="item"><span class="name">เสริมหน้าเล็บ</span><span class="price">ฟรี</span></div>
-    <div class="item"><span class="name">เสริม Overlay</span><span class="price">150.-</span></div>
-
-    <h2 style="font-size:22px;margin-top:20px">เพ้นท์เล็บและตกแต่งเล็บ • Add-ons</h2>
-    <div class="item"><span class="name">งานเพ้นท์<span class="note">เริ่มต้น • นิ้วละ</span></span><span class="price">25.-</span></div>
-    <div class="item"><span class="name">เฟรนช์ปลาย<span class="note">นิ้วละ</span></span><span class="price">40.-</span></div>
-    <div class="item"><span class="name">ไล่ปลาย<span class="note">นิ้วละ</span></span><span class="price">40.-</span></div>
-    <div class="item"><span class="name">ออมเบร<span class="note">นิ้วละ</span></span><span class="price">40.-</span></div>
-    <div class="item"><span class="name">ติดอะไหล่<span class="note">นิ้วละ</span></span><span class="price">30.-</span></div>
-    <div class="item"><span class="name">ติดสติ๊กเกอร์<span class="note">นิ้วละ</span></span><span class="price">15.-</span></div>
-    <div class="item"><span class="name">ปั้นนูน<span class="note">นิ้วละ</span></span><span class="price">50.-</span></div>
-
-    <h2 style="font-size:22px;margin-top:20px">ถอดสีเจลและถอดเล็บ • Remove Menu</h2>
-    <div class="item"><span class="name">ถอดสี ล้างพักหน้าเล็บ</span><span class="price">100.-</span></div>
-    <div class="item"><span class="name">ถอดสี ทำต่อ</span><span class="price">50.-</span></div>
-    <div class="item"><span class="name">ถอดสี เล็บ PVC ทำต่อ</span><span class="price">100.-</span></div>
-    <div class="item"><span class="name">ถอดสีเล็บ PVC ล้างพักหน้าเล็บ</span><span class="price">150.-</span></div>
-    <div class="item"><span class="name">ถอดสี อะคริลิค</span><span class="price">200.-</span></div>
-
-    <p class="fine" style="margin-top:14px">ราคาที่แสดงเป็นราคาเริ่มต้น รายละเอียดงาน ความยาวเล็บ จำนวนเล็บ และวัสดุที่เลือกอาจทำให้ราคาสุดท้ายเปลี่ยนแปลงได้</p>
-  </section>
-
-  <section class="card" id="builder"><h2>คำนวณราคาทำเล็บ • Nail Price Builder</h2><p class="th">เลือกแบบเล็บและดูราคาเริ่มต้น</p>
-<div class="builder">
-<div class="pick"><label>สีหลัก</label><select id="base"><option value="0">ยังไม่เลือก</option><option value="200" data-style="solid">สีพื้น — 200</option><option value="250" data-style="healthy">สีสุขภาพดี — 250</option><option value="300" data-style="glitter">สีกากเพชร — 300</option><option value="300" data-style="flash">สีแฟลช — 300</option><option value="350" data-style="cat">สีลูกแก้ว — 350</option></select></div>
-<div class="pick"><label>Add-ons • ระบุจำนวนเล็บแต่ละแบบ</label>
-<div class="addon-grid">
-<label>งานเพ้นท์ <small>เริ่มต้น 25/นิ้ว</small><input class="addonQty" data-name="งานเพ้นท์" data-price="25" type="number" min="0" max="10" value="0"></label>
-<label>เฟรนช์ปลาย <small>40/นิ้ว</small><input class="addonQty" data-name="เฟรนช์ปลาย" data-price="40" type="number" min="0" max="10" value="0"></label>
-<label>ไล่ปลาย <small>40/นิ้ว</small><input class="addonQty" data-name="ไล่ปลาย" data-price="40" type="number" min="0" max="10" value="0"></label>
-<label>ออมเบร <small>40/นิ้ว</small><input class="addonQty" data-name="ออมเบร" data-price="40" type="number" min="0" max="10" value="0"></label>
-<label>ติดอะไหล่ <small>30/นิ้ว</small><input class="addonQty" data-name="ติดอะไหล่" data-price="30" type="number" min="0" max="10" value="0"></label>
-<label>ติดสติ๊กเกอร์ <small>15/นิ้ว</small><input class="addonQty" data-name="ติดสติ๊กเกอร์" data-price="15" type="number" min="0" max="10" value="0"></label>
-<label>ปั้นนูน <small>50/นิ้ว</small><input class="addonQty" data-name="ปั้นนูน" data-price="50" type="number" min="0" max="10" value="0"></label>
-</div></div>
-<div class="pick"><label>ต่อ/เสริมเล็บ</label><select id="ext"><option value="0">ไม่เพิ่ม</option><option value="150">ชิดโคน กาวธรรมดา — 150</option><option value="200">ชิดโคน กาวเจล — 200</option><option value="300">เว้นโคน กาวเจล — 300</option><option value="0">เสริมหน้าเล็บ — ฟรี</option><option value="150">เสริม Overlay — 150</option></select></div>
-</div>
-<div class="preview"><div id="desc">เลือกบริการเพื่อคำนวณราคา</div><div class="total"><span>ราคาเริ่มต้น</span><strong id="total">0 บาท</strong></div><p class="fine">ราคาที่แสดงเป็นราคาเริ่มต้น ราคาสุดท้ายขึ้นกับจำนวนเล็บ ความยาว รายละเอียดงาน และวัสดุ</p></div>
+  <section class="card calc-card" id="builder">
+  <div class="calc-heading"><span class="eyebrow">PRICE CALCULATOR</span><h2>เลือกบริการของคุณ 💅</h2><p>แตะเลือกบริการ ระบบจะคำนวณยอดประมาณการให้ทันที</p></div>
+  <div class="step"><div class="stephead"><span>01</span><div><b>เลือกสีหลัก</b><small>เลือก 1 รายการ</small></div></div><div class="service-grid" id="baseCards">
+    <button class="service" data-value="200" data-name="สีพื้น"><span>สีพื้น</span><strong>฿200</strong></button>
+    <button class="service" data-value="250" data-name="สีสุขภาพดี"><span>สีสุขภาพดี</span><strong>฿250</strong></button>
+    <button class="service" data-value="300" data-name="สีกากเพชร"><span>✨ สีกากเพชร</span><strong>฿300</strong></button>
+    <button class="service" data-value="300" data-name="สีแฟลช"><span>⚡ สีแฟลช</span><strong>฿300</strong></button>
+    <button class="service" data-value="350" data-name="สีลูกแก้ว"><span>💎 สีลูกแก้ว</span><strong>฿350</strong></button>
+  </div></div>
+  <div class="step"><div class="stephead"><span>02</span><div><b>เพิ่มดีไซน์</b><small>เลือกจำนวนเล็บ 0–10 นิ้ว</small></div></div><div class="addon-modern">
+    <div class="addon-row" data-name="งานเพ้นท์" data-price="25"><div><b>งานเพ้นท์</b><small>เริ่มต้น ฿25/นิ้ว</small></div><div class="counter"><button class="minus">−</button><span>0</span><button class="plus">+</button></div></div>
+    <div class="addon-row" data-name="เฟรนช์ปลาย" data-price="40"><div><b>เฟรนช์ปลาย</b><small>฿40/นิ้ว</small></div><div class="counter"><button class="minus">−</button><span>0</span><button class="plus">+</button></div></div>
+    <div class="addon-row" data-name="ไล่ปลาย" data-price="40"><div><b>ไล่ปลาย</b><small>฿40/นิ้ว</small></div><div class="counter"><button class="minus">−</button><span>0</span><button class="plus">+</button></div></div>
+    <div class="addon-row" data-name="ออมเบร" data-price="40"><div><b>ออมเบร</b><small>฿40/นิ้ว</small></div><div class="counter"><button class="minus">−</button><span>0</span><button class="plus">+</button></div></div>
+    <div class="addon-row" data-name="ติดอะไหล่" data-price="30"><div><b>ติดอะไหล่</b><small>฿30/นิ้ว</small></div><div class="counter"><button class="minus">−</button><span>0</span><button class="plus">+</button></div></div>
+    <div class="addon-row" data-name="ติดสติ๊กเกอร์" data-price="15"><div><b>ติดสติ๊กเกอร์</b><small>฿15/นิ้ว</small></div><div class="counter"><button class="minus">−</button><span>0</span><button class="plus">+</button></div></div>
+    <div class="addon-row" data-name="ปั้นนูน" data-price="50"><div><b>ปั้นนูน</b><small>฿50/นิ้ว</small></div><div class="counter"><button class="minus">−</button><span>0</span><button class="plus">+</button></div></div>
+  </div></div>
+  <div class="step"><div class="stephead"><span>03</span><div><b>ต่อเล็บ / เสริมหน้าเล็บ</b><small>ไม่ต้องการสามารถข้ามได้</small></div></div><div class="service-grid" id="extCards">
+    <button class="service active" data-value="0" data-name=""><span>ไม่เพิ่ม</span><strong>฿0</strong></button>
+    <button class="service" data-value="150" data-name="ต่อเล็บชิดโคน กาวธรรมดา"><span>ชิดโคน · กาวธรรมดา</span><strong>฿150</strong></button>
+    <button class="service" data-value="200" data-name="ต่อเล็บชิดโคน กาวเจล"><span>ชิดโคน · กาวเจล</span><strong>฿200</strong></button>
+    <button class="service" data-value="300" data-name="ต่อเล็บเว้นโคน กาวเจล"><span>เว้นโคน · กาวเจล</span><strong>฿300</strong></button>
+    <button class="service" data-value="0" data-name="เสริมหน้าเล็บ"><span>เสริมหน้าเล็บ</span><strong>ฟรี</strong></button>
+    <button class="service" data-value="150" data-name="เสริม Overlay"><span>เสริม Overlay</span><strong>฿150</strong></button>
+  </div></div>
+  <div class="estimate"><span>ยอดประมาณการ</span><strong id="total">0 บาท</strong><div id="desc">ยังไม่ได้เลือกบริการ</div><p>ราคาที่แสดงเป็นราคาเริ่มต้น ราคาสุดท้ายขึ้นกับจำนวนเล็บ ความยาว รายละเอียดงาน และวัสดุ</p></div>
 </section>
 
   <section class="card">
@@ -331,12 +151,12 @@ gtag('config','G-1Z0XHMFT7Z');
 </main>
 
 <script>
-
-const b=document.getElementById('base'),e=document.getElementById('ext'),t=document.getElementById('total'),d=document.getElementById('desc'),addons=[...document.querySelectorAll('.addonQty')];
-function lab(x){return x.options[x.selectedIndex].text.split(' — ')[0]}
-function calc(){let sum=(+b.value||0)+(+e.value||0),p=[];if(+b.value)p.push(lab(b));addons.forEach(x=>{let qty=Math.max(0,Math.min(10,+x.value||0));x.value=qty;if(qty){sum+=(+x.dataset.price)*qty;p.push(x.dataset.name+' '+qty+' นิ้ว')}});if(e.selectedIndex>0)p.push(lab(e));t.textContent=sum.toLocaleString('th-TH')+' บาท';d.textContent=p.length?p.join(' + '):'เลือกบริการเพื่อคำนวณราคา'}
-[b,e,...addons].forEach(x=>x.addEventListener('input',calc));calc();
-
+let baseValue=0,baseName='',extValue=0,extName='';
+const totalEl=document.getElementById('total'),descEl=document.getElementById('desc');
+function calculate(){let sum=baseValue+extValue,parts=[];if(baseName)parts.push(baseName);document.querySelectorAll('.addon-row').forEach(r=>{const q=+r.querySelector('.counter span').textContent;if(q){sum+=(+r.dataset.price)*q;parts.push(r.dataset.name+' '+q+' นิ้ว')}});if(extName)parts.push(extName);totalEl.textContent=sum.toLocaleString('th-TH')+' บาท';descEl.textContent=parts.length?parts.join(' + '):'ยังไม่ได้เลือกบริการ'}
+document.querySelectorAll('#baseCards .service').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('#baseCards .service').forEach(x=>x.classList.remove('active'));btn.classList.add('active');baseValue=+btn.dataset.value;baseName=btn.dataset.name;calculate()}));
+document.querySelectorAll('#extCards .service').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('#extCards .service').forEach(x=>x.classList.remove('active'));btn.classList.add('active');extValue=+btn.dataset.value;extName=btn.dataset.name;calculate()}));
+document.querySelectorAll('.addon-row').forEach(row=>{const n=row.querySelector('.counter span');row.querySelector('.minus').addEventListener('click',()=>{n.textContent=Math.max(0,+n.textContent-1);calculate()});row.querySelector('.plus').addEventListener('click',()=>{n.textContent=Math.min(10,+n.textContent+1);calculate()})});calculate();
 </script>
 <script>
 document.addEventListener('click',function(e){
