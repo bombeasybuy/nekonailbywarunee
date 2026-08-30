@@ -158,6 +158,34 @@ h1,h2{font-family:Georgia,serif;color:#9c6a1c}h1{margin:10px 0 0;font-size:42px}
   .gallery-head{align-items:center}
 }
 
+
+/* Primary CTA: Price Calculator */
+#price-calculator-link{
+  position:relative;
+  overflow:hidden;
+  border-color:#f0c7d0;
+  background:linear-gradient(145deg,#fffdf9 0%,#fff8f6 58%,#fff0f4 100%);
+}
+#price-calculator-link:before{
+  content:"";position:absolute;width:180px;height:180px;border-radius:50%;
+  right:-72px;top:-92px;background:rgba(217,92,120,.08);pointer-events:none
+}
+#price-calculator-link h2,#price-calculator-link p,#price-calculator-link a,#price-calculator-link .calc-helper{position:relative}
+.price-calc-cta{
+  display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+  margin-top:16px;padding:17px 20px;border-radius:18px;text-decoration:none;
+  color:#fff!important;font-size:18px;font-weight:900;letter-spacing:.1px;
+  background:linear-gradient(135deg,#df6a82 0%,#c84464 58%,#b93658 100%);
+  border:1px solid #bd3d5c;
+  box-shadow:0 12px 26px rgba(185,54,88,.28),inset 0 1px 0 rgba(255,255,255,.28);
+  transition:transform .18s ease,box-shadow .18s ease,filter .18s ease;
+}
+.price-calc-cta:hover{transform:translateY(-2px);box-shadow:0 16px 30px rgba(185,54,88,.34);filter:saturate(1.04)}
+.price-calc-cta:active{transform:translateY(0) scale(.99)}
+.price-calc-cta .cta-arrow{font-size:22px;line-height:1;transition:transform .18s ease}
+.price-calc-cta:hover .cta-arrow{transform:translateX(3px)}
+.calc-helper{text-align:center;margin:9px 0 0;font-size:12px;color:#8f6871}
+@media(max-width:520px){.price-calc-cta{font-size:16px;padding:16px 14px;border-radius:16px}}
 </style><script type="application/ld+json">{"@context":"https://schema.org","@type":"NailSalon","@id":"https://nekonailbywarunee.com/#nailsalon","name":"Neko Nail by Warunee","alternateName":"Neko Nail","url":"https://nekonailbywarunee.com/","telephone":"+66-84-519-6545","priceRange":"฿฿","description":"ร้านทำเล็บบางใหญ่ Neko Nail by Warunee ที่ Index Living Mall บางใหญ่ ชั้น 1 ทาสีเจล ต่อเล็บ เพ้นท์เล็บ เสริมหน้าเล็บ สีเจลเริ่ม 200 บาท เปิดทุกวัน 11:00–21:00 น. จองคิวผ่าน LINE","address":{"@type":"PostalAddress","streetAddress":"Index Living Mall บางใหญ่ ชั้น 1, 87 หมู่ 6 ถนนกาญจนาภิเษก","addressLocality":"เสาธงหิน","addressRegion":"นนทบุรี","postalCode":"11140","addressCountry":"TH"},"areaServed":[{"@type":"Place","name":"บางใหญ่ นนทบุรี"},{"@type":"AdministrativeArea","name":"นนทบุรี"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"21:00"}],"sameAs":["https://www.facebook.com/nekonailbywarunee/","https://www.instagram.com/nekonailbywarunee","https://www.tiktok.com/@neko.nail.by.warunee","https://www.lemon8-app.com/@neko.nail.by.warunee?region=th"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"บริการทำเล็บ Neko Nail by Warunee","itemListElement":[{"@type":"Offer","name":"ทาสีเจล","price":"200","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"ทาสีเจล"}},{"@type":"Offer","name":"สีสุขภาพดี","price":"250","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"สีสุขภาพดี"}},{"@type":"Offer","name":"สีลูกแก้ว","price":"350","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"สีลูกแก้ว"}},{"@type":"Offer","name":"ต่อเล็บชิดโคน กาวธรรมดา","price":"150","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"ต่อเล็บ"}},{"@type":"Offer","name":"งานเพ้นท์เล็บ","price":"25","priceCurrency":"THB","description":"ราคาเริ่มต้นต่อนิ้ว","itemOffered":{"@type":"Service","name":"เพ้นท์เล็บ"}}]},"hasMap":"https://www.google.com/maps/search/?api=1&query=Neko%20Nail%20by%20Warunee%20Index%20Living%20Mall%20Bang%20Yai","image":["https://nekonailbywarunee.com/images/nail-art-pearl-cat-eye-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-red-rhinestone-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-blue-silver-winter-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-pink-blue-gradient-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-halloween-neon-bang-yai.webp"]}</script>
 <!-- Neko Nail GA4 START -->
 <!-- Google tag (gtag.js) -->
@@ -247,10 +275,13 @@ h1,h2{font-family:Georgia,serif;color:#9c6a1c}h1{margin:10px 0 0;font-size:42px}
 </section>
 
 <section class="card" id="price-calculator-link">
-  <h2>ดูราคาทั้งหมด • คำนวณราคาทำเล็บ</h2>
-  <p class="th">ดู Price List เต็ม และเลือกบริการเพื่อประเมินราคา</p>
-  <p>ต้องการประเมินราคาทำเล็บก่อนมาที่ร้าน? เปิดหน้าคำนวณราคา แล้วเลือกสีเจล ต่อเล็บ เสริมหน้าเล็บ และงานตกแต่งที่ต้องการได้เลยค่ะ</p>
-  <a class="map-btn primary-map" href="/price-calculator/" id="openPriceCalculator">💅 ดูราคาทั้งหมด / คำนวณราคา</a>
+  <h2>คำนวณราคาทำเล็บของคุณ</h2>
+  <p class="th">เลือกบริการที่ต้องการ แล้วดูราคาประมาณการได้ทันที</p>
+  <p>อยากรู้ว่าทำเล็บแบบที่ชอบราคาเท่าไร? เลือกสีเจล ต่อเล็บ เสริมหน้าเล็บ และงานตกแต่งที่ต้องการ ระบบจะคำนวณราคาเบื้องต้นให้เลยค่ะ</p>
+  <a class="price-calc-cta" href="/price-calculator/" id="openPriceCalculator" aria-label="คำนวณราคาทำเล็บของคุณ">
+    <span>💅 คำนวณราคาทำเล็บของคุณ</span><span class="cta-arrow" aria-hidden="true">→</span>
+  </a>
+  <p class="calc-helper">เลือกบริการและเห็นยอดประมาณการทันที • ใช้เวลาไม่ถึง 1 นาที</p>
 </section>
 
 
