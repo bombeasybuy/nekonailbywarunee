@@ -41,7 +41,7 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 /* Navigation */
 .site-nav{position:sticky;top:0;z-index:1000;background:rgba(251,247,242,.87);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(231,221,212,.85)}
 .site-nav-inner{max-width:var(--container);height:78px;margin:auto;padding:0 32px;display:flex;align-items:center;gap:24px}
-.site-brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:0}.site-brand img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:1px solid rgba(196,164,106,.48)}
+.site-brand{display:flex;align-items:center;text-decoration:none;min-width:0}.site-brand-minimal{padding:4px 0}.site-brand-minimal .site-brand-text strong{font-size:16px;letter-spacing:.01em}.site-brand-minimal .site-brand-text small{font-size:8px;letter-spacing:.17em}
 .site-brand-text{display:flex;flex-direction:column;line-height:1.1}.site-brand-text strong{font-family:var(--serif);font-size:17px;font-weight:600;white-space:nowrap}.site-brand-text small{font-size:9px;letter-spacing:.18em;color:var(--muted);margin-top:4px;white-space:nowrap}
 .site-menu{margin-left:auto;display:flex;align-items:center;gap:2px}.site-menu a{padding:10px 11px;text-decoration:none;font-size:14px;font-weight:600;color:#5F504A;white-space:nowrap;transition:color .18s ease}.site-menu a:hover{color:var(--rose)}
 .site-menu .nav-book{margin-left:10px;padding:11px 18px;border-radius:var(--r-sm);background:var(--rose);color:#fff;transition:background .18s ease,transform .18s ease}.site-menu .nav-book:hover{background:var(--rose-deep);color:#fff;transform:translateY(-1px)}
@@ -53,8 +53,8 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 .hero-copy p{color:var(--muted);font-size:16px;line-height:1.8}.hero-copy p strong{color:var(--ink)}
 .hero-actions{display:flex;gap:12px;align-items:center;margin:28px 0 24px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:12px 20px;border-radius:var(--r-sm);border:1px solid var(--line);text-decoration:none;font-size:15px;font-weight:700;background:var(--surface);transition:transform .18s ease,border-color .18s ease,background .18s ease,color .18s ease}.btn:hover{transform:translateY(-1px);border-color:#D5C4B8}.btn.primary{background:var(--rose);color:#fff;border-color:var(--rose)}.btn.primary:hover{background:var(--rose-deep)}.btn.text-link{background:transparent;border-color:transparent;padding-inline:4px;color:var(--ink)}.btn.text-link span{transition:transform .18s ease}.btn.text-link:hover span{transform:translateX(4px)}
 .hero-meta{padding-top:17px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
-.hero-visual{position:relative}.hero-photo{display:block;width:100%;height:min(650px,64vw);min-height:520px;object-fit:cover;border-radius:var(--r-lg)}.hero-mark{position:absolute;left:-28px;bottom:32px;width:94px;height:94px;border-radius:50%;object-fit:cover;border:7px solid var(--bg);box-shadow:var(--shadow)}
-.hero-visual:after{content:"";position:absolute;right:-22px;top:28px;width:80px;height:80px;border-top:1px solid rgba(196,164,106,.55);border-right:1px solid rgba(196,164,106,.55);border-radius:0 20px 0 0;pointer-events:none}
+.hero-visual{position:relative}.hero-visual picture{display:block}.hero-photo{display:block;width:100%;height:auto;object-fit:contain;border-radius:var(--r-lg);box-shadow:0 22px 60px rgba(53,42,38,.08)}
+
 
 /* Gallery */
 .gallery-card{padding-top:108px}.gallery-head{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:30px}.gallery-head>div{max-width:680px}.gallery-badge{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--champagne)}.gallery-intro{color:var(--muted);margin:0;max-width:680px}
@@ -95,8 +95,8 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
   .wrap{padding-inline:24px}.site-nav-inner{padding-inline:24px}.hero{gap:42px}.site-menu a{padding-inline:8px;font-size:13px}#price-calculator-link{padding:46px;gap:36px}#location{gap:42px}.location-card{grid-template-columns:1fr}.location-photo img{min-height:300px}.standards{gap:40px}.footer-inner{padding-inline:24px}
 }
 @media(max-width:768px){
-  body{font-size:16px}.wrap{padding:0 18px 104px}.site-nav-inner{height:auto;min-height:66px;padding:8px 18px;flex-wrap:wrap}.site-brand img{width:42px;height:42px}.site-brand-text strong{font-size:15px}.nav-toggle{display:grid;place-items:center}.site-menu{display:none;order:3;width:100%;margin-left:0;padding:13px 0 14px;border-top:1px solid var(--line);grid-template-columns:1fr}.site-menu.open{display:grid}.site-menu a{padding:12px 2px;font-size:16px;text-align:left;border:0;background:transparent}.site-menu .nav-book{margin:9px 0 0;text-align:center;border-radius:var(--r-sm)}
-  .hero{padding:58px 0 72px;grid-template-columns:1fr;gap:34px}.hero-copy{max-width:none}.hero-actions{margin-top:24px}.hero-photo{height:auto;min-height:0;aspect-ratio:4/5}.hero-mark{width:76px;height:76px;left:16px;bottom:-24px;border-width:6px}.section,.gallery-card{padding:72px 0}.section-head{margin-bottom:30px}
+  body{font-size:16px}.wrap{padding:0 18px 104px}.site-nav-inner{height:auto;min-height:66px;padding:8px 18px;flex-wrap:wrap}.site-brand-text strong{font-size:15px}.nav-toggle{display:grid;place-items:center}.site-menu{display:none;order:3;width:100%;margin-left:0;padding:13px 0 14px;border-top:1px solid var(--line);grid-template-columns:1fr}.site-menu.open{display:grid}.site-menu a{padding:12px 2px;font-size:16px;text-align:left;border:0;background:transparent}.site-menu .nav-book{margin:9px 0 0;text-align:center;border-radius:var(--r-sm)}
+  .hero{padding:58px 0 72px;grid-template-columns:1fr;gap:34px}.hero-copy{max-width:none}.hero-actions{margin-top:24px}.hero-photo{height:auto;min-height:0;aspect-ratio:auto;border-radius:16px}.section,.gallery-card{padding:72px 0}.section-head{margin-bottom:30px}
   .gallery-head{align-items:start;margin-bottom:20px}.gallery-badge{display:none}.slider{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-right:-18px;padding-right:18px;scrollbar-width:none}.slider::-webkit-scrollbar{display:none}.slide,.slide:nth-child(n+6){display:block;flex:0 0 84vw;aspect-ratio:1/1;scroll-snap-align:start}.slide img{height:100%}.slider-nav{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:16px}.slider-arrow{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--surface);font-size:21px;color:var(--ink)}.slider-dots{display:flex;gap:6px}.slider-dot{width:6px;height:6px;border-radius:50%;border:0;background:#D7CBC2;padding:0}.slider-dot.active{background:var(--rose)}.slider-hint{display:block;text-align:center;color:var(--muted);font-size:11px;margin:7px 0 0}.gallery-cta{flex-direction:column}.shop-photo{grid-template-columns:1fr;margin-top:40px}.shop-photo img{min-height:0;aspect-ratio:16/10}.shop-photo div{padding:18px 4px;border-top:1px solid var(--line)}
   #pricing{max-width:none}.item{padding:15px 2px}.price{font-size:20px}
   #price-calculator-link{grid-template-columns:1fr;padding:30px 24px;gap:28px}.calc-visual{padding:20px}
@@ -122,7 +122,7 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
   .section-head{margin-bottom:24px}
 
   /* Keep the brand-led hero spacious, but not desktop-spacious. */
-  .hero{padding:46px 0 58px;gap:28px}
+  .hero{padding:38px 0 52px;gap:24px}
 
   /* Price calculator on the homepage is a teaser, not a second calculator page. */
   #price-calculator-link{padding:28px 22px;gap:18px;border-radius:18px}
@@ -191,9 +191,8 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 </head><body>
 <nav aria-label="เมนูหลัก" class="site-nav">
 <div class="site-nav-inner">
-<a aria-label="Neko Nail by Warunee หน้าแรก" class="site-brand" href="/">
-<img alt="โลโก้ Neko Nail by Warunee" height="46" src="/images/neko-nail-logo.webp" width="46"/>
-<span class="site-brand-text"><strong>Neko Nail by Warunee</strong><small>NAIL SALON • BANG YAI</small></span>
+<a aria-label="Neko Nail by Warunee หน้าแรก" class="site-brand site-brand-minimal" href="/">
+<span class="site-brand-text"><strong>Neko Nail</strong><small>BY WARUNEE • BANG YAI</small></span>
 </a>
 <button aria-expanded="false" aria-label="เปิดเมนู" class="nav-toggle" type="button">☰</button>
 <div class="site-menu">
@@ -216,8 +215,10 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 <p class="hero-meta">📍 Index Living Mall บางใหญ่ <span class="floor-nowrap">ชั้น 1</span><br/>🕚 เปิดทุกวัน 11:00–21:00 น.<br/>☎ <a href="tel:0845196545">084 519 6545</a> • <a href="https://lin.ee/YG8WAg5" rel="noopener" target="_blank">จองคิวผ่าน LINE</a></p>
 </div>
 <div class="hero-visual">
-<img alt="ร้าน Neko Nail by Warunee ชั้น 1 Index Living Mall บางใหญ่" class="hero-photo" decoding="async" fetchpriority="high" height="832" src="images/neko-nail-bang-yai-shop-hero.webp" width="1100"/>
-<img alt="" aria-hidden="true" class="hero-mark" height="94" src="images/neko-nail-logo.webp" width="94"/>
+<picture>
+<source media="(max-width: 768px)" srcset="images/neko-nail-hero-artwork-mobile-final.webp" width="1448" height="1086"/>
+<img alt="Artwork Neko Nail by Warunee ผู้หญิงผมสีชมพูและแมวสองตัวท่ามกลางดอกซากุระ" class="hero-photo" decoding="async" fetchpriority="high" src="images/neko-nail-hero-artwork-desktop-final.webp" width="1374" height="1145"/>
+</picture>
 </div>
 </section>
 <section class="gallery-card" id="gallery">
