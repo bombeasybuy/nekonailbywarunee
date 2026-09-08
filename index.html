@@ -72,7 +72,7 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 
 /* Location */
 #location{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:start}.location-copy{max-width:620px}.location-copy p{color:var(--muted)}.location-copy strong{color:var(--ink)}.location-kicker{font-size:12px;letter-spacing:.15em;color:var(--champagne);font-weight:700;text-transform:uppercase;margin-bottom:8px}.visit-summary{display:grid;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);align-self:end}.visit-row{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line-soft)}.visit-row:last-child{border-bottom:0}.visit-row small{color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.visit-row strong{font-size:16px;font-weight:600;color:var(--ink)}.visit-row a{color:var(--rose);text-decoration:none}.visit-row a:hover{text-decoration:underline}
-.location-card{display:grid;grid-template-columns:1.12fr .88fr;gap:0;overflow:hidden;border-radius:var(--r-lg);border:1px solid var(--line);background:var(--surface)}.location-photo img{width:100%;height:100%;min-height:390px;object-fit:cover;display:block}.location-info{padding:42px}.location-head{display:flex;gap:14px;align-items:center}.map-pin{width:46px;height:46px;flex:0 0 46px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(196,164,106,.45)}.map-pin svg{width:24px;height:24px}.map-pin svg path{fill:var(--champagne)}.location-title{font-family:var(--serif);font-size:25px;font-weight:600;line-height:1.35}.location-sub{font-size:13px;color:var(--muted);margin-top:3px}.location-address{margin:25px 0;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--muted);font-size:14px;line-height:1.75}.location-address strong{color:var(--ink)}.map-actions{display:flex;gap:10px;flex-wrap:wrap}.map-note{margin:15px 0 0;color:var(--muted);font-size:12px}
+.location-card{display:grid;grid-template-columns:1.12fr .88fr;gap:0;overflow:hidden;border-radius:var(--r-lg);border:1px solid var(--line);background:var(--surface)}.location-photo img{width:100%;height:100%;min-height:390px;object-fit:cover;display:block}.location-info{padding:42px}.location-address{margin:25px 0;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--muted);font-size:14px;line-height:1.75}.location-address strong{color:var(--ink)}.map-actions{display:flex;gap:10px;flex-wrap:wrap}
 
 /* Social */
 #social{text-align:center}.socials{display:flex;justify-content:center;gap:12px;margin-top:28px;flex-wrap:wrap}.socialbtn{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;text-decoration:none;background:var(--surface);border:1px solid var(--line);transition:transform .18s ease,border-color .18s ease}.socialbtn:hover{transform:translateY(-2px);border-color:#D6C2B4}.socialbtn svg{width:27px;height:27px;display:block}.social-label{margin-top:15px;font-size:12px;color:var(--muted)}.social-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:38px}.social-gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r-md)}
@@ -136,7 +136,6 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
   .location-copy p{line-height:1.68;margin-bottom:13px}
     #map{padding-top:42px;padding-bottom:48px}
   .location-info{padding:28px 24px}
-  .location-title{font-size:22px;line-height:1.42}
   .location-address{margin:20px 0;padding:17px 0}
 
   /* Journal: image is the visual anchor; copy becomes compact and scannable. */
@@ -162,9 +161,6 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 }
 @media(max-width:520px){
   h1{font-size:36px;line-height:1.16}
-  .location-head{align-items:flex-start;gap:12px}
-  .map-pin{width:40px;height:40px;flex-basis:40px}
-  .location-title{font-size:20px;letter-spacing:-.015em}
   .standards h2 .brand-nowrap{white-space:nowrap}
   h2{font-size:27px}
   .section{padding:46px 0}
@@ -256,7 +252,7 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 <section class="section" id="map">
 <div class="location-card reveal">
 <div class="location-photo"><img alt="หน้าร้าน Neko Nail by Warunee ที่ Index Living Mall บางใหญ่" decoding="async" loading="lazy" src="images/neko-nail-storefront-index-living-mall-bang-yai.webp"/></div>
-<div class="location-info"><div class="location-head"><div aria-hidden="true" class="map-pin"><svg viewbox="0 0 24 24"><path d="M12 2.5a7 7 0 0 0-7 7c0 5.15 7 12 7 12s7-6.85 7-12a7 7 0 0 0-7-7Zm0 9.5a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4Z"></path></svg></div><div><div class="location-title">มา <span class="brand-nowrap">Neko Nail</span> <span class="phrase-nowrap">ง่ายนิดเดียว ✨</span></div><div class="location-sub">กดเปิด Google Maps แล้วนำทางมาที่ร้านได้ทันที</div></div></div><div class="location-address"><strong>📍 Neko Nail by Warunee</strong><br/>Index Living Mall บางใหญ่ <span class="floor-nowrap">ชั้น 1</span><br/>87 หมู่ 6 ถ.กาญจนาภิเษก เสาธงหิน บางใหญ่ นนทบุรี 11140</div><div class="map-actions"><a aria-label="เปิด Google Maps เพื่อไป Neko Nail by Warunee" class="map-btn primary-map" href="https://www.google.com/maps/search/?api=1&amp;query=Neko%20Nail%20by%20Warunee%20Index%20Living%20Mall%20Bang%20Yai" rel="noopener" target="_blank">เปิด Google Maps</a><a aria-label="โทรหา Neko Nail by Warunee" class="map-btn" href="tel:0845196545">โทร 084-519-6545</a></div><p class="map-note">เปิดทุกวัน 11:00–21:00 น.</p></div>
+<div class="location-info"><div class="location-address"><strong>📍 Neko Nail by Warunee</strong><br/>Index Living Mall บางใหญ่ <span class="floor-nowrap">ชั้น 1</span><br/>87 หมู่ 6 ถ.กาญจนาภิเษก เสาธงหิน บางใหญ่ นนทบุรี 11140</div><div class="map-actions"><a aria-label="เปิด Google Maps เพื่อไป Neko Nail by Warunee" class="map-btn primary-map" href="https://www.google.com/maps/search/?api=1&amp;query=Neko%20Nail%20by%20Warunee%20Index%20Living%20Mall%20Bang%20Yai" rel="noopener" target="_blank">เปิด Google Maps</a><a aria-label="โทรหา Neko Nail by Warunee" class="map-btn" href="tel:0845196545">โทร 084-519-6545</a></div></div>
 </div>
 </section>
 
