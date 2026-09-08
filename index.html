@@ -72,10 +72,7 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 
 /* Location */
 #location{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:start}.location-copy{max-width:620px}.location-copy p{color:var(--muted)}.location-copy strong{color:var(--ink)}.location-kicker{font-size:12px;letter-spacing:.15em;color:var(--champagne);font-weight:700;text-transform:uppercase;margin-bottom:8px}.visit-summary{display:grid;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);align-self:end}.visit-row{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line-soft)}.visit-row:last-child{border-bottom:0}.visit-row small{color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.visit-row strong{font-size:16px;font-weight:600;color:var(--ink)}.visit-row a{color:var(--rose);text-decoration:none}.visit-row a:hover{text-decoration:underline}
-.location-card{display:grid;grid-template-columns:1.12fr .88fr;gap:0;overflow:hidden;border-radius:var(--r-lg);border:1px solid var(--line);background:var(--surface)}.location-photo img{width:100%;height:100%;min-height:390px;object-fit:cover;display:block}.location-info{padding:42px}.location-address{margin:25px 0;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--muted);font-size:14px;line-height:1.75}.location-address strong{color:var(--ink)}.map-actions{display:flex;gap:10px;flex-wrap:wrap}
-
-/* Social */
-#social{text-align:center}.socials{display:flex;justify-content:center;gap:12px;margin-top:28px;flex-wrap:wrap}.socialbtn{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;text-decoration:none;background:var(--surface);border:1px solid var(--line);transition:transform .18s ease,border-color .18s ease}.socialbtn:hover{transform:translateY(-2px);border-color:#D6C2B4}.socialbtn svg{width:27px;height:27px;display:block}.social-label{margin-top:15px;font-size:12px;color:var(--muted)}.social-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:38px}.social-gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r-md)}
+.location-card{grid-column:1/-1;display:grid;grid-template-columns:1.12fr .88fr;gap:0;overflow:hidden;border-radius:var(--r-lg);border:1px solid var(--line);background:var(--surface);margin-top:10px}.location-photo img{width:100%;height:100%;min-height:390px;object-fit:cover;display:block}.location-info{padding:42px}.location-address{margin:25px 0;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--muted);font-size:14px;line-height:1.75}.location-address strong{color:var(--ink)}.map-actions{display:flex;gap:10px;flex-wrap:wrap}
 
 /* Article */
 .article-card{display:grid;grid-template-columns:.95fr 1.05fr;gap:54px;align-items:center}.article-thumb{width:100%;aspect-ratio:4/3;border-radius:var(--r-md);object-fit:cover}.article-meta{font-size:11px;color:var(--champagne);font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}.article-preview{display:contents}.article-preview h3{margin:0 0 10px;font-size:28px}.article-preview p{color:var(--muted);font-size:15px}.article-link,.all-articles a{display:inline-flex;gap:7px;align-items:center;margin-top:14px;text-decoration:none;font-weight:700;color:var(--rose);font-size:14px}.all-articles{margin-top:10px}
@@ -84,7 +81,7 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 .standards{display:grid;grid-template-columns:.75fr 1.25fr;gap:72px;align-items:start}.standards-points{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.standard-point{padding-top:18px;border-top:1px solid var(--line)}.standard-point b{display:block;margin-bottom:7px;font-family:var(--serif);font-size:18px}.standard-point span{color:var(--muted);font-size:14px;line-height:1.7}
 
 /* Footer + sticky actions */
-.site-footer{margin-top:0;background:var(--ink);color:#F7F0EA}.footer-inner{max-width:var(--container);margin:auto;padding:62px 32px 90px;display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:48px}.footer-brand{font-family:var(--serif);font-size:24px}.footer-copy,.footer-links{font-size:13px;color:#D9CCC4}.footer-links a{display:block;text-decoration:none;margin:4px 0}.footer-links a:hover{color:#fff}.footer-title{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#C9A970;margin-bottom:12px}
+.site-footer{margin-top:0;background:var(--ink);color:#F7F0EA}.footer-inner{max-width:var(--container);margin:auto;padding:62px 32px 90px;display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:48px}.footer-brand{font-family:var(--serif);font-size:24px}.footer-copy,.footer-links{font-size:13px;color:#D9CCC4}.footer-links a{display:block;text-decoration:none;margin:4px 0}.footer-links a:hover{color:#fff}.footer-title{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#C9A970;margin-bottom:12px}.footer-socials{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:14px}.footer-socials a{font-size:12px;color:#D9CCC4;text-decoration:none}.footer-socials a:hover{color:#fff}
 .bottom{position:fixed;left:0;right:0;bottom:0;z-index:900;background:rgba(255,253,252,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid rgba(231,221,212,.9);padding:9px 16px}.bottomin{max-width:520px;margin:auto;display:grid;grid-template-columns:.72fr .9fr 1.38fr;gap:7px}.bottom .btn{min-height:46px;padding:9px 10px;font-size:13px}.bottom .mapquick{background:var(--surface)}
 
 /* Motion */
@@ -100,10 +97,10 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
   #pricing{max-width:none}.item{padding:15px 2px}.price{font-size:20px}
   #price-calculator-link{grid-template-columns:1fr;padding:30px 24px;gap:28px}.calc-visual{padding:20px}
   #location{grid-template-columns:1fr;gap:24px}.visit-summary{margin-top:2px}.visit-row{grid-template-columns:1fr;gap:6px;padding:15px 0}.visit-row small{font-size:10px}.visit-row strong{font-size:15px;line-height:1.45}.location-card{grid-template-columns:1fr}.location-info{padding:28px 22px}.location-photo img{min-height:0;aspect-ratio:16/11}.map-actions{flex-direction:column}.map-actions .map-btn{width:100%}
-  .social-gallery{grid-template-columns:repeat(2,1fr)}.article-card{grid-template-columns:1fr;gap:24px}.article-preview{display:contents}.article-preview h3{font-size:24px}.standards{grid-template-columns:1fr;gap:30px}.standards-points{grid-template-columns:1fr;gap:18px}.standard-point{padding-top:14px}.footer-inner{grid-template-columns:1fr;gap:28px;padding:46px 18px 96px}
+  .article-card{grid-template-columns:1fr;gap:24px}.article-preview{display:contents}.article-preview h3{font-size:24px}.standards{grid-template-columns:1fr;gap:30px}.standards-points{grid-template-columns:1fr;gap:18px}.standard-point{padding-top:14px}.footer-inner{grid-template-columns:1fr;gap:28px;padding:46px 18px 96px}
 }
 @media(max-width:520px){
-  h1{font-size:38px}h2{font-size:29px}.hero-actions{display:grid;grid-template-columns:1fr 1fr}.hero-actions .btn{padding-inline:12px}.visit-row{grid-template-columns:1fr;gap:6px;padding:15px 0}.bottom{padding:7px 8px}.bottomin{grid-template-columns:.72fr .92fr 1.36fr;gap:5px}.bottom .btn{font-size:12px;padding:8px 5px}.socialbtn{width:54px;height:54px}.socialbtn svg{width:25px;height:25px}
+  h1{font-size:38px}h2{font-size:29px}.hero-actions{display:grid;grid-template-columns:1fr 1fr}.hero-actions .btn{padding-inline:12px}.visit-row{grid-template-columns:1fr;gap:6px;padding:15px 0}.bottom{padding:7px 8px}.bottomin{grid-template-columns:.72fr .92fr 1.36fr;gap:5px}.bottom .btn{font-size:12px;padding:8px 5px}
 }
 /* Phase 2.1 — Mobile visual refinement */
 @media(max-width:768px){
@@ -134,7 +131,6 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
   /* Preserve the strong location treatment while tightening the surrounding rhythm. */
   #location{gap:24px}
   .location-copy p{line-height:1.68;margin-bottom:13px}
-    #map{padding-top:42px;padding-bottom:48px}
   .location-info{padding:28px 24px}
   .location-address{margin:20px 0;padding:17px 0}
 
@@ -191,7 +187,7 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 </a>
 <button aria-expanded="false" aria-label="เปิดเมนู" class="nav-toggle" type="button">☰</button>
 <div class="site-menu">
-<a href="/">หน้าแรก</a><a href="/#gallery">ผลงาน</a><a href="/#pricing">ราคา</a><a href="/price-calculator/">คำนวณราคา</a><a href="/blog/">บทความ</a><a href="/#map">ติดต่อ</a>
+<a href="/">หน้าแรก</a><a href="/#gallery">ผลงาน</a><a href="/#pricing">ราคา</a><a href="/price-calculator/">คำนวณราคา</a><a href="/blog/">บทความ</a><a href="/#location">ติดต่อ</a>
 <a class="nav-book" href="https://lin.ee/YG8WAg5" rel="noopener" target="_blank">จองคิว</a>
 </div>
 </div>
@@ -207,7 +203,7 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 <a class="btn primary" href="https://lin.ee/YG8WAg5" rel="noopener" target="_blank">จองคิวผ่าน LINE</a>
 <a class="btn text-link" href="/#gallery">ดูผลงาน <span aria-hidden="true">→</span></a>
 </div>
-<p class="hero-meta">📍 Index Living Mall บางใหญ่ <span class="floor-nowrap">ชั้น 1</span><br/>🕚 เปิดทุกวัน 11:00–21:00 น.<br/>☎ <a href="tel:0845196545">084 519 6545</a> • <a href="https://lin.ee/YG8WAg5" rel="noopener" target="_blank">จองคิวผ่าน LINE</a></p>
+<p class="hero-meta">📍 Index Living Mall บางใหญ่ <span class="floor-nowrap">ชั้น 1</span><br/>🕚 เปิดทุกวัน 11:00–21:00 น.</p>
 </div>
 <div class="hero-visual">
 <picture>
@@ -241,16 +237,14 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 </section>
 <section class="section">
 <div class="reveal" id="price-calculator-link">
-<div class="calc-copy"><div class="eyebrow">Price Calculator</div><h2>คำนวณราคาทำเล็บของคุณ</h2><p class="th">เลือกบริการที่ต้องการ แล้วดูราคาประมาณการได้ทันที</p><p>อยากรู้ว่าทำเล็บแบบที่ชอบราคาเท่าไร? เลือกสีเจล ต่อเล็บ เสริมหน้าเล็บ และงานตกแต่งที่ต้องการ ระบบจะคำนวณราคาเบื้องต้นให้เลยค่ะ</p><a aria-label="คำนวณราคาทำเล็บของคุณ" class="price-calc-cta" href="/price-calculator/" id="openPriceCalculator"><span>คำนวณราคาทำเล็บของคุณ</span><span aria-hidden="true" class="cta-arrow">→</span></a><p class="calc-helper">เลือกบริการและเห็นยอดประมาณการทันที • ใช้เวลาไม่ถึง 1 นาที</p></div>
+<div class="calc-copy"><div class="eyebrow">Price Calculator</div><h2>คำนวณราคาทำเล็บของคุณ</h2><p>เลือกสีเจล ต่อเล็บ เสริมหน้าเล็บ และงานตกแต่งที่ต้องการ เพื่อดูราคาประมาณการก่อนจองคิวได้ทันทีค่ะ</p><a aria-label="คำนวณราคาทำเล็บของคุณ" class="price-calc-cta" href="/price-calculator/" id="openPriceCalculator"><span>คำนวณราคาทำเล็บของคุณ</span><span aria-hidden="true" class="cta-arrow">→</span></a></div>
 <div aria-hidden="true" class="calc-visual"><small>ESTIMATED PRICE</small><strong>เลือกบริการได้ทันที</strong><span>สีเจล • ต่อเล็บ • เสริมหน้าเล็บ • งานตกแต่ง</span></div>
 </div>
 </section>
 <section class="section" id="location">
-<div class="location-copy reveal"><div class="location-kicker">Visit Neko</div><h2>ร้านทำเล็บ Index Living Mall บางใหญ่</h2><p class="th">Neko Nail by Warunee • บางใหญ่ นนทบุรี</p><p>ร้านอยู่ที่ <strong>Index Living Mall บางใหญ่ <span class="floor-nowrap">ชั้น 1</span></strong> สำหรับลูกค้าที่กำลังมองหา <strong>ร้านทำเล็บบางใหญ่</strong> ที่ดูราคาเริ่มต้นและเลือกบริการได้ชัดเจนก่อนจองคิว</p><p>บริการหลัก ได้แก่ <strong>ทาสีเจล ต่อเล็บ เพ้นท์เล็บ เสริมหน้าเล็บ และถอดสี</strong></p></div>
+<div class="location-copy reveal"><div class="location-kicker">Visit Neko</div><h2>ร้านทำเล็บ Index Living Mall บางใหญ่</h2><p class="th">Neko Nail by Warunee • บางใหญ่ นนทบุรี</p><p>ร้านอยู่ที่ <strong>Index Living Mall บางใหญ่ <span class="floor-nowrap">ชั้น 1</span></strong> ลูกค้าสามารถดูราคาเริ่มต้นและคำนวณราคาก่อนจองคิวได้ค่ะ</p></div>
 <div class="visit-summary reveal" aria-label="ข้อมูลการเดินทางและเวลาเปิดร้าน"><div class="visit-row"><small>Open</small><strong>ทุกวัน 11:00–21:00 น.</strong></div><div class="visit-row"><small>Nearby</small><strong>ใกล้ MRT ตลาดบางใหญ่</strong></div><div class="visit-row"><small>Booking</small><strong><a href="https://lin.ee/YG8WAg5" rel="noopener" target="_blank">LINE จองคิว →</a></strong></div></div>
-</section>
-<section class="section" id="map">
-<div class="location-card reveal">
+<div class="location-card reveal" id="map">
 <div class="location-photo"><img alt="หน้าร้าน Neko Nail by Warunee ชั้น 1 Index Living Mall บางใหญ่" decoding="async" loading="lazy" src="images/neko-nail-shop-index-living-mall-bang-yai.webp"/></div>
 <div class="location-info"><div class="location-address"><strong>📍 Neko Nail by Warunee</strong><br/>Index Living Mall บางใหญ่ <span class="floor-nowrap">ชั้น 1</span><br/>87 หมู่ 6 ถ.กาญจนาภิเษก เสาธงหิน บางใหญ่ นนทบุรี 11140</div><div class="map-actions"><a aria-label="เปิด Google Maps เพื่อไป Neko Nail by Warunee" class="map-btn primary-map" href="https://www.google.com/maps/search/?api=1&amp;query=Neko%20Nail%20by%20Warunee%20Index%20Living%20Mall%20Bang%20Yai" rel="noopener" target="_blank">เปิด Google Maps</a><a aria-label="โทรหา Neko Nail by Warunee" class="map-btn" href="tel:0845196545">โทร 084-519-6545</a></div></div>
 </div>
@@ -258,24 +252,15 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 
 
 
-<section class="section" id="social">
-<div class="section-head center reveal"><div class="eyebrow">Follow the latest looks</div><h2>ผลงานทำเล็บ Neko Nail</h2><p class="th">ติดตามผลงาน • แบบเล็บ • อัปเดตจากร้าน</p></div>
-<div class="social-gallery reveal"><img alt="ผลงานเล็บเจลสีแดง Neko Nail บางใหญ่" loading="lazy" src="images/nail-art-red-rhinestone-bang-yai.webp"/><img alt="ผลงานเล็บเจลโทนฟ้า Neko Nail บางใหญ่" loading="lazy" src="images/nail-art-blue-silver-winter-bang-yai.webp"/><img alt="ผลงานเล็บเจลไล่สี Neko Nail บางใหญ่" loading="lazy" src="images/nail-art-pink-blue-gradient-bang-yai.webp"/><img alt="ผลงานเล็บเจลมินิมอล Neko Nail บางใหญ่" loading="lazy" src="images/nail-art-brown-white-minimal-bang-yai.webp"/></div>
-<div class="socials reveal">
-<a aria-label="Facebook Neko Nail by Warunee" class="socialbtn fb" href="https://www.facebook.com/nekonailbywarunee/" rel="noopener" target="_blank" title="Facebook"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="#1877F2" r="10"></circle><path d="M13.7 8.2h2V5.1c-.35-.05-1.55-.15-2.98-.15-2.95 0-4.97 1.8-4.97 5.12v2.86H4.4v3.47h3.35V24h4.1v-7.6h3.42l.54-3.47h-3.96v-2.52c0-1 .27-1.68 1.85-1.68z" fill="#fff" transform="scale(.72) translate(4.7 1.8)"></path></svg></a>
-<a aria-label="Instagram Neko Nail by Warunee" class="socialbtn ig" href="https://www.instagram.com/nekonailbywarunee" rel="noopener" target="_blank" title="Instagram"><svg aria-hidden="true" viewbox="0 0 24 24"><defs><lineargradient id="igG" x1="0" x2="1" y1="1" y2="0"><stop offset="0" stop-color="#ff7a00"></stop><stop offset=".45" stop-color="#ff0169"></stop><stop offset="1" stop-color="#7b2cff"></stop></lineargradient></defs><rect fill="none" height="18" rx="5" stroke="url(#igG)" stroke-width="2" width="18" x="3" y="3"></rect><circle cx="12" cy="12" fill="none" r="4.2" stroke="url(#igG)" stroke-width="2"></circle><circle cx="17.4" cy="6.7" fill="url(#igG)" r="1.25"></circle></svg></a>
-<a aria-label="TikTok Neko Nail by Warunee" class="socialbtn tt" href="https://www.tiktok.com/@neko.nail.by.warunee" rel="noopener" target="_blank" title="TikTok"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M14.2 4.2c.8 2.4 2.3 3.8 4.8 4.1v3.2c-1.8 0-3.4-.6-4.8-1.6v5.8a5.3 5.3 0 1 1-4.6-5.3v3.3a2.2 2.2 0 1 0 1.4 2V4.2h3.2z" fill="#111"></path><path d="M14.2 4.2c.4 1.3 1.1 2.3 2.1 3" fill="none" stroke="#25F4EE" stroke-linecap="round" stroke-width="1.3"></path><path d="M9.7 10.4a5.3 5.3 0 0 0-3.5 8.8" fill="none" stroke="#FE2C55" stroke-linecap="round" stroke-width="1.3"></path></svg></a>
-<a aria-label="Lemon8 Neko Nail by Warunee" class="socialbtn lemon8" href="https://www.lemon8-app.com/@neko.nail.by.warunee?region=th" rel="noopener" target="_blank" title="Lemon8"><svg aria-hidden="true" role="img" viewbox="0 0 64 64"><rect fill="#FFF200" height="56" rx="14" width="56" x="4" y="4"></rect><text fill="#111" font-family="Arial Rounded MT Bold, Arial, sans-serif" font-size="15" font-style="italic" font-weight="900" text-anchor="middle" x="32" y="34">Lemon8</text><path d="M18 42 C27 39, 38 39, 47 41" fill="none" stroke="#111" stroke-linecap="round" stroke-width="3.5"></path></svg></a>
-</div><div class="social-label">Facebook   •   Instagram   •   TikTok   •   Lemon8</div>
+<section class="section standards">
+<div class="reveal"><div class="eyebrow">Neko Standards</div><h2>มาตรฐานร้านทำเล็บ <span class="brand-nowrap">Neko Nail</span></h2><p class="th">Clean • Care • Detail</p></div>
+<div class="standards-points reveal"><div class="standard-point"><b>ความสะอาด</b><span>✦ ทำความสะอาดเล็บด้วยน้ำยาคุณภาพ</span></div><div class="standard-point"><b>อุปกรณ์</b><span>✦ อุปกรณ์สะอาด ฆ่าเชื้อทุกชิ้นก่อนให้บริการ</span></div><div class="standard-point"><b>รายละเอียด</b><span>✦ ใส่ใจทุกรายละเอียด เพื่อเล็บสวยและปลอดภัย</span></div></div>
 </section><section class="section article-card" id="articles">
 <div class="reveal"><img alt="บทความวิธีดูแลเล็บหลังทำเล็บเจล Neko Nail by Warunee" class="article-thumb" decoding="async" loading="lazy" src="images/nail-art-pearl-cat-eye-bang-yai.webp"/></div>
 <div class="reveal"><div class="eyebrow">Neko Journal</div><h2>บทความและคำแนะนำเรื่องเล็บ</h2><p class="th">Nail Care Guide • ดูแลเล็บให้สวยนานขึ้น</p><div class="article-preview"><div><div class="article-meta">Nail Care • อ่านประมาณ 4 นาที</div><h3>วิธีดูแลเล็บหลังทำเล็บเจล ให้สวยนาน ไม่ลอกง่าย</h3><p>ทำไม “ปลายเล็บ” จึงสำคัญ? รู้จักการคุมปลายเล็บ พร้อมวิธีลดโอกาสสีเจลยก บิ่น หรือลอกก่อนเวลา</p><a class="article-link" href="/blog/nail-care-after-gel/">อ่านบทความ <span aria-hidden="true">→</span></a></div></div><div class="all-articles"><a href="/blog/">ดูบทความทั้งหมด →</a></div></div>
-</section><section class="section standards">
-<div class="reveal"><div class="eyebrow">Neko Standards</div><h2>มาตรฐานร้านทำเล็บ <span class="brand-nowrap">Neko Nail</span></h2><p class="th">มาตรฐาน Neko Nail</p></div>
-<div class="standards-points reveal"><div class="standard-point"><b>ความสะอาด</b><span>✦ ทำความสะอาดเล็บด้วยน้ำยาคุณภาพ</span></div><div class="standard-point"><b>อุปกรณ์</b><span>✦ อุปกรณ์สะอาด ฆ่าเชื้อทุกชิ้นก่อนให้บริการ</span></div><div class="standard-point"><b>รายละเอียด</b><span>✦ ใส่ใจทุกรายละเอียด เพื่อเล็บสวยและปลอดภัย</span></div></div>
 </section>
 </main>
-<footer class="site-footer"><div class="footer-inner"><div><div class="footer-brand">Neko Nail by Warunee</div><p class="footer-copy">ร้านทำเล็บบางใหญ่ • Index Living Mall บางใหญ่ <span class="floor-nowrap">ชั้น 1</span><br/>เปิดทุกวัน 11:00–21:00 น.</p></div><div><div class="footer-title">Explore</div><div class="footer-links"><a href="/#gallery">ผลงาน</a><a href="/#pricing">ราคา</a><a href="/price-calculator/">คำนวณราคา</a><a href="/blog/">บทความ</a></div></div><div><div class="footer-title">Contact</div><div class="footer-links"><a href="https://lin.ee/YG8WAg5" rel="noopener" target="_blank">LINE</a><a href="tel:0845196545">084 519 6545</a><a href="/#map">แผนที่</a></div></div></div></footer>
+<footer class="site-footer"><div class="footer-inner"><div><div class="footer-brand">Neko Nail by Warunee</div><p class="footer-copy">ร้านทำเล็บบางใหญ่ • Index Living Mall บางใหญ่ <span class="floor-nowrap">ชั้น 1</span><br/>เปิดทุกวัน 11:00–21:00 น.</p><div class="footer-socials"><a href="https://www.facebook.com/nekonailbywarunee/" rel="noopener" target="_blank">Facebook</a><a href="https://www.instagram.com/nekonailbywarunee" rel="noopener" target="_blank">Instagram</a><a href="https://www.tiktok.com/@neko.nail.by.warunee" rel="noopener" target="_blank">TikTok</a><a href="https://www.lemon8-app.com/@neko.nail.by.warunee?region=th" rel="noopener" target="_blank">Lemon8</a></div></div><div><div class="footer-title">Explore</div><div class="footer-links"><a href="/#gallery">ผลงาน</a><a href="/#pricing">ราคา</a><a href="/price-calculator/">คำนวณราคา</a><a href="/blog/">บทความ</a></div></div><div><div class="footer-title">Contact</div><div class="footer-links"><a href="https://lin.ee/YG8WAg5" rel="noopener" target="_blank">LINE</a><a href="tel:0845196545">084 519 6545</a><a href="/#location">แผนที่</a></div></div></div></footer>
 <nav aria-label="ทางลัดติดต่อร้าน" class="bottom"><div class="bottomin"><a class="btn" href="tel:0845196545">โทร</a><a class="btn mapquick" href="https://www.google.com/maps/search/?api=1&amp;query=Neko%20Nail%20by%20Warunee%20Index%20Living%20Mall%20Bang%20Yai" rel="noopener" target="_blank">แผนที่</a><a class="btn primary" href="https://lin.ee/YG8WAg5" rel="noopener" target="_blank">LINE จองคิว</a></div></nav>
 <script>
 (function(){
@@ -316,8 +301,7 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
   function getButtonLocation(el) {
     if (el.closest('.bottom')) return 'bottom_sticky_bar';
     if (el.closest('#gallery')) return 'gallery';
-    if (el.closest('#map')) return 'location';
-    if (el.closest('#social')) return 'social';
+    if (el.closest('#location')) return 'location';
     if (el.closest('.hero')) return 'hero';
     return 'page';
   }
