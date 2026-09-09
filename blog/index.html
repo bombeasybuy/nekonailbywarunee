@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="th"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<html lang="th"><head><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&amp;family=Noto+Serif+Thai:wght@500;600&amp;display=swap" rel="stylesheet"/><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>บทความดูแลเล็บ | Neko Nail by Warunee บางใหญ่</title>
 <meta content="รวมบทความและคำแนะนำเรื่องเล็บจาก Neko Nail by Warunee บางใหญ่ ทั้งการดูแลเล็บเจล การเลือกทรงเล็บ การเลือกสีเล็บตามสีผิว และความรู้เรื่องงานเล็บ" name="description"/>
 <meta content="index,follow,max-snippet:-1,max-image-preview:large" name="robots"/>
@@ -53,10 +53,38 @@ h2{font-size:26px;margin:30px 0 8px}h3{font-size:20px}.eyebrow{font-size:11px;le
 .nav-toggle{display:none;margin-left:auto;width:44px;height:44px;border-radius:13px;border:1px solid var(--line);background:#fff;color:#765a4d;font-size:22px;cursor:pointer}
 @media(max-width:760px){.site-nav-inner{min-height:62px;padding:7px 12px;flex-wrap:wrap}.site-brand img{width:42px;height:42px}.site-brand-text strong{font-size:15px}.site-brand-text small{font-size:9px}.nav-toggle{display:grid;place-items:center}.site-menu{display:none;order:3;width:100%;margin-left:0;padding:3px 0 8px;grid-template-columns:1fr 1fr;gap:6px}.site-menu.open{display:grid}.site-menu a{text-align:center;border:1px solid #efe0d4;background:#fff;padding:11px 8px}.site-menu .nav-book{margin-left:0;grid-column:1/-1}}
 @media(max-width:560px){.article-grid{grid-template-columns:92px 1fr;gap:12px;align-items:start}.article-grid img{width:92px;height:92px;border-radius:15px}.article-grid h2{font-size:18px}.card{padding:18px;border-radius:22px}.cta-row{grid-template-columns:1fr}.bottom{padding:8px}.bottomin{gap:6px}.bottom .btn{font-size:13px;padding:11px 6px}.summary-table{font-size:14px}}
+
+/* Blog Hub V2 — topic filters + editorial grid */
+:root{--hub-serif:"Noto Serif Thai",Georgia,serif;--hub-sans:"Noto Sans Thai",system-ui,-apple-system,sans-serif}
+body{font-family:var(--hub-sans)}
+h1,h2,h3{font-family:var(--hub-serif)}
+.wrap{max-width:1180px;padding:24px 24px 110px}
+.blog-hero{padding:34px 38px}
+.blog-hero .lead{max-width:820px}
+.topic-panel{margin:18px 0 0;padding:22px 24px;border:1px solid var(--line);border-radius:22px;background:rgba(255,253,249,.78)}
+.topic-panel-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:14px}
+.topic-panel h2{margin:0;font-size:24px}
+.topic-count{font-size:12px;color:var(--muted);white-space:nowrap}
+.topic-filters{display:flex;gap:8px;flex-wrap:wrap}
+.topic-filter{appearance:none;border:1px solid var(--line);background:#fff;color:#6b554c;border-radius:999px;padding:9px 13px;font:700 12px/1.2 var(--hub-sans);cursor:pointer;transition:.16s ease}
+.topic-filter:hover{border-color:#d9bba8}.topic-filter[aria-pressed="true"]{background:#a95561;border-color:#a95561;color:#fff}
+.hub-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:18px}
+.hub-article-card{margin-top:0;padding:0;overflow:hidden;min-width:0;transition:transform .18s ease,box-shadow .18s ease}
+.hub-article-card:hover{transform:translateY(-2px);box-shadow:0 15px 38px #7655331f}
+.hub-article-card[hidden]{display:none!important}
+.hub-article-card .article-grid{display:block}
+.hub-article-card .article-grid img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:0;border:0;border-bottom:1px solid var(--line);display:block}
+.hub-article-card .article-grid>div{padding:18px 19px 20px}
+.hub-article-card .article-grid h2{font-size:21px;line-height:1.4;margin:8px 0}
+.hub-article-card .muted{font-size:13.5px;line-height:1.68;margin:0}
+.hub-article-card .pill{font-size:10px;letter-spacing:.04em}
+.hub-article-card .readmore{margin-top:13px;font-size:13px}
+@media(max-width:900px){.hub-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.wrap{padding-inline:18px}}
+@media(max-width:620px){.wrap{padding-inline:14px}.blog-hero{padding:24px 20px}.topic-panel{padding:18px}.topic-panel-head{align-items:start;flex-direction:column;gap:4px}.topic-panel h2{font-size:21px}.topic-filters{display:grid;grid-template-columns:1fr 1fr;width:100%}.topic-filter{width:100%;padding:10px 8px}.topic-filter:first-child{grid-column:1/-1}.hub-grid{grid-template-columns:1fr;gap:14px}.hub-article-card .article-grid{display:grid;grid-template-columns:118px 1fr;align-items:stretch}.hub-article-card .article-grid img{width:118px;height:100%;min-height:150px;aspect-ratio:auto;border-bottom:0;border-right:1px solid var(--line)}.hub-article-card .article-grid>div{padding:14px 14px 15px}.hub-article-card .article-grid h2{font-size:17px;line-height:1.42;margin:6px 0}.hub-article-card .muted{font-size:12.5px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.hub-article-card .pill{font-size:9px;padding:5px 8px}.hub-article-card .readmore{font-size:12px;margin-top:8px}}
 </style>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1Z0XHMFT7Z"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-1Z0XHMFT7Z');</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "@id": "https://nekonailbywarunee.com/blog/#webpage", "url": "https://nekonailbywarunee.com/blog/", "name": "บทความดูแลเล็บ | Neko Nail by Warunee บางใหญ่", "isPartOf": {"@id": "https://nekonailbywarunee.com/#website"}, "about": {"@id": "https://nekonailbywarunee.com/#nailsalon"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://nekonailbywarunee.com/blog/#webpage","url":"https://nekonailbywarunee.com/blog/","name":"บทความดูแลเล็บ | Neko Nail by Warunee บางใหญ่","isPartOf":{"@id":"https://nekonailbywarunee.com/#website"},"about":{"@id":"https://nekonailbywarunee.com/#nailsalon"},"mainEntity":{"@type":"ItemList","name":"บทความ Neko Nail Journal","numberOfItems":24,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://nekonailbywarunee.com/blog/how-long-do-nails-take/"},{"@type":"ListItem","position":2,"url":"https://nekonailbywarunee.com/blog/nail-extension-vs-overlay-guide/"},{"@type":"ListItem","position":3,"url":"https://nekonailbywarunee.com/blog/cat-eye-vs-flash-vs-glitter-nails/"},{"@type":"ListItem","position":4,"url":"https://nekonailbywarunee.com/blog/gel-toe-nails-color-guide/"},{"@type":"ListItem","position":5,"url":"https://nekonailbywarunee.com/blog/nail-budget-500-bang-yai/"},{"@type":"ListItem","position":6,"url":"https://nekonailbywarunee.com/blog/most-durable-gel-nail-colors/"},{"@type":"ListItem","position":7,"url":"https://nekonailbywarunee.com/blog/nail-salon-near-bb-market-bang-yai/"},{"@type":"ListItem","position":8,"url":"https://nekonailbywarunee.com/blog/nail-salon-near-mrt-purple-line/"},{"@type":"ListItem","position":9,"url":"https://nekonailbywarunee.com/blog/wedding-nails-guide/"},{"@type":"ListItem","position":10,"url":"https://nekonailbywarunee.com/blog/hand-foot-nail-color-matching/"},{"@type":"ListItem","position":11,"url":"https://nekonailbywarunee.com/blog/gel-vs-regular-nail-polish/"},{"@type":"ListItem","position":12,"url":"https://nekonailbywarunee.com/blog/nail-extension-pain-guide/"},{"@type":"ListItem","position":13,"url":"https://nekonailbywarunee.com/blog/remove-gel-nails-safely/"},{"@type":"ListItem","position":14,"url":"https://nekonailbywarunee.com/blog/short-nails-style-guide/"},{"@type":"ListItem","position":15,"url":"https://nekonailbywarunee.com/blog/thin-nails-gel-overlay-guide/"},{"@type":"ListItem","position":16,"url":"https://nekonailbywarunee.com/blog/gel-nails-first-time-guide/"},{"@type":"ListItem","position":17,"url":"https://nekonailbywarunee.com/blog/bang-yai-nail-salon-guide/"},{"@type":"ListItem","position":18,"url":"https://nekonailbywarunee.com/blog/gel-nails-peeling-causes/"},{"@type":"ListItem","position":19,"url":"https://nekonailbywarunee.com/blog/cat-eye-nails-guide/"},{"@type":"ListItem","position":20,"url":"https://nekonailbywarunee.com/blog/nail-extension-types/"},{"@type":"ListItem","position":21,"url":"https://nekonailbywarunee.com/blog/nail-price-guide/"},{"@type":"ListItem","position":22,"url":"https://nekonailbywarunee.com/blog/nail-color-for-skin-tone/"},{"@type":"ListItem","position":23,"url":"https://nekonailbywarunee.com/blog/nail-shapes-guide/"},{"@type":"ListItem","position":24,"url":"https://nekonailbywarunee.com/blog/nail-care-after-gel/"}]}}</script>
 </head><body>
 <nav aria-label="เมนูหลัก" class="site-nav">
 <div class="site-nav-inner">
@@ -74,98 +102,98 @@ h2{font-size:26px;margin:30px 0 8px}h3{font-size:20px}.eyebrow{font-size:11px;le
 </nav>
 <main class="wrap">
 <section class="card blog-hero"><div class="breadcrumb"><a href="/">หน้าแรก</a> › บทความ</div><span class="eyebrow">NEKO NAIL JOURNAL</span>
-<h1>บทความและคำแนะนำเรื่องเล็บ</h1><p class="lead">ความรู้ที่นำไปใช้ได้จริงสำหรับคนรักเล็บ ตั้งแต่การดูแลหลังทำสีเจล ไปจนถึงการเลือกทรงเล็บให้เข้ากับสไตล์และการใช้ชีวิต</p></section><section class="card"><div class="article-grid"><img alt="หน้าร้าน Neko Nail by Warunee ใช้ประกอบบทความเรื่องเวลาทำเล็บ" height="1108" loading="lazy" src="/images/neko-nail-shop-index-living-mall-bang-yai.webp" width="1477"/><div><span class="pill">APPOINTMENT TIME GUIDE</span><h2>ทำเล็บใช้เวลานานแค่ไหน? อะไรทำให้คิวสั้นหรือยาวขึ้น</h2><p class="muted">ทำไมคิวสีพื้น ต่อเล็บ ถอดงานเดิม และงานเพ้นท์ใช้เวลาไม่เท่ากัน พร้อมข้อมูลที่ควรส่งให้ร้านเพื่อประเมินเวลาก่อนจอง</p><a class="readmore" href="/blog/how-long-do-nails-take/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid"><img alt="ต่อเล็บ vs Overlay ต่างกันยังไง? เลือกแบบไหนให้เหมาะกับเล็บและความยาว" height="921" loading="lazy" src="/images/gel-nails-white-tan-neko-nail-bang-yai.webp" width="918"/><div><span class="pill">EXTENSION VS OVERLAY</span><h2>ต่อเล็บ vs Overlay ต่างกันยังไง? เลือกแบบไหนให้เหมาะกับเล็บและความยาว</h2><p class="muted">แยกให้ชัดว่าแบบไหนเพิ่มความยาว แบบไหนเสริมโครงสร้างบนเล็บธรรมชาติ และควรเลือกจากสภาพเล็บกับ Lifestyle อย่างไร</p><a class="readmore" href="/blog/nail-extension-vs-overlay-guide/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid"><img alt="ผลงาน Emerald Eclipse Cat Eye ใช้ประกอบบทความลูกแก้ว vs แฟลช vs กลิตเตอร์" height="1402" loading="lazy" src="/images/neko-nail-emerald-eclipse-cat-eye-bang-yai.webp" width="1122"/><div><span class="pill">CAT EYE • FLASH • GLITTER</span><h2>สีลูกแก้ว vs สีแฟลช vs กลิตเตอร์ ต่างกันยังไง? เลือกแบบไหนให้ตรงลุค</h2><p class="muted">เทียบมิติของ Cat Eye ประกายสะท้อนแสงของ Flash และความระยิบของ Glitter พร้อมราคาเริ่มต้นและวิธีเลือกตามลุค</p><a class="readmore" href="/blog/cat-eye-vs-flash-vs-glitter-nails/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid"><img alt="ภาพตัวอย่างเล็บเท้าเจลโทนชมพูนู้ดและประกายทอง สำหรับบทความเลือกสีเล็บเท้า" height="1086" loading="lazy" src="/images/neko-nail-gel-toe-nails-soft-pink-bang-yai.webp" width="1448"/><div><span class="pill">TOE NAIL COLOR GUIDE</span><h2>ทาสีเจลเท้าเลือกสีอะไรดี? เลือกให้เข้ากับผิว รองเท้า และการใช้งาน</h2><p class="muted">เลือกสีเล็บเท้าจากโทนผิว รองเท้า และการใช้งาน พร้อมแนวทางสำหรับรองเท้าเปิด รองเท้าหุ้มส้น และการจับคู่กับสีเล็บมือ</p><a class="readmore" href="/blog/gel-toe-nails-color-guide/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid"><img alt="ผลงาน Pastel Morning ใช้ประกอบบทความทำเล็บงบ 500 บาท" height="1402" loading="lazy" src="/images/neko-nail-pastel-morning-gel-nails-bang-yai.webp" width="1122"/><div><span class="pill">BUDGET 500 • PRICE GUIDE</span><h2>ทำเล็บงบ 500 บาท ทำอะไรได้บ้าง? วางงบก่อนเข้าร้านแบบไม่ต้องเดา</h2><p class="muted">ตัวอย่างจัดงบจากราคาเริ่มต้นจริงใน Price Calculator ทั้งสีพื้น ลูกแก้ว แฟลช เพ้นท์ ต่อเล็บ และ Overlay พร้อมวิธีคุมงบก่อนจอง</p><a class="readmore" href="/blog/nail-budget-500-bang-yai/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<h1>บทความและคำแนะนำเรื่องเล็บ</h1><p class="lead">ความรู้ที่นำไปใช้ได้จริงสำหรับคนรักเล็บ ตั้งแต่การดูแลหลังทำสีเจล ไปจนถึงการเลือกทรงเล็บให้เข้ากับสไตล์และการใช้ชีวิต</p></section><section aria-labelledby="topic-filter-title" class="topic-panel"><div class="topic-panel-head"><div><span class="eyebrow">EXPLORE BY TOPIC</span><h2 id="topic-filter-title">เลือกอ่านตามเรื่องที่คุณกำลังหา</h2></div><div aria-live="polite" class="topic-count" id="topicCount">24 บทความ</div></div><div aria-label="กรองบทความตามหัวข้อ" class="topic-filters"><button aria-pressed="true" class="topic-filter" data-topic-filter="all" type="button">ทั้งหมด</button><button aria-pressed="false" class="topic-filter" data-topic-filter="start" type="button">ก่อนทำเล็บ</button><button aria-pressed="false" class="topic-filter" data-topic-filter="color" type="button">สี &amp; ดีไซน์</button><button aria-pressed="false" class="topic-filter" data-topic-filter="structure" type="button">ต่อเล็บ &amp; Overlay</button><button aria-pressed="false" class="topic-filter" data-topic-filter="care" type="button">ดูแล &amp; แก้ปัญหา</button><button aria-pressed="false" class="topic-filter" data-topic-filter="price" type="button">ราคา &amp; วางงบ</button><button aria-pressed="false" class="topic-filter" data-topic-filter="local" type="button">ร้าน &amp; การเดินทาง</button></div></section><div class="hub-grid" id="articleList"><section class="card hub-article-card" data-article="24" data-topic="start"><div class="article-grid"><img alt="หน้าร้าน Neko Nail by Warunee ใช้ประกอบบทความเรื่องเวลาทำเล็บ" height="1108" loading="lazy" src="/images/neko-nail-shop-index-living-mall-bang-yai.webp" width="1477"/><div><span class="pill">APPOINTMENT TIME GUIDE</span><h2>ทำเล็บใช้เวลานานแค่ไหน? อะไรทำให้คิวสั้นหรือยาวขึ้น</h2><p class="muted">ทำไมคิวสีพื้น ต่อเล็บ ถอดงานเดิม และงานเพ้นท์ใช้เวลาไม่เท่ากัน พร้อมข้อมูลที่ควรส่งให้ร้านเพื่อประเมินเวลาก่อนจอง</p><a class="readmore" href="/blog/how-long-do-nails-take/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="23" data-topic="structure"><div class="article-grid"><img alt="ต่อเล็บ vs Overlay ต่างกันยังไง? เลือกแบบไหนให้เหมาะกับเล็บและความยาว" height="921" loading="lazy" src="/images/gel-nails-white-tan-neko-nail-bang-yai.webp" width="918"/><div><span class="pill">EXTENSION VS OVERLAY</span><h2>ต่อเล็บ vs Overlay ต่างกันยังไง? เลือกแบบไหนให้เหมาะกับเล็บและความยาว</h2><p class="muted">แยกให้ชัดว่าแบบไหนเพิ่มความยาว แบบไหนเสริมโครงสร้างบนเล็บธรรมชาติ และควรเลือกจากสภาพเล็บกับ Lifestyle อย่างไร</p><a class="readmore" href="/blog/nail-extension-vs-overlay-guide/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="22" data-topic="color"><div class="article-grid"><img alt="ผลงาน Emerald Eclipse Cat Eye ใช้ประกอบบทความลูกแก้ว vs แฟลช vs กลิตเตอร์" height="1402" loading="lazy" src="/images/neko-nail-emerald-eclipse-cat-eye-bang-yai.webp" width="1122"/><div><span class="pill">CAT EYE • FLASH • GLITTER</span><h2>สีลูกแก้ว vs สีแฟลช vs กลิตเตอร์ ต่างกันยังไง? เลือกแบบไหนให้ตรงลุค</h2><p class="muted">เทียบมิติของ Cat Eye ประกายสะท้อนแสงของ Flash และความระยิบของ Glitter พร้อมราคาเริ่มต้นและวิธีเลือกตามลุค</p><a class="readmore" href="/blog/cat-eye-vs-flash-vs-glitter-nails/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="21" data-topic="color"><div class="article-grid"><img alt="ภาพตัวอย่างเล็บเท้าเจลโทนชมพูนู้ดและประกายทอง สำหรับบทความเลือกสีเล็บเท้า" height="1086" loading="lazy" src="/images/neko-nail-gel-toe-nails-soft-pink-bang-yai.webp" width="1448"/><div><span class="pill">TOE NAIL COLOR GUIDE</span><h2>ทาสีเจลเท้าเลือกสีอะไรดี? เลือกให้เข้ากับผิว รองเท้า และการใช้งาน</h2><p class="muted">เลือกสีเล็บเท้าจากโทนผิว รองเท้า และการใช้งาน พร้อมแนวทางสำหรับรองเท้าเปิด รองเท้าหุ้มส้น และการจับคู่กับสีเล็บมือ</p><a class="readmore" href="/blog/gel-toe-nails-color-guide/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="20" data-topic="price"><div class="article-grid"><img alt="ผลงาน Pastel Morning ใช้ประกอบบทความทำเล็บงบ 500 บาท" height="1402" loading="lazy" src="/images/neko-nail-pastel-morning-gel-nails-bang-yai.webp" width="1122"/><div><span class="pill">BUDGET 500 • PRICE GUIDE</span><h2>ทำเล็บงบ 500 บาท ทำอะไรได้บ้าง? วางงบก่อนเข้าร้านแบบไม่ต้องเดา</h2><p class="muted">ตัวอย่างจัดงบจากราคาเริ่มต้นจริงใน Price Calculator ทั้งสีพื้น ลูกแก้ว แฟลช เพ้นท์ ต่อเล็บ และ Overlay พร้อมวิธีคุมงบก่อนจอง</p><a class="readmore" href="/blog/nail-budget-500-bang-yai/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="19" data-topic="care"><div class="article-grid">
 <img alt="สีเจลแบบไหนหลุดยาก เลือกสีเล็บให้เหมาะกับคนใช้มือหนัก" height="686" loading="lazy" src="/images/gel-nails-coffee-neko-nail-bang-yai.webp" width="925"/>
 <div><span class="pill">DURABLE GEL • LIFESTYLE</span><h2>สีเจลแบบไหนหลุดยาก? เลือกสีเล็บให้เหมาะกับคนใช้มือหนัก</h2>
 <p class="muted">เปรียบเทียบสีพื้น ลูกแก้ว แฟลช กลิตเตอร์ Chrome Matte และงาน 3D พร้อมแนวทางเลือกงานผิวเรียบและความยาวให้เหมาะกับการใช้งานจริง</p>
-<a class="readmore" href="/blog/most-durable-gel-nail-colors/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/most-durable-gel-nail-colors/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="18" data-topic="local"><div class="article-grid">
 <img alt="ร้านทำเล็บใกล้ตลาดบีบี บางใหญ่ Neko Nail ที่ Index Living Mall" height="1059" loading="lazy" src="/images/neko-nail-storefront-index-living-mall-bang-yai.webp" width="1400"/>
 <div><span class="pill">BB MARKET • BANG YAI</span><h2>ร้านทำเล็บใกล้ตลาดบีบี บางใหญ่ | Neko Nail อยู่ Index ติด BB Market</h2>
 <p class="muted">Neko Nail by Warunee อยู่ชั้น 1 Index Living Mall บางใหญ่ ซึ่งอยู่ติดกับ BB Market Park พร้อมบริการทำสีเจล สีลูกแก้ว ต่อเล็บ และ Nail Art</p>
-<a class="readmore" href="/blog/nail-salon-near-bb-market-bang-yai/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid"><img alt="ร้านทำเล็บใกล้ MRT สายสีม่วง Neko Nail บางใหญ่" loading="lazy" src="/images/index-living-mall-bang-yai-near-mrt-purple-line.webp"/><div><span class="pill">MRT PURPLE LINE</span><h2>ร้านทำเล็บใกล้ MRT สายสีม่วง เดินจาก Skywalk ไม่เกิน 3 นาที</h2><p class="muted">ลง MRT ตลาดบางใหญ่ เดินตาม Skywalk ไป Index Living Mall พร้อมภาพเส้นทางจริงจนถึง Neko Nail ชั้น 1</p><a class="readmore" href="/blog/nail-salon-near-mrt-purple-line/">ดูเส้นทาง →</a></div></div></section>
-<section class="card"><div class="article-grid"><img alt="เล็บโทนนู้ดมุกสำหรับไอเดียไปงานแต่ง" loading="lazy" src="/images/neko-nail-nude-bang-yai.webp"/><div><span class="pill">WEDDING NAILS</span><h2>ทำเล็บไปงานแต่งเลือกสีอะไรดี? เจ้าสาว เพื่อนเจ้าสาว และแขก</h2><p class="muted">เลือกจากบทบาท ชุด เครื่องประดับ และระดับความเด่น เพื่อให้เล็บเป็นส่วนหนึ่งของลุคโดยไม่แย่งจุดสนใจ</p><a class="readmore" href="/blog/wedding-nails-guide/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/nail-salon-near-bb-market-bang-yai/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="17" data-topic="local"><div class="article-grid"><img alt="ร้านทำเล็บใกล้ MRT สายสีม่วง Neko Nail บางใหญ่" loading="lazy" src="/images/index-living-mall-bang-yai-near-mrt-purple-line.webp"/><div><span class="pill">MRT PURPLE LINE</span><h2>ร้านทำเล็บใกล้ MRT สายสีม่วง เดินจาก Skywalk ไม่เกิน 3 นาที</h2><p class="muted">ลง MRT ตลาดบางใหญ่ เดินตาม Skywalk ไป Index Living Mall พร้อมภาพเส้นทางจริงจนถึง Neko Nail ชั้น 1</p><a class="readmore" href="/blog/nail-salon-near-mrt-purple-line/">ดูเส้นทาง →</a></div></div></section><section class="card hub-article-card" data-article="16" data-topic="color"><div class="article-grid"><img alt="เล็บโทนนู้ดมุกสำหรับไอเดียไปงานแต่ง" loading="lazy" src="/images/neko-nail-nude-bang-yai.webp"/><div><span class="pill">WEDDING NAILS</span><h2>ทำเล็บไปงานแต่งเลือกสีอะไรดี? เจ้าสาว เพื่อนเจ้าสาว และแขก</h2><p class="muted">เลือกจากบทบาท ชุด เครื่องประดับ และระดับความเด่น เพื่อให้เล็บเป็นส่วนหนึ่งของลุคโดยไม่แย่งจุดสนใจ</p><a class="readmore" href="/blog/wedding-nails-guide/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="15" data-topic="color"><div class="article-grid">
 <img alt="สีเล็บมือกับเล็บเท้าต้องเหมือนกันไหม 4 วิธีจับคู่ให้ดูเป็นเซ็ต" height="1200" loading="lazy" src="/images/nail-art-red-rhinestone-bang-yai.webp" width="1200"/>
 <div><span class="pill">Hand &amp; Toe Color Guide</span><h2>สีเล็บมือกับเล็บเท้าต้องเหมือนกันไหม? 4 วิธีจับคู่ให้ดูเป็นเซ็ต</h2>
 <p class="muted">ไม่ต้องใช้สีเดียวกันเป๊ะ ๆ ค่ะ ลองจับคู่ด้วยครอบครัวสี ฟินิช สีเด่นกับสีกลาง หรือคุมบรรยากาศให้สัมพันธ์กัน</p>
-<a class="readmore" href="/blog/hand-foot-nail-color-matching/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/hand-foot-nail-color-matching/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="14" data-topic="start"><div class="article-grid">
 <img alt="สีเจลกับสีทาเล็บธรรมดาต่างกันอย่างไร เลือกแบบไหนดี" height="900" loading="lazy" src="/images/nail-art-pink-blue-gradient-bang-yai.webp" width="1200"/>
 <div><span class="pill">Gel vs Regular Polish</span><h2>สีเจลกับสีทาเล็บธรรมดาต่างกันอย่างไร? เลือกแบบไหนดี</h2>
 <p class="muted">เทียบวิธีแห้ง ความพร้อมใช้งานหลังทำ ความเงา ความทน และความเหมาะกับคนที่ชอบเปลี่ยนสีบ่อย โดยไม่ทวนเรื่องราคา สีผิว หรือการถอดค่ะ</p>
-<a class="readmore" href="/blog/gel-vs-regular-nail-polish/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/gel-vs-regular-nail-polish/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="13" data-topic="structure"><div class="article-grid">
 <img alt="ต่อเล็บแล้วเจ็บไหม เจ็บแบบไหนควรหยุดและเช็กก่อนทำต่อ" height="1024" loading="lazy" src="/images/nail-extension-pvc-neko-nail-bang-yai.webp" width="1536"/>
 <div><span class="pill">Extension Comfort Guide</span><h2>ต่อเล็บแล้วเจ็บไหม? เจ็บแบบไหนควรหยุดและเช็กก่อนทำต่อ</h2>
 <p class="muted">แยกความรู้สึกไม่คุ้นหลังเพิ่มความยาวออกจากอาการที่ไม่ควรฝืน พร้อมจังหวะที่ควรบอกช่างและวิธีเลือกความยาวให้เข้ากับการใช้มือค่ะ</p>
-<a class="readmore" href="/blog/nail-extension-pain-guide/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/nail-extension-pain-guide/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="12" data-topic="care"><div class="article-grid">
 <img alt="ถอดสีเจลเองได้ไหม ทำอย่างไรไม่ให้หน้าเล็บเสีย" height="922" loading="lazy" src="/images/gel-nails-white-care-neko-nail-bang-yai.webp" width="921"/>
 <div><span class="pill">Gel Removal Guide</span><h2>ถอดสีเจลเองได้ไหม? ทำอย่างไรไม่ให้หน้าเล็บเสีย</h2>
 <p class="muted">ก่อนแกะหรือลอกสีเจล มาดูว่าทำไมวิธีถอดต้องเลือกตามวัสดุเดิม และควรสังเกตอะไรเพื่อไม่ทำร้ายหน้าเล็บโดยไม่จำเป็นค่ะ</p>
-<a class="readmore" href="/blog/remove-gel-nails-safely/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/remove-gel-nails-safely/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="11" data-topic="start"><div class="article-grid">
 <img alt="เล็บสั้นทำเล็บแบบไหนดี 5 เทคนิคให้มือดูสมส่วนและมีสไตล์" height="922" loading="lazy" src="/images/gel-nails-ruby-short-neko-nail-bang-yai.webp" width="921"/>
 <div><span class="pill">Short Nail Style Guide</span><h2>เล็บสั้นทำเล็บแบบไหนดี? 5 เทคนิคให้มือดูสมส่วนและมีสไตล์</h2>
 <p class="muted">ไม่ทวนรายชื่อทรงหรือสีตามสีผิว แต่เจาะวิธีใช้พื้นที่หน้าเล็บ สัดส่วน จุดเด่น และการใช้งานจริง เพื่อเลือกดีไซน์สำหรับเล็บสั้น</p>
-<a class="readmore" href="/blog/short-nails-style-guide/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/short-nails-style-guide/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="10" data-topic="structure"><div class="article-grid">
 <img alt="เล็บบางทำสีเจลได้ไหม ควรเสริมหน้าเล็บหรือ Overlay เมื่อไหร่" height="900" loading="lazy" src="/images/nail-art-pastel-candy-bang-yai.webp" width="1200"/>
 <div><span class="pill">Thin Nails &amp; Overlay Guide</span><h2>เล็บบางทำสีเจลได้ไหม? ควรเสริมหน้าเล็บหรือ Overlay เมื่อไหร่</h2>
 <p class="muted">เข้าใจความต่างระหว่างทำสีเจลบนเล็บธรรมชาติ การเสริมหน้าเล็บ Overlay และการต่อเล็บ พร้อมสัญญาณที่ควรพักเล็บก่อนทำ</p>
-<a class="readmore" href="/blog/thin-nails-gel-overlay-guide/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/thin-nails-gel-overlay-guide/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="9" data-topic="start"><div class="article-grid">
 <img alt="ทำเล็บเจลครั้งแรก ต้องรู้อะไรบ้าง คู่มือสำหรับมือใหม่" height="1200" loading="lazy" src="/images/nail-art-brown-white-minimal-bang-yai.webp" width="1200"/>
 <div><span class="pill">First Gel Nail Guide</span><h2>ทำเล็บเจลครั้งแรก ต้องรู้อะไรบ้าง? เตรียมตัวยังไง ใช้เวลานานไหม</h2>
 <p class="muted">คู่มือสำหรับมือใหม่ ตั้งแต่เตรียม Reference เลือกสีและทรง เช็กราคา ระยะเวลา ไปจนถึงสิ่งที่ควรแจ้งร้านก่อนจอง</p>
-<a class="readmore" href="/blog/gel-nails-first-time-guide/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/gel-nails-first-time-guide/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="8" data-topic="local"><div class="article-grid">
 <img alt="ร้านทำเล็บบางใหญ่ Neko Nail by Warunee ที่ Index Living Mall บางใหญ่" height="832" loading="lazy" src="/images/neko-nail-bang-yai-shop-hero.webp" width="1100"/>
 <div><span class="pill">Bang Yai Nail Salon Guide</span><h2>ร้านทำเล็บบางใหญ่ เลือกร้านอย่างไร? ราคาเท่าไร และต้องรู้อะไรก่อนจอง</h2>
 <p class="muted">คู่มือสำหรับคนกำลังเลือกร้าน เช็กผลงาน รีวิว ราคา ทำเล การส่ง Reference และวิธีใช้ AI Search ช่วยเปรียบเทียบก่อนจอง</p>
-<a class="readmore" href="/blog/bang-yai-nail-salon-guide/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/bang-yai-nail-salon-guide/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="7" data-topic="care"><div class="article-grid">
 <img alt="เล็บเจลหลุดง่าย เกิดจากอะไร 7 สาเหตุและวิธีให้สีเจลติดทน" height="917" loading="lazy" src="/images/gel-nails-peeling-hero-neko-nail-bang-yai.webp" width="921"/>
 <div><span class="pill">Gel Nail Care</span><h2>เล็บเจลหลุดง่าย เกิดจากอะไร? 7 สาเหตุ พร้อมวิธีให้ติดทนนาน</h2>
 <p class="muted">รวมสาเหตุที่ทำให้สีเจลล่อน บิ่น หรือยกเร็ว ตั้งแต่สภาพหน้าเล็บ การเตรียมเล็บ การอบ ไปจนถึงพฤติกรรมหลังทำ พร้อมวิธีดูแล</p>
-<a class="readmore" href="/blog/gel-nails-peeling-causes/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/gel-nails-peeling-causes/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="6" data-topic="color"><div class="article-grid">
 <img alt="สีลูกแก้วคืออะไร คู่มือ Cat Eye Gel และการเลือกสี" height="921" loading="lazy" src="/images/cat-eye-nails-hero-neko-nail-bang-yai.webp" width="922"/>
 <div><span class="pill">Cat Eye Nail Guide</span><h2>สีลูกแก้วคืออะไร? เลือกแบบไหนให้สวย พร้อมไอเดียเล็บลูกแก้ว</h2>
 <p class="muted">รู้จัก Cat Eye Gel การเล่นแสงจากผงแม่เหล็ก ลายลูกแก้วยอดนิยม วิธีเลือกสีให้เข้ากับโทนผิว และความต่างจากสีแฟลช</p>
-<a class="readmore" href="/blog/cat-eye-nails-guide/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/cat-eye-nails-guide/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="5" data-topic="structure"><div class="article-grid">
 <img alt="ต่อเล็บแบบไหนดี เปรียบเทียบ PVC Gel-X Polygel และ Acrylic" height="1024" loading="lazy" src="/images/nail-extension-types-neko-nail-bang-yai.webp" width="1536"/>
 <div><span class="pill">Nail Extension Guide</span><h2>ต่อเล็บแบบไหนดี? เปรียบเทียบ PVC, Gel-X, Polygel และ Acrylic</h2>
 <p class="muted">เทียบความแข็งแรง ความบางเบา ความเป็นธรรมชาติ ความเร็ว ระดับราคา และความเหมาะสมของการต่อเล็บ 4 แบบสำหรับมือใหม่</p>
-<a class="readmore" href="/blog/nail-extension-types/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/nail-extension-types/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="4" data-topic="price"><div class="article-grid">
 <img alt="ทำเล็บราคาเท่าไหร่ ค่าใช้จ่ายขึ้นอยู่กับอะไรบ้าง" height="1024" loading="lazy" src="/images/nail-price-guide-neko-nail-bang-yai.webp" width="1536"/>
 <div><span class="pill">Nail Price Guide</span><h2>ทำเล็บราคาเท่าไหร่? ค่าใช้จ่ายขึ้นอยู่กับอะไรบ้าง</h2>
 <p class="muted">ดูว่าราคาทำเล็บขึ้นอยู่กับประเภทสี งานตกแต่ง การต่อเล็บ และ Overlay อย่างไร พร้อมลิงก์คำนวณราคาก่อนจอง</p>
-<a class="readmore" href="/blog/nail-price-guide/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/nail-price-guide/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="3" data-topic="start"><div class="article-grid">
 <img alt="เลือกสีเล็บให้เหมาะกับสีผิว" height="1024" loading="lazy" src="/images/nail-color-for-skin-tone-neko-nail-bang-yai.webp" width="1536"/>
 <div><span class="pill">Nail Color Guide</span><h2>สีเล็บแบบไหนเหมาะกับสีผิว? เลือกสีให้มือดูสว่าง</h2>
 <p class="muted">รวมตัวอย่างสีสำหรับผิวขาว ผิวขาวอมชมพู ผิวขาวเหลือง ผิวสองสี และผิวเข้ม พร้อมเทคนิคเลือกเฉดให้เข้ากับสไตล์</p>
-<a class="readmore" href="/blog/nail-color-for-skin-tone/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/nail-color-for-skin-tone/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="2" data-topic="start"><div class="article-grid">
 <img alt="7 ทรงเล็บยอดนิยม Square Squoval Round Oval Almond Coffin และ Stiletto" loading="lazy" src="/images/nail-shapes-guide-neko-nail-bang-yai.webp"/>
 <div><span class="pill">Nail Shape Guide</span><h2>เลือกทรงเล็บแบบไหนดี? 7 ทรงยอดนิยม แต่ละทรงเด่นเรื่องอะไร</h2>
 <p class="muted">เรียบหรู คุณหนู สายลุย สายแฟชั่น หรือแซ่บมั่นใจ — ดูบุคลิกของ Square, Squoval, Round, Oval, Almond, Coffin และ Stiletto ก่อนเลือกทรงที่ใช่</p>
-<a class="readmore" href="/blog/nail-shapes-guide/">อ่านบทความ →</a></div></div></section>
-<section class="card"><div class="article-grid">
+<a class="readmore" href="/blog/nail-shapes-guide/">อ่านบทความ →</a></div></div></section><section class="card hub-article-card" data-article="1" data-topic="care"><div class="article-grid">
 <img alt="วิธีดูแลเล็บหลังทำเล็บเจล" loading="lazy" src="/images/nail-art-pearl-cat-eye-bang-yai.webp"/>
 <div><span class="pill">Nail Care</span><h2>วิธีดูแลเล็บหลังทำเล็บเจล ให้สวยนาน ไม่ลอกง่าย</h2>
 <p class="muted">รู้จักความสำคัญของ “ปลายเล็บ” และการคุมปลายเล็บ พร้อมวิธีลดโอกาสสีเจลยก บิ่น หรือลอกก่อนเวลา</p>
-<a class="readmore" href="/blog/nail-care-after-gel/">อ่านบทความ →</a></div></div></section>
+<a class="readmore" href="/blog/nail-care-after-gel/">อ่านบทความ →</a></div></div></section></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="card cta-box"><h2 style="margin-top:0">อยากทำเล็บแบบที่เหมาะกับคุณ?</h2><p class="muted">ดูราคาเบื้องต้นก่อนจอง หรือส่ง Reference ให้ร้านช่วยประเมินได้เลย</p>
 <div class="cta-row"><a class="btn" href="/price-calculator/">💅 คำนวณราคา</a><a class="btn primary" href="https://lin.ee/YG8WAg5" rel="noopener" target="_blank">💬 จองผ่าน LINE</a></div></section>
 </main>
@@ -193,4 +221,4 @@ document.addEventListener('click',function(e){
  if(name) gtag('event',name,{link_url:href,link_text:(el.innerText||'').trim(),button_location:'blog'});
 },true);
 </script>
-</body></html>
+<script>(function(){const buttons=[...document.querySelectorAll('[data-topic-filter]')],cards=[...document.querySelectorAll('.hub-article-card')],count=document.getElementById('topicCount');if(!buttons.length||!cards.length)return;function apply(topic){let visible=0;cards.forEach(card=>{const show=topic==='all'||card.dataset.topic===topic;card.hidden=!show;if(show)visible++;});buttons.forEach(btn=>btn.setAttribute('aria-pressed',btn.dataset.topicFilter===topic?'true':'false'));if(count)count.textContent=visible+' บทความ';}buttons.forEach(btn=>btn.addEventListener('click',()=>apply(btn.dataset.topicFilter)));apply('all');})();</script></body></html>
