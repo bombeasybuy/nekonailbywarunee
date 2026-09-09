@@ -75,7 +75,7 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 .location-card{grid-column:1/-1;display:grid;grid-template-columns:1.12fr .88fr;gap:0;overflow:hidden;border-radius:var(--r-lg);border:1px solid var(--line);background:var(--surface);margin-top:10px}.location-photo img{width:100%;height:100%;min-height:390px;object-fit:cover;display:block}.location-info{padding:42px}.location-address{margin:25px 0;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--muted);font-size:14px;line-height:1.75}.location-address strong{color:var(--ink)}.map-actions{display:flex;gap:10px;flex-wrap:wrap}
 
 /* Article */
-.article-card{display:grid;grid-template-columns:minmax(300px,420px) minmax(0,1fr);gap:48px;align-items:center}.article-card>.reveal:first-child{width:100%;max-width:420px}.article-thumb{display:block;width:100%;aspect-ratio:4/3;border-radius:var(--r-md);object-fit:cover}.article-meta{font-size:11px;color:var(--champagne);font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}.article-preview{display:contents}.article-preview h3{margin:0 0 10px;font-size:28px}.article-preview p{color:var(--muted);font-size:15px}.article-link,.all-articles a{display:inline-flex;gap:7px;align-items:center;margin-top:14px;text-decoration:none;font-weight:700;color:var(--rose);font-size:14px}.all-articles{margin-top:10px}
+.article-card{display:grid;grid-template-columns:minmax(280px,360px) minmax(0,1fr);gap:46px;align-items:center}.journal-media{width:100%;max-width:360px}.article-thumb{display:block;width:100%;aspect-ratio:16/10;border-radius:var(--r-md);object-fit:cover}.journal-copy{max-width:680px}.journal-title{margin:0 0 12px;font-size:30px;line-height:1.38}.journal-desc{max-width:620px;margin:0;color:var(--muted);font-size:15px;line-height:1.7}.journal-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:18px}.journal-actions a{display:inline-flex;gap:7px;align-items:center;text-decoration:none;font-weight:700;color:var(--rose);font-size:14px}.journal-actions .all-articles-link{color:var(--muted);font-weight:600}.journal-actions a:hover{color:var(--rose-deep)}
 
 /* Standards */
 .standards{display:grid;grid-template-columns:.75fr 1.25fr;gap:72px;align-items:start}.standards-points{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.standard-point{padding-top:18px;border-top:1px solid var(--line)}.standard-point b{display:block;margin-bottom:7px;font-family:var(--serif);font-size:18px}.standard-point span{color:var(--muted);font-size:14px;line-height:1.7}
@@ -97,7 +97,7 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
   #pricing{max-width:none}.item{padding:15px 2px}.price{font-size:20px}
   #price-calculator-link{grid-template-columns:1fr;padding:30px 24px;gap:28px}.calc-visual{padding:20px}
   #location{grid-template-columns:1fr;gap:24px}.visit-summary{margin-top:2px}.visit-row{grid-template-columns:1fr;gap:6px;padding:15px 0}.visit-row small{font-size:10px}.visit-row strong{font-size:15px;line-height:1.45}.location-card{grid-template-columns:1fr}.location-info{padding:28px 22px}.location-photo img{min-height:0;aspect-ratio:16/11}.map-actions{flex-direction:column}.map-actions .map-btn{width:100%}
-  .article-card{grid-template-columns:1fr;gap:20px}.article-card>.reveal:first-child{max-width:460px}.article-preview{display:contents}.article-preview h3{font-size:24px}.standards{grid-template-columns:1fr;gap:30px}.standards-points{grid-template-columns:1fr;gap:18px}.standard-point{padding-top:14px}.footer-inner{grid-template-columns:1fr;gap:28px;padding:46px 18px 96px}
+  .article-card{grid-template-columns:1fr;gap:18px}.journal-media{max-width:460px}.standards{grid-template-columns:1fr;gap:30px}.standards-points{grid-template-columns:1fr;gap:18px}.standard-point{padding-top:14px}.footer-inner{grid-template-columns:1fr;gap:28px;padding:46px 18px 96px}
 }
 @media(max-width:520px){
   h1{font-size:38px}h2{font-size:29px}.hero-actions{display:grid;grid-template-columns:1fr 1fr}.hero-actions .btn{padding-inline:12px}.visit-row{grid-template-columns:1fr;gap:6px;padding:15px 0}.bottom{padding:7px 8px}.bottomin{grid-template-columns:.72fr .92fr 1.36fr;gap:5px}.bottom .btn{font-size:12px;padding:8px 5px}
@@ -134,16 +134,15 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
   .location-info{padding:28px 24px}
   .location-address{margin:20px 0;padding:17px 0}
 
-  /* Journal: compact editorial preview — keep the article image supportive, not hero-sized. */
-  .article-card{padding:46px 0;gap:18px}
-  .article-card>.reveal:first-child{max-width:460px}
-  .article-thumb{aspect-ratio:16/9;max-height:220px;border-radius:16px}
-  .article-card h2{font-size:30px;line-height:1.27}
-  .article-preview h3{font-size:22px;line-height:1.42;margin-bottom:8px}
-  .article-preview p{font-size:14px;line-height:1.65;margin-bottom:8px}
-  .article-meta{margin-bottom:6px}
-  .article-link,.all-articles a{margin-top:9px}
-  .all-articles{margin-top:5px}
+  /* Journal: one clean editorial story, without stacked labels. */
+  .article-card{padding:40px 0 42px;gap:17px}
+  .journal-media{max-width:460px}
+  .article-thumb{aspect-ratio:16/9;max-height:190px;border-radius:16px}
+  .journal-copy{max-width:none}
+  .journal-title{font-size:27px;line-height:1.38;margin-bottom:9px}
+  .journal-desc{font-size:14px;line-height:1.65}
+  .journal-actions{gap:18px;margin-top:14px}
+  .journal-actions a{font-size:13.5px}
 
   /* Standards should read as three concise trust points, not a large empty chapter. */
   .standards{padding:50px 0 42px;gap:20px}
@@ -162,8 +161,8 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
   h2{font-size:27px}
   .section{padding:46px 0}
   .gallery-card{padding:50px 0 46px}
-  #price-calculator-link h2,.article-card h2,.standards h2{font-size:28px}
-  .article-preview h3{font-size:21px}
+  #price-calculator-link h2,.standards h2{font-size:28px}
+  .journal-title{font-size:26px}
   .standard-point b{min-width:82px;font-size:16px}
   .standard-point span{font-size:12.5px}
 }
@@ -257,8 +256,8 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 <div class="reveal"><div class="eyebrow">Neko Standards</div><h2>มาตรฐานร้านทำเล็บ <span class="brand-nowrap">Neko Nail</span></h2><p class="th">Clean • Care • Detail</p></div>
 <div class="standards-points reveal"><div class="standard-point"><b>ความสะอาด</b><span>✦ ทำความสะอาดเล็บด้วยน้ำยาคุณภาพ</span></div><div class="standard-point"><b>อุปกรณ์</b><span>✦ อุปกรณ์สะอาด ฆ่าเชื้อทุกชิ้นก่อนให้บริการ</span></div><div class="standard-point"><b>รายละเอียด</b><span>✦ ใส่ใจทุกรายละเอียด เพื่อเล็บสวยและปลอดภัย</span></div></div>
 </section><section class="section article-card" id="articles">
-<div class="reveal"><img alt="บทความวิธีดูแลเล็บหลังทำเล็บเจล Neko Nail by Warunee" class="article-thumb" decoding="async" height="1200" loading="lazy" src="images/nail-art-pearl-cat-eye-bang-yai.webp" width="1200"/></div>
-<div class="reveal"><div class="eyebrow">Neko Journal</div><h2>บทความและคำแนะนำเรื่องเล็บ</h2><p class="th">Nail Care Guide • ดูแลเล็บให้สวยนานขึ้น</p><div class="article-preview"><div><div class="article-meta">Nail Care • อ่านประมาณ 4 นาที</div><h3>วิธีดูแลเล็บหลังทำเล็บเจล ให้สวยนาน ไม่ลอกง่าย</h3><p>ทำไม “ปลายเล็บ” จึงสำคัญ? รู้จักการคุมปลายเล็บ พร้อมวิธีลดโอกาสสีเจลยก บิ่น หรือลอกก่อนเวลา</p><a class="article-link" href="/blog/nail-care-after-gel/">อ่านบทความ <span aria-hidden="true">→</span></a></div></div><div class="all-articles"><a href="/blog/">ดูบทความทั้งหมด →</a></div></div>
+<div class="reveal journal-media"><img alt="บทความวิธีดูแลเล็บหลังทำเล็บเจล Neko Nail by Warunee" class="article-thumb" decoding="async" height="1200" loading="lazy" src="images/nail-art-pearl-cat-eye-bang-yai.webp" width="1200"/></div>
+<div class="reveal journal-copy"><div class="eyebrow">Neko Journal</div><h2 class="journal-title">วิธีดูแลเล็บหลังทำเล็บเจล ให้สวยนาน ไม่ลอกง่าย</h2><p class="journal-desc">ทำไม “ปลายเล็บ” จึงสำคัญ? รู้จักการคุมปลายเล็บ พร้อมวิธีลดโอกาสสีเจลยก บิ่น หรือลอกก่อนเวลา</p><div class="journal-actions"><a href="/blog/nail-care-after-gel/">อ่านบทความ <span aria-hidden="true">→</span></a><a class="all-articles-link" href="/blog/">ดูบทความทั้งหมด <span aria-hidden="true">→</span></a></div></div>
 </section>
 </main>
 <footer class="site-footer"><div class="footer-inner"><div><div class="footer-brand">Neko Nail by Warunee</div><p class="footer-copy">ร้านทำเล็บบางใหญ่ • Index Living Mall บางใหญ่ <span class="floor-nowrap">ชั้น 1</span><br/>เปิดทุกวัน 11:00–21:00 น.</p><div class="footer-socials"><a href="https://www.facebook.com/nekonailbywarunee/" rel="noopener" target="_blank">Facebook</a><a href="https://www.instagram.com/nekonailbywarunee" rel="noopener" target="_blank">Instagram</a><a href="https://www.tiktok.com/@neko.nail.by.warunee" rel="noopener" target="_blank">TikTok</a><a href="https://www.lemon8-app.com/@neko.nail.by.warunee?region=th" rel="noopener" target="_blank">Lemon8</a></div></div><div><div class="footer-title">Explore</div><div class="footer-links"><a href="/#gallery">ผลงาน</a><a href="/#pricing">ราคา</a><a href="/price-calculator/">คำนวณราคา</a><a href="/blog/">บทความ</a></div></div><div><div class="footer-title">Contact</div><div class="footer-links"><a href="https://lin.ee/YG8WAg5" rel="noopener" target="_blank">LINE</a><a href="tel:0845196545">084 519 6545</a><a href="/#location">แผนที่</a></div></div></div></footer>
