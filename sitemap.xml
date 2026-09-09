@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://nekonailbywarunee.com/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://nekonailbywarunee.com/price-calculator/</loc><lastmod>2026-08-30</lastmod></url>
-  <url><loc>https://nekonailbywarunee.com/blog/</loc><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://nekonailbywarunee.com/blog/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://nekonailbywarunee.com/blog/thin-nails-gel-overlay-guide/</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://nekonailbywarunee.com/blog/gel-nails-first-time-guide/</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://nekonailbywarunee.com/blog/bang-yai-nail-salon-guide/</loc><lastmod>2026-09-02</lastmod></url>
@@ -25,4 +25,34 @@
   <url><loc>https://nekonailbywarunee.com/blog/nail-salon-near-mrt-purple-line/</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://nekonailbywarunee.com/blog/nail-salon-near-bb-market-bang-yai/</loc><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://nekonailbywarunee.com/blog/most-durable-gel-nail-colors/</loc><lastmod>2026-09-08</lastmod></url>
+  <url>
+    <loc>https://nekonailbywarunee.com/blog/how-long-do-nails-take/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nekonailbywarunee.com/blog/nail-extension-vs-overlay-guide/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nekonailbywarunee.com/blog/cat-eye-vs-flash-vs-glitter-nails/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nekonailbywarunee.com/blog/gel-toe-nails-color-guide/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nekonailbywarunee.com/blog/nail-budget-500-bang-yai/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
