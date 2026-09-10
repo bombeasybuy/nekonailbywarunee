@@ -309,6 +309,70 @@ html,body{
   .site-footer .footer-inner{padding-bottom:62px}
 }
 
+
+/* =========================================================
+   Mobile Hero Refinement — 2026-09-10
+   More transparent glass + tighter first-screen composition.
+   Visual-only changes; SEO/Schema/GA4 remain unchanged.
+   ========================================================= */
+@media(max-width:768px){
+  .hero{
+    min-height:660px;
+    padding:22px 0 38px;
+    align-items:flex-end;
+  }
+  .hero::before{
+    background-position:75% 42%;
+  }
+  .hero::after{
+    background:
+      linear-gradient(180deg,
+        rgba(251,247,242,.005) 0%,
+        rgba(251,247,242,.02) 34%,
+        rgba(251,247,242,.12) 58%,
+        rgba(251,247,242,.40) 100%),
+      linear-gradient(90deg,
+        rgba(251,247,242,.045),
+        rgba(251,247,242,.005) 78%);
+  }
+  .hero-copy.hero-glass-panel{
+    margin-top:205px;
+    background:linear-gradient(
+      145deg,
+      rgba(255,255,255,.24),
+      rgba(255,250,247,.10)
+    );
+    backdrop-filter:blur(14px) saturate(1.08);
+    -webkit-backdrop-filter:blur(14px) saturate(1.08);
+    box-shadow:
+      0 18px 48px rgba(75,52,46,.10),
+      inset 0 1px 0 rgba(255,255,255,.66);
+  }
+  .hero-copy .tag{
+    background:rgba(255,255,255,.28);
+    border-color:rgba(255,255,255,.52);
+    backdrop-filter:blur(9px);
+    -webkit-backdrop-filter:blur(9px);
+  }
+  .hero-actions .btn.text-link{
+    background:rgba(255,255,255,.22);
+    border-color:rgba(255,255,255,.54);
+  }
+}
+@media(max-width:520px){
+  .hero{
+    min-height:635px;
+    padding-top:18px;
+    padding-bottom:34px;
+  }
+  .hero::before{
+    background-position:76% 40%;
+  }
+  .hero-copy.hero-glass-panel{
+    margin-top:185px;
+  }
+}
+
 </style><script type="application/ld+json">{"@context":"https://schema.org","@type":"NailSalon","@id":"https://nekonailbywarunee.com/#nailsalon","name":"Neko Nail by Warunee","alternateName":"Neko Nail","url":"https://nekonailbywarunee.com/","telephone":"+66-84-519-6545","priceRange":"฿฿","description":"ร้านทำเล็บบางใหญ่ Neko Nail by Warunee ที่ Index Living Mall บางใหญ่ ชั้น 1 ทาสีเจล ต่อเล็บ เพ้นท์เล็บ เสริมหน้าเล็บ สีเจลเริ่ม 200 บาท เปิดทุกวัน 11:00–21:00 น. จองคิวผ่าน LINE","address":{"@type":"PostalAddress","streetAddress":"Index Living Mall บางใหญ่ ชั้น 1, 87 หมู่ 6 ถนนกาญจนาภิเษก","addressLocality":"เสาธงหิน","addressRegion":"นนทบุรี","postalCode":"11140","addressCountry":"TH"},"areaServed":[{"@type":"Place","name":"บางใหญ่ นนทบุรี"},{"@type":"AdministrativeArea","name":"นนทบุรี"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"21:00"}],"sameAs":["https://www.facebook.com/nekonailbywarunee/","https://www.instagram.com/nekonailbywarunee","https://www.tiktok.com/@neko.nail.by.warunee","https://www.lemon8-app.com/@neko.nail.by.warunee?region=th"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"บริการทำเล็บ Neko Nail by Warunee","itemListElement":[{"@type":"Offer","name":"ทาสีเจล","price":"200","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"ทาสีเจล"}},{"@type":"Offer","name":"สีสุขภาพดี","price":"250","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"สีสุขภาพดี"}},{"@type":"Offer","name":"สีลูกแก้ว","price":"350","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"สีลูกแก้ว"}},{"@type":"Offer","name":"ต่อเล็บชิดโคน กาวธรรมดา","price":"150","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"ต่อเล็บ"}},{"@type":"Offer","name":"งานเพ้นท์เล็บ","price":"25","priceCurrency":"THB","description":"ราคาเริ่มต้นต่อนิ้ว","itemOffered":{"@type":"Service","name":"เพ้นท์เล็บ"}}]},"hasMap":"https://www.google.com/maps/search/?api=1&query=Neko%20Nail%20by%20Warunee%20Index%20Living%20Mall%20Bang%20Yai","image":["https://nekonailbywarunee.com/images/nail-art-pearl-cat-eye-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-red-rhinestone-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-blue-silver-winter-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-pink-blue-gradient-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-halloween-neon-bang-yai.webp"]}</script>
 <!-- Neko Nail GA4 START -->
 <!-- Google tag (gtag.js) -->
