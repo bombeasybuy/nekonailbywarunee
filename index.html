@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="th"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&amp;family=Noto+Serif+Thai:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<html lang="th"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link as="image" fetchpriority="high" href="images/neko-nail-hero-background-soft-luxury.webp" rel="preload" type="image/webp"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&amp;family=Noto+Serif+Thai:wght@500;600&amp;display=swap" rel="stylesheet"/>
 <title>ร้านทำเล็บบางใหญ่ | Neko Nail by Warunee – Index Living Mall</title>
 <meta content="ร้านทำเล็บบางใหญ่ Neko Nail by Warunee ที่ Index Living Mall บางใหญ่ ชั้น 1 ทาสีเจล ต่อเล็บ เพ้นท์เล็บ เสริมหน้าเล็บ สีเจลเริ่ม 200 บาท เปิดทุกวัน 11:00–21:00 น. จองคิวผ่าน LINE" name="description"/>
 <meta content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" name="robots"/>
@@ -168,6 +168,124 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 }
 .floor-nowrap{white-space:nowrap}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.slide img,.btn,.price-calc-cta{transition:none}}
+
+/* =========================================================
+   Neko Nail — Soft Background Glass + Journal Clean V2
+   Visual-only layer. SEO copy, headings, schema, URLs and GA4
+   remain inherited from the approved latest homepage.
+   ========================================================= */
+:root{
+  --glass:rgba(255,253,252,.54);
+  --glass-strong:rgba(255,253,252,.72);
+  --glass-line:rgba(255,255,255,.72);
+  --glass-shadow:0 24px 70px rgba(92,62,54,.12),inset 0 1px 0 rgba(255,255,255,.72);
+}
+body{background:linear-gradient(180deg,#FBF7F2 0%,#FCF8F4 46%,#FBF7F2 100%)}
+
+/* Full-bleed atmospheric hero with readable real HTML copy. */
+.hero{
+  position:relative;isolation:isolate;min-height:690px;
+  display:flex;align-items:center;padding:92px 0 104px;
+}
+.hero::before{
+  content:"";position:absolute;z-index:-2;top:0;bottom:0;left:50%;width:100vw;
+  transform:translateX(-50%);
+  background-image:url('images/neko-nail-hero-background-soft-luxury.webp');
+  background-size:cover;background-position:center center;background-repeat:no-repeat;
+}
+.hero::after{
+  content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;
+  transform:translateX(-50%);
+  background:
+    linear-gradient(90deg,rgba(251,247,242,.78) 0%,rgba(251,247,242,.48) 36%,rgba(251,247,242,.10) 67%,rgba(251,247,242,.025) 100%),
+    linear-gradient(180deg,rgba(251,247,242,.025),rgba(251,247,242,.06) 70%,rgba(251,247,242,.72) 100%);
+  pointer-events:none;
+}
+.hero-copy.hero-glass-panel{
+  width:min(610px,54%);max-width:610px;padding:42px 42px 38px;
+  border:1px solid var(--glass-line);border-radius:28px;
+  background:linear-gradient(135deg,rgba(255,255,255,.52),rgba(255,250,247,.28));
+  box-shadow:var(--glass-shadow);
+  backdrop-filter:blur(15px) saturate(1.08);-webkit-backdrop-filter:blur(15px) saturate(1.08);
+}
+.hero-copy .tag{
+  background:rgba(255,255,255,.42);border-color:rgba(196,164,106,.28);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)
+}
+.hero-meta{border-top-color:rgba(196,164,106,.28)}
+
+/* Glass controls + restrained champagne sheen. */
+.btn,.map-btn,.price-calc-cta,.nav-toggle{
+  position:relative;overflow:hidden;isolation:isolate;
+  border-color:rgba(255,255,255,.72);
+  box-shadow:0 9px 28px rgba(76,53,47,.09),inset 0 1px 0 rgba(255,255,255,.75);
+  backdrop-filter:blur(12px) saturate(1.08);-webkit-backdrop-filter:blur(12px) saturate(1.08);
+}
+.btn:not(.primary):not(.text-link),.map-btn:not(.primary-map),.nav-toggle{
+  background:linear-gradient(135deg,rgba(255,255,255,.74),rgba(255,253,252,.44));
+}
+.btn.primary,.map-btn.primary-map,.price-calc-cta{
+  background:linear-gradient(135deg,rgba(190,118,129,.93),rgba(158,89,100,.84));
+  border-color:rgba(255,255,255,.50);
+}
+.btn::after,.map-btn::after,.price-calc-cta::after,.nav-toggle::after{
+  content:"";position:absolute;z-index:-1;top:-55%;bottom:-55%;left:-75%;width:45%;
+  transform:skewX(-20deg);opacity:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.70),rgba(255,240,210,.34),transparent);
+  pointer-events:none;
+}
+.reveal.in-view .btn::after,.reveal.in-view .map-btn::after,.reveal.in-view .price-calc-cta::after,
+.hero-glass-panel.in-view .btn::after{
+  animation:nekoGlassSheen 1.15s .20s cubic-bezier(.2,.75,.2,1) 1;
+}
+@keyframes nekoGlassSheen{
+  0%{left:-75%;opacity:0}
+  18%{opacity:.72}
+  100%{left:135%;opacity:0}
+}
+
+/* Supporting surfaces. */
+#price-calculator-link{
+  background:linear-gradient(135deg,rgba(255,255,255,.72),rgba(246,233,233,.55));
+  box-shadow:0 18px 55px rgba(80,56,50,.07),inset 0 1px 0 rgba(255,255,255,.7);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+}
+.location-card{
+  background:rgba(255,253,252,.76);box-shadow:0 18px 55px rgba(80,56,50,.06);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+}
+.site-nav{background:rgba(251,247,242,.72);box-shadow:0 8px 30px rgba(71,50,45,.035)}
+.bottom{background:rgba(255,253,252,.73);box-shadow:0 -10px 35px rgba(71,50,45,.05)}
+
+@media(max-width:768px){
+  .hero{min-height:760px;padding:34px 0 48px;align-items:flex-end}
+  .hero::before{background-position:74% center}
+  .hero::after{
+    background:
+      linear-gradient(180deg,rgba(251,247,242,.015) 0%,rgba(251,247,242,.06) 34%,rgba(251,247,242,.34) 58%,rgba(251,247,242,.82) 100%),
+      linear-gradient(90deg,rgba(251,247,242,.14),rgba(251,247,242,.015) 78%);
+  }
+  .hero-copy.hero-glass-panel{
+    width:100%;max-width:none;margin-top:300px;padding:27px 22px 24px;border-radius:22px;
+    background:linear-gradient(145deg,rgba(255,255,255,.56),rgba(255,250,247,.34));
+    backdrop-filter:blur(13px) saturate(1.06);-webkit-backdrop-filter:blur(13px) saturate(1.06);
+    box-shadow:0 20px 55px rgba(75,52,46,.11),inset 0 1px 0 rgba(255,255,255,.82);
+  }
+  .hero-copy p{font-size:15px;line-height:1.72}
+  .hero-actions{gap:9px}
+  .hero-actions .btn{min-height:48px}
+}
+@media(max-width:520px){
+  .hero{min-height:720px;padding-top:24px;padding-bottom:42px}
+  .hero::before{background-position:76% center}
+  .hero-copy.hero-glass-panel{margin-top:270px;padding:24px 18px 22px;border-radius:20px}
+  .hero-copy .tag{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  .reveal.in-view .btn::after,.reveal.in-view .map-btn::after,.reveal.in-view .price-calc-cta::after,
+  .hero-glass-panel.in-view .btn::after{animation:none}
+}
+
 </style><script type="application/ld+json">{"@context":"https://schema.org","@type":"NailSalon","@id":"https://nekonailbywarunee.com/#nailsalon","name":"Neko Nail by Warunee","alternateName":"Neko Nail","url":"https://nekonailbywarunee.com/","telephone":"+66-84-519-6545","priceRange":"฿฿","description":"ร้านทำเล็บบางใหญ่ Neko Nail by Warunee ที่ Index Living Mall บางใหญ่ ชั้น 1 ทาสีเจล ต่อเล็บ เพ้นท์เล็บ เสริมหน้าเล็บ สีเจลเริ่ม 200 บาท เปิดทุกวัน 11:00–21:00 น. จองคิวผ่าน LINE","address":{"@type":"PostalAddress","streetAddress":"Index Living Mall บางใหญ่ ชั้น 1, 87 หมู่ 6 ถนนกาญจนาภิเษก","addressLocality":"เสาธงหิน","addressRegion":"นนทบุรี","postalCode":"11140","addressCountry":"TH"},"areaServed":[{"@type":"Place","name":"บางใหญ่ นนทบุรี"},{"@type":"AdministrativeArea","name":"นนทบุรี"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:00","closes":"21:00"}],"sameAs":["https://www.facebook.com/nekonailbywarunee/","https://www.instagram.com/nekonailbywarunee","https://www.tiktok.com/@neko.nail.by.warunee","https://www.lemon8-app.com/@neko.nail.by.warunee?region=th"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"บริการทำเล็บ Neko Nail by Warunee","itemListElement":[{"@type":"Offer","name":"ทาสีเจล","price":"200","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"ทาสีเจล"}},{"@type":"Offer","name":"สีสุขภาพดี","price":"250","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"สีสุขภาพดี"}},{"@type":"Offer","name":"สีลูกแก้ว","price":"350","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"สีลูกแก้ว"}},{"@type":"Offer","name":"ต่อเล็บชิดโคน กาวธรรมดา","price":"150","priceCurrency":"THB","itemOffered":{"@type":"Service","name":"ต่อเล็บ"}},{"@type":"Offer","name":"งานเพ้นท์เล็บ","price":"25","priceCurrency":"THB","description":"ราคาเริ่มต้นต่อนิ้ว","itemOffered":{"@type":"Service","name":"เพ้นท์เล็บ"}}]},"hasMap":"https://www.google.com/maps/search/?api=1&query=Neko%20Nail%20by%20Warunee%20Index%20Living%20Mall%20Bang%20Yai","image":["https://nekonailbywarunee.com/images/nail-art-pearl-cat-eye-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-red-rhinestone-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-blue-silver-winter-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-pink-blue-gradient-bang-yai.webp","https://nekonailbywarunee.com/images/nail-art-halloween-neon-bang-yai.webp"]}</script>
 <!-- Neko Nail GA4 START -->
 <!-- Google tag (gtag.js) -->
@@ -194,7 +312,7 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 </nav>
 <main class="wrap">
 <section class="hero">
-<div class="hero-copy">
+<div class="hero-copy hero-glass-panel reveal">
 <div class="sub">NEKO NAIL BY WARUNEE</div>
 <h1>ร้านทำเล็บบางใหญ่</h1>
 <div class="tag">Nail Salon • Bang Yai • สีเจลเริ่ม 200 บาท</div>
@@ -204,12 +322,6 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 <a class="btn text-link" href="/#gallery">ดูผลงาน <span aria-hidden="true">→</span></a>
 </div>
 <p class="hero-meta">📍 Index Living Mall บางใหญ่ <span class="floor-nowrap">ชั้น 1</span><br/>🕚 เปิดทุกวัน 11:00–21:00 น.</p>
-</div>
-<div class="hero-visual">
-<picture>
-<source media="(max-width: 768px)" srcset="images/neko-nail-hero-artwork-mobile-final.webp" width="1448" height="1086"/>
-<img alt="Artwork Neko Nail by Warunee ผู้หญิงผมสีชมพูและแมวสองตัวท่ามกลางดอกซากุระ" class="hero-photo" decoding="async" fetchpriority="high" src="images/neko-nail-hero-artwork-desktop-final.webp" width="1374" height="1145"/>
-</picture>
 </div>
 </section>
 <section class="gallery-card" id="gallery">
