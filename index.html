@@ -102,7 +102,150 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 @media(max-width:520px){
   h1{font-size:38px}h2{font-size:29px}.hero-actions{display:grid;grid-template-columns:1fr 1fr}.hero-actions .btn{padding-inline:12px}.visit-row{grid-template-columns:1fr;gap:6px;padding:15px 0}.bottom{padding:7px 8px}.bottomin{grid-template-columns:.72fr .92fr 1.36fr;gap:5px}.bottom .btn{font-size:12px;padding:8px 5px}
 }
-/* Phase 2.1 — Mobile visual refinement */
+/* =========================================================
+   Neko Nail — Production Polish V3
+   Consolidated responsive + glass + PC fixes.
+   Final approved Hero glass readability is preserved.
+   ========================================================= */
+.floor-nowrap{white-space:nowrap}
+
+:root{
+  --glass:rgba(255,253,252,.54);
+  --glass-strong:rgba(255,253,252,.72);
+  --glass-line:rgba(255,255,255,.72);
+  --glass-shadow:0 24px 70px rgba(92,62,54,.12),inset 0 1px 0 rgba(255,255,255,.72);
+}
+
+html,body{
+  max-width:100%;
+  overflow-x:hidden;
+  overflow-x:clip;
+}
+body{background:linear-gradient(180deg,#FBF7F2 0%,#FCF8F4 46%,#FBF7F2 100%)}
+
+/* Full-bleed atmospheric hero. H1 and supporting copy remain real HTML. */
+.hero{
+  position:relative;
+  isolation:isolate;
+  min-height:690px;
+  display:flex;
+  align-items:center;
+  padding:92px 0 104px;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  z-index:-2;
+  top:0;bottom:0;left:50%;
+  width:100vw;
+  transform:translateX(-50%);
+  background-image:url('images/neko-nail-hero-background-soft-luxury.webp');
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:0;bottom:0;left:50%;
+  width:100vw;
+  transform:translateX(-50%);
+  background:
+    linear-gradient(90deg,rgba(251,247,242,.78) 0%,rgba(251,247,242,.48) 36%,rgba(251,247,242,.10) 67%,rgba(251,247,242,.025) 100%),
+    linear-gradient(180deg,rgba(251,247,242,.025),rgba(251,247,242,.06) 70%,rgba(251,247,242,.72) 100%);
+  pointer-events:none;
+}
+.hero-copy.hero-glass-panel{
+  width:min(610px,54%);
+  max-width:610px;
+  padding:42px 42px 38px;
+  border:1px solid var(--glass-line);
+  border-radius:28px;
+  background:linear-gradient(135deg,rgba(255,255,255,.52),rgba(255,250,247,.28));
+  box-shadow:var(--glass-shadow);
+  backdrop-filter:blur(15px) saturate(1.08);
+  -webkit-backdrop-filter:blur(15px) saturate(1.08);
+}
+.hero-copy .tag{
+  background:rgba(255,255,255,.42);
+  border-color:rgba(196,164,106,.28);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+}
+.hero-meta{border-top-color:rgba(196,164,106,.28)}
+
+/* Frosted controls + restrained champagne sheen. */
+.btn,.map-btn,.price-calc-cta,.nav-toggle{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  border-color:rgba(255,255,255,.72);
+  box-shadow:0 9px 28px rgba(76,53,47,.09),inset 0 1px 0 rgba(255,255,255,.75);
+  backdrop-filter:blur(12px) saturate(1.08);
+  -webkit-backdrop-filter:blur(12px) saturate(1.08);
+}
+.btn:not(.primary):not(.text-link),.map-btn:not(.primary-map),.nav-toggle{
+  background:linear-gradient(135deg,rgba(255,255,255,.74),rgba(255,253,252,.44));
+}
+.btn.primary,.map-btn.primary-map,.price-calc-cta{
+  background:linear-gradient(135deg,rgba(190,118,129,.93),rgba(158,89,100,.84));
+  border-color:rgba(255,255,255,.50);
+}
+.btn::after,.map-btn::after,.price-calc-cta::after,.nav-toggle::after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:-55%;bottom:-55%;left:-75%;
+  width:45%;
+  transform:skewX(-20deg);
+  opacity:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.70),rgba(255,240,210,.34),transparent);
+  pointer-events:none;
+}
+.reveal.in-view .btn::after,
+.reveal.in-view .map-btn::after,
+.reveal.in-view .price-calc-cta::after,
+.hero-glass-panel.in-view .btn::after{
+  animation:nekoGlassSheen 1.15s .20s cubic-bezier(.2,.75,.2,1) 1;
+}
+@keyframes nekoGlassSheen{
+  0%{left:-75%;opacity:0}
+  18%{opacity:.72}
+  100%{left:135%;opacity:0}
+}
+
+/* Supporting glass surfaces. */
+#price-calculator-link{
+  background:linear-gradient(135deg,rgba(255,255,255,.72),rgba(246,233,233,.55));
+  box-shadow:0 18px 55px rgba(80,56,50,.07),inset 0 1px 0 rgba(255,255,255,.7);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+}
+.location-card{
+  background:rgba(255,253,252,.76);
+  box-shadow:0 18px 55px rgba(80,56,50,.06);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+}
+.site-nav{
+  background:rgba(251,247,242,.72);
+  box-shadow:0 8px 30px rgba(71,50,45,.035);
+}
+.bottom{
+  background:rgba(255,253,252,.73);
+  box-shadow:0 -10px 35px rgba(71,50,45,.05);
+}
+.article-thumb{height:auto}
+
+/* Desktop: primary booking already exists in header; fixed CTA is mobile-only. */
+@media(min-width:769px){
+  .bottom{display:none}
+  .wrap{padding-bottom:72px}
+  .site-footer .footer-inner{padding-bottom:62px}
+}
+
+/* Mobile production rhythm. */
 @media(max-width:768px){
   body{font-size:16px;line-height:1.68}
   .brand-nowrap,.phrase-nowrap{white-space:nowrap}
@@ -117,10 +260,6 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
   .gallery-card{padding:56px 0 50px}
   .section-head{margin-bottom:24px}
 
-  /* Keep the brand-led hero spacious, but not desktop-spacious. */
-  .hero{padding:38px 0 52px;gap:24px}
-
-  /* Price calculator on the homepage is a teaser, not a second calculator page. */
   #price-calculator-link{padding:28px 22px;gap:18px;border-radius:18px}
   #price-calculator-link h2{font-size:30px;line-height:1.3}
   .calc-copy p{line-height:1.65;margin-bottom:13px}
@@ -128,13 +267,11 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
   .calc-helper{margin-top:9px!important;font-size:11.5px!important;line-height:1.5!important}
   .calc-visual{display:none}
 
-  /* Preserve the strong location treatment while tightening the surrounding rhythm. */
   #location{gap:24px}
   .location-copy p{line-height:1.68;margin-bottom:13px}
   .location-info{padding:28px 24px}
   .location-address{margin:20px 0;padding:17px 0}
 
-  /* Journal: one clean editorial story, without stacked labels. */
   .article-card{padding:40px 0 42px;gap:17px}
   .journal-media{max-width:460px}
   .article-thumb{aspect-ratio:16/9;max-height:190px;border-radius:16px}
@@ -144,7 +281,6 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
   .journal-actions{gap:18px;margin-top:14px}
   .journal-actions a{font-size:13.5px}
 
-  /* Standards should read as three concise trust points, not a large empty chapter. */
   .standards{padding:50px 0 42px;gap:20px}
   .standards h2{font-size:30px;line-height:1.28}
   .standards .th{margin-bottom:2px}
@@ -154,176 +290,15 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
   .standard-point b{display:inline-block;min-width:88px;margin:0 8px 0 0;font-size:17px}
   .standard-point span{font-size:13px;line-height:1.55}
   .fine[style]{padding:12px 0 30px!important;line-height:1.6}
-}
-@media(max-width:520px){
-  h1{font-size:36px;line-height:1.16}
-  .standards h2 .brand-nowrap{white-space:nowrap}
-  h2{font-size:27px}
-  .section{padding:46px 0}
-  .gallery-card{padding:50px 0 46px}
-  #price-calculator-link h2,.standards h2{font-size:28px}
-  .journal-title{font-size:26px}
-  .standard-point b{min-width:82px;font-size:16px}
-  .standard-point span{font-size:12.5px}
-}
-.floor-nowrap{white-space:nowrap}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.slide img,.btn,.price-calc-cta{transition:none}}
 
-/* =========================================================
-   Neko Nail — Soft Background Glass + Journal Clean V2
-   Visual-only layer. SEO copy, headings, schema, URLs and GA4
-   remain inherited from the approved latest homepage.
-   ========================================================= */
-:root{
-  --glass:rgba(255,253,252,.54);
-  --glass-strong:rgba(255,253,252,.72);
-  --glass-line:rgba(255,255,255,.72);
-  --glass-shadow:0 24px 70px rgba(92,62,54,.12),inset 0 1px 0 rgba(255,255,255,.72);
-}
-body{background:linear-gradient(180deg,#FBF7F2 0%,#FCF8F4 46%,#FBF7F2 100%)}
-
-/* Full-bleed atmospheric hero with readable real HTML copy. */
-.hero{
-  position:relative;isolation:isolate;min-height:690px;
-  display:flex;align-items:center;padding:92px 0 104px;
-}
-.hero::before{
-  content:"";position:absolute;z-index:-2;top:0;bottom:0;left:50%;width:100vw;
-  transform:translateX(-50%);
-  background-image:url('images/neko-nail-hero-background-soft-luxury.webp');
-  background-size:cover;background-position:center center;background-repeat:no-repeat;
-}
-.hero::after{
-  content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;
-  transform:translateX(-50%);
-  background:
-    linear-gradient(90deg,rgba(251,247,242,.78) 0%,rgba(251,247,242,.48) 36%,rgba(251,247,242,.10) 67%,rgba(251,247,242,.025) 100%),
-    linear-gradient(180deg,rgba(251,247,242,.025),rgba(251,247,242,.06) 70%,rgba(251,247,242,.72) 100%);
-  pointer-events:none;
-}
-.hero-copy.hero-glass-panel{
-  width:min(610px,54%);max-width:610px;padding:42px 42px 38px;
-  border:1px solid var(--glass-line);border-radius:28px;
-  background:linear-gradient(135deg,rgba(255,255,255,.52),rgba(255,250,247,.28));
-  box-shadow:var(--glass-shadow);
-  backdrop-filter:blur(15px) saturate(1.08);-webkit-backdrop-filter:blur(15px) saturate(1.08);
-}
-.hero-copy .tag{
-  background:rgba(255,255,255,.42);border-color:rgba(196,164,106,.28);
-  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)
-}
-.hero-meta{border-top-color:rgba(196,164,106,.28)}
-
-/* Glass controls + restrained champagne sheen. */
-.btn,.map-btn,.price-calc-cta,.nav-toggle{
-  position:relative;overflow:hidden;isolation:isolate;
-  border-color:rgba(255,255,255,.72);
-  box-shadow:0 9px 28px rgba(76,53,47,.09),inset 0 1px 0 rgba(255,255,255,.75);
-  backdrop-filter:blur(12px) saturate(1.08);-webkit-backdrop-filter:blur(12px) saturate(1.08);
-}
-.btn:not(.primary):not(.text-link),.map-btn:not(.primary-map),.nav-toggle{
-  background:linear-gradient(135deg,rgba(255,255,255,.74),rgba(255,253,252,.44));
-}
-.btn.primary,.map-btn.primary-map,.price-calc-cta{
-  background:linear-gradient(135deg,rgba(190,118,129,.93),rgba(158,89,100,.84));
-  border-color:rgba(255,255,255,.50);
-}
-.btn::after,.map-btn::after,.price-calc-cta::after,.nav-toggle::after{
-  content:"";position:absolute;z-index:-1;top:-55%;bottom:-55%;left:-75%;width:45%;
-  transform:skewX(-20deg);opacity:0;
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,.70),rgba(255,240,210,.34),transparent);
-  pointer-events:none;
-}
-.reveal.in-view .btn::after,.reveal.in-view .map-btn::after,.reveal.in-view .price-calc-cta::after,
-.hero-glass-panel.in-view .btn::after{
-  animation:nekoGlassSheen 1.15s .20s cubic-bezier(.2,.75,.2,1) 1;
-}
-@keyframes nekoGlassSheen{
-  0%{left:-75%;opacity:0}
-  18%{opacity:.72}
-  100%{left:135%;opacity:0}
-}
-
-/* Supporting surfaces. */
-#price-calculator-link{
-  background:linear-gradient(135deg,rgba(255,255,255,.72),rgba(246,233,233,.55));
-  box-shadow:0 18px 55px rgba(80,56,50,.07),inset 0 1px 0 rgba(255,255,255,.7);
-  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-}
-.location-card{
-  background:rgba(255,253,252,.76);box-shadow:0 18px 55px rgba(80,56,50,.06);
-  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-}
-.site-nav{background:rgba(251,247,242,.72);box-shadow:0 8px 30px rgba(71,50,45,.035)}
-.bottom{background:rgba(255,253,252,.73);box-shadow:0 -10px 35px rgba(71,50,45,.05)}
-
-@media(max-width:768px){
-  .hero{min-height:760px;padding:34px 0 48px;align-items:flex-end}
-  .hero::before{background-position:74% center}
-  .hero::after{
-    background:
-      linear-gradient(180deg,rgba(251,247,242,.01) 0%,rgba(251,247,242,.035) 34%,rgba(251,247,242,.20) 58%,rgba(251,247,242,.56) 100%),
-      linear-gradient(90deg,rgba(251,247,242,.08),rgba(251,247,242,.01) 78%);
-  }
-  .hero-copy.hero-glass-panel{
-    width:100%;max-width:none;margin-top:300px;padding:27px 22px 24px;border-radius:22px;
-    background:linear-gradient(145deg,rgba(255,255,255,.32),rgba(255,250,247,.16));
-    backdrop-filter:blur(15px) saturate(1.08);-webkit-backdrop-filter:blur(15px) saturate(1.08);
-    box-shadow:0 20px 55px rgba(75,52,46,.11),inset 0 1px 0 rgba(255,255,255,.72);
-  }
-  .hero-copy p{font-size:15px;line-height:1.72}
-  .hero-actions{gap:9px}
-  .hero-actions .btn{min-height:48px}
-}
-@media(max-width:520px){
-  .hero{min-height:720px;padding-top:24px;padding-bottom:42px}
-  .hero::before{background-position:76% center}
-  .hero-copy.hero-glass-panel{margin-top:270px;padding:24px 18px 22px;border-radius:20px}
-  .hero-copy .tag{font-size:12px}
-}
-@media(prefers-reduced-motion:reduce){
-  .reveal.in-view .btn::after,.reveal.in-view .map-btn::after,.reveal.in-view .price-calc-cta::after,
-  .hero-glass-panel.in-view .btn::after{animation:none}
-}
-
-
-/* =========================================================
-   PC Layout Fix — 2026-09-10
-   1) Force Journal thumbnail to honor editorial aspect ratio.
-   2) Prevent full-bleed hero pseudo-elements from creating
-      a desktop horizontal scrollbar.
-   3) Keep the fixed conversion bar mobile-only; desktop
-      already has the primary booking CTA in the header.
-   ========================================================= */
-html,body{
-  max-width:100%;
-  overflow-x:hidden;
-  overflow-x:clip;
-}
-.article-thumb{
-  height:auto;
-}
-@media(min-width:769px){
-  .bottom{display:none}
-  .wrap{padding-bottom:72px}
-  .site-footer .footer-inner{padding-bottom:62px}
-}
-
-
-/* =========================================================
-   Mobile Hero Refinement — 2026-09-10
-   More transparent glass + tighter first-screen composition.
-   Visual-only changes; SEO/Schema/GA4 remain unchanged.
-   ========================================================= */
-@media(max-width:768px){
+  /* Final approved mobile hero: readable glass, artwork first, then slow reveal. */
   .hero{
-    min-height:660px;
-    padding:22px 0 38px;
+    min-height:630px;
+    padding:16px 0 32px;
+    gap:24px;
     align-items:flex-end;
   }
-  .hero::before{
-    background-position:75% 42%;
-  }
+  .hero::before{background-position:75% 38%}
   .hero::after{
     background:
       linear-gradient(180deg,
@@ -336,71 +311,30 @@ html,body{
         rgba(251,247,242,.005) 78%);
   }
   .hero-copy.hero-glass-panel{
-    margin-top:205px;
-    background:linear-gradient(
-      145deg,
-      rgba(255,255,255,.24),
-      rgba(255,250,247,.10)
-    );
+    width:100%;
+    max-width:none;
+    margin-top:145px;
+    padding:27px 22px 24px;
+    border-radius:22px;
+    background:linear-gradient(145deg,rgba(255,255,255,.22),rgba(255,250,247,.09));
     backdrop-filter:blur(14px) saturate(1.08);
     -webkit-backdrop-filter:blur(14px) saturate(1.08);
-    box-shadow:
-      0 18px 48px rgba(75,52,46,.10),
-      inset 0 1px 0 rgba(255,255,255,.66);
+    box-shadow:0 18px 48px rgba(75,52,46,.10),inset 0 1px 0 rgba(255,255,255,.66);
   }
+  .hero-copy p{font-size:15px;line-height:1.72}
   .hero-copy .tag{
     background:rgba(255,255,255,.28);
     border-color:rgba(255,255,255,.52);
     backdrop-filter:blur(9px);
     -webkit-backdrop-filter:blur(9px);
   }
+  .hero-actions{gap:9px}
+  .hero-actions .btn{min-height:48px}
   .hero-actions .btn.text-link{
     background:rgba(255,255,255,.22);
     border-color:rgba(255,255,255,.54);
   }
-}
-@media(max-width:520px){
-  .hero{
-    min-height:635px;
-    padding-top:18px;
-    padding-bottom:34px;
-  }
-  .hero::before{
-    background-position:76% 40%;
-  }
-  .hero-copy.hero-glass-panel{
-    margin-top:185px;
-  }
-}
 
-
-/* =========================================================
-   Luxury Hero Reveal — 2026-09-10
-   Mobile: show artwork first, then reveal the glass panel
-   smoothly within ~1.8 seconds. Panel is also moved upward.
-   Visual-only changes; SEO/Schema/GA4 remain unchanged.
-   ========================================================= */
-@media(max-width:768px){
-  .hero{
-    min-height:630px;
-    padding-top:16px;
-    padding-bottom:32px;
-  }
-  .hero::before{
-    background-position:75% 38%;
-  }
-  .hero-copy.hero-glass-panel{
-    margin-top:145px;
-    background:linear-gradient(
-      145deg,
-      rgba(255,255,255,.22),
-      rgba(255,250,247,.09)
-    );
-    backdrop-filter:blur(14px) saturate(1.08);
-    -webkit-backdrop-filter:blur(14px) saturate(1.08);
-  }
-
-  /* Hero only: delay the first reveal so the artwork is seen first. */
   .hero-copy.hero-glass-panel.reveal{
     opacity:0;
     transform:translateY(34px);
@@ -414,35 +348,48 @@ html,body{
     opacity:1;
     transform:translateY(0);
   }
-
-  /* Let the CTA sheen happen after the panel has nearly settled. */
-  .hero-glass-panel.in-view .btn::after{
-    animation-delay:1.55s;
-  }
+  .hero-glass-panel.in-view .btn::after{animation-delay:1.55s}
 }
+
 @media(max-width:520px){
+  h1{font-size:36px;line-height:1.16}
+  h2{font-size:27px}
+  .standards h2 .brand-nowrap{white-space:nowrap}
+  .section{padding:46px 0}
+  .gallery-card{padding:50px 0 46px}
+  #price-calculator-link h2,.standards h2{font-size:28px}
+  .journal-title{font-size:26px}
+  .standard-point b{min-width:82px;font-size:16px}
+  .standard-point span{font-size:12.5px}
+
   .hero{
     min-height:610px;
     padding-top:14px;
     padding-bottom:30px;
   }
-  .hero::before{
-    background-position:76% 37%;
-  }
+  .hero::before{background-position:76% 37%}
   .hero-copy.hero-glass-panel{
     margin-top:125px;
+    padding:24px 18px 22px;
+    border-radius:20px;
   }
+  .hero-copy .tag{font-size:12px}
 }
+
 @media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .slide img,.btn,.price-calc-cta{transition:none}
+  .reveal.in-view .btn::after,
+  .reveal.in-view .map-btn::after,
+  .reveal.in-view .price-calc-cta::after,
+  .hero-glass-panel.in-view .btn::after{animation:none}
   .hero-copy.hero-glass-panel.reveal,
   .hero-copy.hero-glass-panel.reveal.in-view{
     opacity:1;
     transform:none;
     transition:none;
     will-change:auto;
-  }
-  .hero-glass-panel.in-view .btn::after{
-    animation:none;
   }
 }
 
@@ -485,7 +432,7 @@ html,body{
 </div>
 </section>
 <section class="gallery-card" id="gallery">
-<div class="gallery-head reveal"><div><div class="eyebrow">Signature Work</div><h2>ผลงานทำเล็บ Neko Nail</h2><p class="th">ไอเดียเล็บจริง • เล็บเจล • เพ้นท์เล็บ • บางใหญ่</p><p class="gallery-intro">เลือกชมตัวอย่างผลงานของ Neko Nail by Warunee แล้วปัดซ้าย–ขวาเพื่อดูแบบเพิ่มเติมได้เลยค่ะ</p></div><span class="gallery-badge">Our Work</span></div>
+<div class="gallery-head reveal"><div><div class="eyebrow">Signature Work</div><h2>ผลงานทำเล็บ Neko Nail</h2><p class="th">ไอเดียเล็บจริง • เล็บเจล • เพ้นท์เล็บ • บางใหญ่</p><p class="gallery-intro">เลือกชมตัวอย่างผลงานของ Neko Nail by Warunee แล้วเลือกแบบที่ชอบเพื่อส่งให้ช่างดูได้เลยค่ะ</p></div><span class="gallery-badge">Our Work</span></div>
 <div class="slider-wrap reveal">
 <div aria-label="ตัวอย่างผลงานทำเล็บ" class="slider" id="nailSlider">
 <figure class="slide" data-index="0"><img alt="เล็บเจลลูกแก้วมุกโทนนู้ด ผลงาน Neko Nail by Warunee ร้านทำเล็บบางใหญ่" decoding="async" height="1200" loading="lazy" src="images/nail-art-pearl-cat-eye-bang-yai.webp" width="1200"/><figcaption>Pearl Cat Eye • Heart Effect 🤍</figcaption></figure>
@@ -514,7 +461,7 @@ html,body{
 </div>
 </section>
 <section class="section" id="location">
-<div class="location-copy reveal"><div class="location-kicker">Visit Neko</div><h2>ร้านทำเล็บ Index Living Mall บางใหญ่</h2><p class="th">Neko Nail by Warunee • บางใหญ่ นนทบุรี</p><p>ร้านอยู่ที่ <strong>Index Living Mall บางใหญ่ <span class="floor-nowrap">ชั้น 1</span></strong> ลูกค้าสามารถดูราคาเริ่มต้นและคำนวณราคาก่อนจองคิวได้ค่ะ</p></div>
+<div class="location-copy reveal"><div class="location-kicker">Visit Neko</div><h2>ร้านทำเล็บ Index Living Mall บางใหญ่</h2><p class="th">Neko Nail by Warunee • บางใหญ่ นนทบุรี</p><p>เดินทางสะดวก <strong>ใกล้ MRT ตลาดบางใหญ่</strong> จากสถานีสามารถต่อมายังร้านได้ง่าย และกดแผนที่ด้านล่างเพื่อให้นำทางมาที่ร้านได้ทันทีค่ะ</p></div>
 <div class="visit-summary reveal" aria-label="ข้อมูลการเดินทางและเวลาเปิดร้าน"><div class="visit-row"><small>Open</small><strong>ทุกวัน 11:00–21:00 น.</strong></div><div class="visit-row"><small>Nearby</small><strong>ใกล้ MRT ตลาดบางใหญ่</strong></div><div class="visit-row"><small>Booking</small><strong><a href="https://lin.ee/YG8WAg5" rel="noopener" target="_blank">LINE จองคิว →</a></strong></div></div>
 <div class="location-card reveal" id="map">
 <div class="location-photo"><img alt="หน้าร้าน Neko Nail by Warunee ชั้น 1 Index Living Mall บางใหญ่" decoding="async" height="1108" loading="lazy" src="images/neko-nail-shop-index-living-mall-bang-yai.webp" width="1477"/></div>
@@ -638,7 +585,7 @@ document.addEventListener('click', function(e){
     toggle.textContent=open?'✕':'☰';
   });
   menu.addEventListener('click',function(e){
-    if(e.target.closest('a') && window.innerWidth<=760){menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}
+    if(e.target.closest('a') && window.innerWidth<=768){menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';}
   });
 })();
 </script><script>(function(){if(!('IntersectionObserver' in window)){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in-view')});return;}var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in-view');io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});})();</script></body></html>
