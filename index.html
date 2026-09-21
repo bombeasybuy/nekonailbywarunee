@@ -78,9 +78,13 @@ p{margin:0 0 16px}.th{margin:7px 0 22px;color:var(--rose);font-size:14px;font-we
 
 /* Calculator */
 #price-calculator-link{position:relative;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr;gap:58px;align-items:center;padding:64px;border:1px solid var(--line);border-radius:var(--r-lg);background:linear-gradient(135deg,var(--surface),#F8EEEE)}
-#price-calculator-link:after{content:"";position:absolute;right:-100px;top:-120px;width:300px;height:300px;border-radius:50%;border:1px solid rgba(182,109,120,.15)}#price-calculator-link>*{position:relative;z-index:1}.calc-copy p{color:var(--muted)}
+#price-calculator-link>*{position:relative;z-index:1}.calc-copy p{color:var(--muted)}
 .price-calc-cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-top:12px;min-height:52px;padding:12px 20px;border-radius:var(--r-sm);background:var(--rose);color:#fff!important;text-decoration:none;font-size:15px;font-weight:700;transition:background .18s ease,transform .18s ease}.price-calc-cta:hover{background:var(--rose-deep);transform:translateY(-1px)}.price-calc-cta .cta-arrow{transition:transform .18s ease}.price-calc-cta:hover .cta-arrow{transform:translateX(4px)}.calc-helper{margin:10px 0 0;font-size:12px;color:var(--muted)}
-.calc-visual{padding:26px;border:1px solid rgba(182,109,120,.18);border-radius:var(--r-md);background:rgba(255,255,255,.6)}.calc-visual small{font-size:12px;letter-spacing:.12em;color:var(--rose);font-weight:700}.calc-visual strong{display:block;margin:8px 0 10px;font-family:var(--serif);font-size:34px;font-weight:600}.calc-visual span{font-size:13px;color:var(--muted)}
+.calc-visual{display:grid;place-items:center;padding:24px;border:1px solid rgba(255,255,255,.72);border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.72),rgba(244,223,226,.38));box-shadow:0 18px 42px rgba(98,60,68,.11),inset 0 1px 0 rgba(255,255,255,.92);backdrop-filter:blur(13px);-webkit-backdrop-filter:blur(13px)}
+.calculator-art{width:min(100%,240px);padding:18px;border:1px solid rgba(196,164,106,.34);border-radius:25px;background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(226,184,191,.66));box-shadow:0 20px 38px rgba(109,67,75,.16),inset 0 1px 0 #fff,inset 0 -12px 24px rgba(128,74,84,.07);transform:rotate(2deg)}
+.calculator-screen{padding:13px 14px 11px;border:1px solid rgba(136,73,83,.16);border-radius:14px;background:linear-gradient(145deg,rgba(255,255,255,.84),rgba(250,244,239,.66));box-shadow:inset 0 2px 8px rgba(77,52,47,.07)}
+.calculator-screen small{display:block;font-size:9px;letter-spacing:.14em;color:var(--rose);font-weight:800}.calculator-screen strong{display:block;margin:3px 0 0;font-family:var(--serif);font-size:25px;line-height:1.25;text-align:right;color:var(--ink)}
+.calculator-keys{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:13px}.calculator-keys i{display:grid;place-items:center;aspect-ratio:1;border:1px solid rgba(255,255,255,.72);border-radius:10px;background:linear-gradient(145deg,rgba(255,255,255,.80),rgba(255,246,242,.46));box-shadow:0 5px 11px rgba(83,54,49,.07),inset 0 1px 0 #fff;color:#765d56;font-size:11px;font-style:normal;font-weight:700}.calculator-keys i:nth-child(4n),.calculator-keys i:last-child{background:linear-gradient(145deg,rgba(211,143,153,.80),rgba(158,89,100,.76));color:#fff}.calculator-caption{margin:15px 0 0;text-align:center;color:var(--muted);font-size:12px}
 
 /* Location */
 #location{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:start}.location-copy{max-width:620px}.location-copy p{color:var(--muted)}.location-copy strong{color:var(--ink)}.location-kicker{font-size:12px;letter-spacing:.15em;color:var(--champagne);font-weight:700;text-transform:uppercase;margin-bottom:8px}.visit-summary{display:grid;gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);align-self:end}.visit-row{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line-soft)}.visit-row:last-child{border-bottom:0}.visit-row small{color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.visit-row strong{font-size:16px;font-weight:600;color:var(--ink)}.visit-row a{color:var(--rose);text-decoration:none}.visit-row a:hover{text-decoration:underline}
@@ -284,12 +288,17 @@ body{background:linear-gradient(180deg,#FBF7F2 0%,#FCF8F4 46%,#FBF7F2 100%)}
   .gallery-card{padding:56px 0 50px}
   .section-head{margin-bottom:24px}
 
-  #price-calculator-link{padding:28px 22px;gap:18px;border-radius:18px}
-  #price-calculator-link h2{font-size:30px;line-height:1.3}
+  #price-calculator-link{display:block;padding:28px 22px;gap:0;border-radius:18px}
+  #price-calculator-link h2{padding-right:102px;font-size:30px;line-height:1.3}
+  .calc-copy .eyebrow{padding-right:102px}
   .calc-copy p{line-height:1.65;margin-bottom:13px}
   .price-calc-cta{width:100%;margin-top:8px;min-height:50px;padding:11px 14px;font-size:14px}
   .calc-helper{margin-top:9px!important;font-size:11.5px!important;line-height:1.5!important}
-  .calc-visual{display:none}
+  .calc-visual{display:grid;position:absolute;top:20px;right:17px;width:88px;margin:0;padding:8px;border-radius:16px;pointer-events:none}
+  .calculator-art{width:70px;padding:6px;border-radius:12px;transform:rotate(2deg)}
+  .calculator-screen{padding:4px 5px;border-radius:7px}.calculator-screen small{display:none}.calculator-screen strong{font-size:12px}
+  .calculator-keys{gap:2px;margin-top:4px}.calculator-keys i{min-height:7px;border-radius:3px;font-size:0}
+  .calculator-caption{display:none}
 
   #location{gap:24px}
   .location-copy p{line-height:1.68;margin-bottom:13px}
@@ -315,7 +324,7 @@ body{background:linear-gradient(180deg,#FBF7F2 0%,#FCF8F4 46%,#FBF7F2 100%)}
   .standard-point span{font-size:13px;line-height:1.55}
   .fine[style]{padding:12px 0 30px!important;line-height:1.6}
 
-  /* Final approved mobile hero: readable glass, artwork first, then slow reveal. */
+  /* Refined mobile hero proportions with the slower luxury reveal retained. */
   .hero{
     min-height:600px;
     padding:16px 0 32px;
@@ -361,17 +370,18 @@ body{background:linear-gradient(180deg,#FBF7F2 0%,#FCF8F4 46%,#FBF7F2 100%)}
 
   .hero-copy.hero-glass-panel.reveal.reveal-pending{
     opacity:0;
-    transform:translateY(18px);
+    transform:translateY(34px);
     transition:
-      opacity .55s cubic-bezier(.18,.72,.22,1),
-      transform .55s cubic-bezier(.18,.72,.22,1);
-    transition-delay:.08s;
+      opacity 1.30s cubic-bezier(.18,.72,.22,1),
+      transform 1.30s cubic-bezier(.18,.72,.22,1);
+    transition-delay:.42s;
+    will-change:opacity,transform;
   }
   .hero-copy.hero-glass-panel.reveal.reveal-pending.in-view{
     opacity:1;
     transform:translateY(0);
   }
-  .hero-glass-panel.in-view .btn::after{animation-delay:.65s}
+  .hero-glass-panel.in-view .btn::after{animation-delay:1.55s}
 }
 
 @media(max-width:520px){
@@ -482,7 +492,7 @@ body{background:linear-gradient(180deg,#FBF7F2 0%,#FCF8F4 46%,#FBF7F2 100%)}
 <section class="section">
 <div class="reveal" id="price-calculator-link">
 <div class="calc-copy"><div class="eyebrow">Price Calculator</div><h2>คำนวณราคาทำเล็บของคุณ</h2><p>เลือกสีเจล ต่อเล็บ เสริมหน้าเล็บ และงานตกแต่งที่ต้องการ เพื่อดูราคาประมาณการก่อนจองคิวได้ทันทีค่ะ</p><a aria-label="คำนวณราคาทำเล็บของคุณ" class="price-calc-cta" href="/price-calculator/" id="openPriceCalculator"><span>คำนวณราคาทำเล็บของคุณ</span><span aria-hidden="true" class="cta-arrow">→</span></a></div>
-<div aria-hidden="true" class="calc-visual"><small>ESTIMATED PRICE</small><strong>เลือกบริการได้ทันที</strong><span>สีเจล • ต่อเล็บ • เสริมหน้าเล็บ • งานตกแต่ง</span></div>
+<div aria-hidden="true" class="calc-visual"><div class="calculator-art"><div class="calculator-screen"><small>ESTIMATED PRICE</small><strong>฿ —</strong></div><div class="calculator-keys"><i>7</i><i>8</i><i>9</i><i>÷</i><i>4</i><i>5</i><i>6</i><i>×</i><i>1</i><i>2</i><i>3</i><i>−</i><i>0</i><i>00</i><i>.</i><i>+</i></div></div><p class="calculator-caption">เลือกบริการ แล้วระบบคำนวณราคาให้ทันที</p></div>
 </div>
 </section>
 <section class="section" id="location">
