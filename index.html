@@ -288,16 +288,16 @@ body{background:linear-gradient(180deg,#FBF7F2 0%,#FCF8F4 46%,#FBF7F2 100%)}
   .gallery-card{padding:56px 0 50px}
   .section-head{margin-bottom:24px}
 
-  #price-calculator-link{display:block;padding:28px 22px;gap:0;border-radius:18px}
-  #price-calculator-link h2{padding-right:102px;font-size:30px;line-height:1.3}
-  .calc-copy .eyebrow{padding-right:102px}
+  #price-calculator-link{display:block;padding:28px 22px;gap:0;border-radius:18px;isolation:isolate}
+  #price-calculator-link h2{padding-right:0;font-size:30px;line-height:1.3}
+  .calc-copy .eyebrow{padding-right:0}
   .calc-copy p{line-height:1.65;margin-bottom:13px}
   .price-calc-cta{width:100%;margin-top:8px;min-height:50px;padding:11px 14px;font-size:14px}
   .calc-helper{margin-top:9px!important;font-size:11.5px!important;line-height:1.5!important}
-  .calc-visual{display:grid;position:absolute;top:20px;right:17px;width:88px;margin:0;padding:8px;border-radius:16px;pointer-events:none}
-  .calculator-art{width:70px;padding:6px;border-radius:12px;transform:rotate(2deg)}
-  .calculator-screen{padding:4px 5px;border-radius:7px}.calculator-screen small{display:none}.calculator-screen strong{font-size:12px}
-  .calculator-keys{gap:2px;margin-top:4px}.calculator-keys i{min-height:7px;border-radius:3px;font-size:0}
+  #price-calculator-link>.calc-visual{display:grid;position:absolute;z-index:0;top:auto;right:-24px;bottom:-34px;width:190px;margin:0;padding:14px;border:0;border-radius:30px;opacity:.17;filter:saturate(.8);transform:rotate(-7deg);pointer-events:none}
+  .calculator-art{width:150px;padding:11px;border-radius:20px;transform:none}
+  .calculator-screen{padding:8px 9px;border-radius:10px}.calculator-screen small{display:none}.calculator-screen strong{font-size:18px}
+  .calculator-keys{gap:5px;margin-top:8px}.calculator-keys i{min-height:auto;border-radius:7px;font-size:0}
   .calculator-caption{display:none}
 
   #location{gap:24px}
@@ -453,7 +453,7 @@ body{background:linear-gradient(180deg,#FBF7F2 0%,#FCF8F4 46%,#FBF7F2 100%)}
 </nav>
 <main class="wrap" id="main-content" tabindex="-1">
 <section class="hero">
-<div class="hero-copy hero-glass-panel reveal">
+<div class="hero-copy hero-glass-panel reveal reveal-pending">
 <div class="sub">NEKO NAIL BY WARUNEE</div>
 <h1>ร้านทำเล็บบางใหญ่</h1>
 <div class="tag">Nail Salon • Bang Yai • สีเจลเริ่ม 200 บาท</div>
